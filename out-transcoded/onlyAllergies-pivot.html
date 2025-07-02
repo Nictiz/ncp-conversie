@@ -1,0 +1,1315 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:n1="urn:hl7-org:v3">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <!--Do NOT edit this HTML directly: it was generated via an XSLT transformation from a CDA
+                    Release 2 XML document.
+                -->
+      <title>Patient summary Document</title>
+      <style type="text/css">
+
+@import "ps.css";
+@import "ep.css";
+
+body {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    margin: 0;
+    padding: 1rem;
+    height: 100%;
+    /*text-rendering: optimizeLegibility;*/
+}
+
+div {}
+table {
+    width: 100%;
+}
+tr {}
+td {
+    font-size:12px;
+    padding:5px;
+    vertical-align: top;
+    text-align: left;
+}
+th {
+    color:#4A4A4A;
+    font-size:13px;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+
+ul {
+    padding-left: 1rem;
+}​
+.h1center {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #085a9f;
+    color: #FFF;
+    margin-bottom: 1rem;
+    padding: 0.5rem ;
+    border-radius: 4px
+}
+.header_table{
+    border-bottom:0 solid #666;
+}
+.header_table th {
+    color:#009fd1;
+    font-size: 12px;
+    border-bottom: 1px solid #009fd1
+}
+.header_table td {
+    font-size: 12px;
+}
+.sectionTitle{
+    color:#3871A9;
+    font-weight: bold;
+    font-size:16px;
+}
+.narr_table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table_caption {
+    border-bottom:0 solid #666;
+    width: 100%;
+}
+
+.table_caption th {
+    background-color:#9FBFDF;
+    color:#4A4A4A;
+    font-size:13px;
+    padding:6px;
+    border-bottom: 2px solid #4A4A4A;
+    -moz-border-radius: 0;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-radius: 6px 6px 0px 0px;
+    text-align:left;
+    vertical-align:middle;
+}
+
+.nullFlavor {
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: yellow;
+    font-weight: bold;
+    padding:5px;
+}
+.wrap-collapsible {
+    margin-bottom: 1.2rem 0px;
+    width: 100%;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+/*****************************/
+/* Default collapsible panel */
+/*****************************/
+.lbl-toggle {
+    display: block;
+
+    color: #009fd1;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+
+    padding: 0.5rem;
+
+    border: 2px solid #009fd1;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background: #FFF;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    transition: all 0.25s ease-out;
+}
+
+
+.lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: none;
+    overflow: visible;
+}
+
+.toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    background: white;
+    border-bottom: 2px solid #009fd1;
+    border-left: 2px solid #009fd1;
+    border-right: 2px solid #009fd1;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+}
+/*******************************************************/
+/* Collapsible panel for:                              */
+/*    - section titles in PS                           */
+/*    - substances in eP                               */
+/*******************************************************/
+.lbl-toggle-title {
+    display: block;
+
+    font-weight: bold;
+    color: #FFF;
+    font-size: 15px;
+    text-align: left;
+
+    padding: 0.5rem;
+
+    border: 2px solid #085a9f;
+    background: #085a9f;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle-title:hover {
+    color: #009fd1;
+}
+
+.lbl-toggle-title::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle-title::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content-title {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle-title + .collapsible-content-title {
+    max-height: none;
+    overflow: visible;
+}
+
+.toggle:checked + .lbl-toggle-title {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content-title .content-inner-title {
+    background: white;
+    border-bottom: 2px solid #085a9f;
+    border-left: 2px solid #085a9f;
+    border-right: 2px solid #085a9f;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+}
+
+/***************************************/
+/* collapsible panel for main blocks */
+/***************************************/
+.lbl-toggle-main {
+    display: block;
+
+    font-weight: bold;
+    color: #085a9f;
+    font-size: 15px;
+    text-align: left;
+
+    padding: 0.5rem;
+
+    border: 2px solid #085a9f;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    background: #FFF;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle-main:hover {
+    color: #009fd1;
+}
+
+.lbl-toggle-main::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle-main::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content-main {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle-main + .collapsible-content-main {
+    max-height: none;
+}
+
+.toggle:checked + .lbl-toggle-main {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content-main .content-inner-main {
+    border-bottom: 2px solid #085a9f;
+    border-left: 2px solid #085a9f;
+    border-right: 2px solid #085a9f;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+}
+
+/************/
+/* Tooltips */
+/************/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 160%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-right .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    background-color: white;
+    color: #3871A9;
+    text-align: left;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #3871A9;
+    border-width: 1px;
+    padding: 7px 7px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-right .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #3871A9 transparent transparent ;
+}
+
+.tooltip-right:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.narrative {
+    color: #085a9f;
+}
+
+.label {
+    color: white;
+    padding: 4px;
+}
+
+.otherContacts-personalRelationship {
+    background-color: #009fd1;
+}
+
+.otherContacts-roleClass {
+    background-color: #085a9f;
+}
+
+
+
+.container {
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.extended_header_block {
+    height:100%;
+}
+
+.narrative_wrapper {
+}
+
+.narrative_wrapper table {
+    width: 100%;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Translation table - table containing the coded translations */
+.translation_table{
+    width: 100%;
+    table-layout: fixed;
+}
+.translation_table th {
+    background: #E6F2FF;
+    color:#4A4A4A;
+    font-size:12px;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+
+.translation_table th.subtitle {
+    background: #009fd1;
+    color:#FFFFFF;
+    font-size:12px;
+    font-weight:bold;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+
+.translation_table td {
+    font-size:12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.translation_table tr:nth-child(even) {
+    background: #FFFFFF;
+}
+
+.translation_table tr:nth-child(odd) {
+    background: #E6F2FF;
+}
+
+/* Medication summary table - table containing the coded translations */
+.medication_summary_table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.medication_summary_table th {
+    color:#4A4A4A;
+    font-size:12px;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+}
+.medication_summary_table td {
+    font-size:12px;
+    vertical-align: top;
+    text-align: left;
+}
+.medication_summary_table tbody:nth-child(odd) {
+    background: #FFFFFF;
+}
+.medication_summary_table tbody:nth-child(even) {
+    background: #E6F2FF;
+}
+
+.extended_header_table{
+    border: 1px solid #009fd1;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    border-radius: 3px;
+}
+.extended_header_table th {
+    background-color:#E6F2FF;
+    color:#4A4A4A;
+    font-size:12px;
+    padding:6px;
+    vertical-align: top;
+    height: 20%;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+.extended_header_table td {
+    font-size:12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.contact_information_table{
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+.contact_information_table th {
+    background-color:#009fd1;
+    color:white;
+    font-size:11px;
+    vertical-align: top;
+    text-align: left;
+}
+.contact_information_table td {
+    background-color:white;
+    color:#009fd1;
+    font-size:11px;
+    vertical-align: top;
+    text-align: left;
+}
+.medicinalproduct {
+    width: 14%;
+}
+.activeingredient {
+    width: 12%;
+}
+.strength {
+    width: 10%;
+}
+.doseform {
+    width: 10%;
+}
+.unitsperintake {
+    width: 10%;
+}
+.frequencyofintakes {
+    width: 10%;
+}
+.routeofadministration {
+    width: 10%;
+}
+.duration {
+    width: 14%;
+}
+
+.medicationreason {
+    width: 10%;
+}
+
+
+
+/******************************************************************/
+/* Ingredients table - Table containing the different ingredients */
+/******************************************************************/
+.ingredients_table {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #009fd1;
+        }
+.ingredients_table th {
+    border: 1px;
+}
+.ingredients_table td {
+}
+
+/***************/
+/* eP table    */
+/***************/
+.ep_table {
+}
+
+.ep_table tr:nth-child(odd) {
+    background: #e3eff7
+}
+.ep_table tr:nth-child(even)  {
+    background: #FFF;
+}
+
+html, body {
+    background: #fff;
+    min-width: 700px;
+}
+
+/* ---- Timeline ---- */
+ol {
+    position: relative;
+    display: block;
+    margin: 10px;
+    margin-top: 50px;
+    height: 1px;
+    background: #085a9f;
+}
+ol::before,
+ol::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 3px;
+    border: 3px solid #085a9f;
+}
+ol::before {
+    top: -2px;
+    left:-3px;
+}
+ol::after {
+    right: -10px;
+    border: 5px solid transparent;
+    border-right: 0;
+    border-left: 10px solid #085a9f;
+}
+
+/* ---- Timeline elements ---- */
+/* li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 150px;
+    font: 12px arial;
+    height: 50px;
+}
+li .date {
+    position: absolute;
+    top: -35px;
+    left: 30%;
+    color: #000000;
+}
+li .point {
+    top: -2px;
+    left: 43%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #085a9f;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+}
+li .description {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    color: #000000;
+    font: bold 12px arial;
+}*/
+
+/***********************/
+/* Fieldset            */
+/***********************/
+
+fieldset {
+    font-family: 'Montserrat';
+    border: 2px solid #085a9f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+fieldset legend {
+    background: #085a9f;
+    color: #fff;
+    padding: 5px 10px ;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/******************************/
+/* Code System and ATC blocks */
+/******************************/
+.codeSystem {
+    background-color:#666;
+    margin-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.button {
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+    background-color:#007dc1;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #124d77;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:'Montserrat';
+    font-size:13px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #154682;
+}
+.button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+    background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+    background-color:#0061a7;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}
+
+.additionalInfo {
+    float: left;
+    font-style: italic;
+    color: #009fd1;
+}
+
+</style>
+   </head>
+   <body>
+      <h1 class="h1center">Patient summary Document</h1>
+      <div class="patient">
+         <div class="wrap-collapsible"><input id="collapsible-patient-header" class="toggle" type="checkbox" checked="true"><label for="collapsible-patient-header" class="lbl-toggle-main">Patient</label><div class="collapsible-content-main">
+               <div class="content-inner-main">
+                  <div>
+                     <table class="header_table">
+                        <tbody>
+                           <tr>
+                              <table class="header_table">
+                                 <tbody>
+                                    <tr>
+                                       <th colspan="2">Prefix</th>
+                                       <th colspan="2">Family Name</th>
+                                       <th>Given Name</th>
+                                    </tr>
+                                    <tr>
+                                       <td colspan="2"></td>
+                                       <td colspan="2">XXX_Bomele-van Zegels&nbsp;
+                                          </td>
+                                       <td>Gerard Jan&nbsp;
+                                          G. J.&nbsp;
+                                          Gerard&nbsp;
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                       <th style="width:140px;">Primary Patient Identifier</th>
+                                       <td>999910942</td>
+                                    </tr>
+                                    <tr>
+                                       <th style="width:140px;">Gender</th>
+                                       <td>Male</td>
+                                       <th style="width:140px;">Date of Birth</th>
+                                       <td>1954-08-22</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </tr>
+                        </tbody>
+                     </table><br><div class="wrap-collapsible"><input id="collapsible-extended-header" class="toggle" type="checkbox"><label for="collapsible-extended-header" class="lbl-toggle">See details</label><div class="collapsible-content">
+                           <div class="content-inner">
+                              <div id="extendedCdaHeader">
+                                 <div class="container">
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Patient</th>
+                                                </tr>
+                                                <tr>
+                                                   <td></td>
+                                                   <td>
+                                                      <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="contact_information_table">
+                                                         <colgroup>
+                                                            <col span="1" style="width: 30%;">
+                                                            <col span="1" style="width: 70%;">
+                                                         </colgroup>
+                                                         <tr>
+                                                            <th colspan="2">Contact Information</th>
+                                                         </tr>
+                                                         <tr></tr>
+                                                         <tr>
+                                                            <th>Address</th>
+                                                            <td>Knolweg 1000<br>STITSWERD&nbsp;9999 XX,&nbsp;Nederland<br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <th>Telecom</th>
+                                                            <td>
+                                                               <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> NoInformation<br></td>
+                                                         </tr><br></table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Preferred HCP/Legal organization to contact</th>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Authoring Device</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>&nbsp;
+                                                      
+                                                      ()
+                                                      </td>
+                                                   <td>
+                                                      <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="contact_information_table">
+                                                         <colgroup>
+                                                            <col span="1" style="width: 30%;">
+                                                            <col span="1" style="width: 70%;">
+                                                         </colgroup>
+                                                         <tr>
+                                                            <th colspan="2">Contact Information</th>
+                                                         </tr>
+                                                         <tr></tr>
+                                                         <tr>
+                                                            <th>Address</th>
+                                                            <td>
+                                                               <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> NoInformation<br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <th>Telecom</th>
+                                                            <td>
+                                                               <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> NoInformation<br></td>
+                                                         </tr><br></table>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> NoInformation</td>
+                                                   <td>
+                                                      <table class="contact_information_table">
+                                                         <tr>
+                                                            <th colspan="2">Represented Organization</th>
+                                                         </tr>
+                                                         <tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Address</th>
+                                                               <td>,&nbsp;NL<br></td>
+                                                            </tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Telecom</th>
+                                                               <td>
+                                                                  <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> NoInformation<br></td>
+                                                            </tr><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></tr>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Legal Authenticator</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>Not available Not available</td>
+                                                   <td>
+                                                      <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="contact_information_table">
+                                                         <colgroup>
+                                                            <col span="1" style="width: 30%;">
+                                                            <col span="1" style="width: 70%;">
+                                                         </colgroup>
+                                                         <tr>
+                                                            <th colspan="2">Contact Information</th>
+                                                         </tr>
+                                                         <tr></tr>
+                                                         <tr>
+                                                            <th>Address</th>
+                                                            <td>Den Haag&nbsp;2500 BC,&nbsp;NL<br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <th>Telecom</th>
+                                                            <td>Tel (work place):  +31703405511<br></td>
+                                                         </tr><br></table>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>NCPeH-NL</td>
+                                                   <td>
+                                                      <table class="contact_information_table">
+                                                         <tr>
+                                                            <th colspan="2">Represented Organization</th>
+                                                         </tr>
+                                                         <tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Address</th>
+                                                               <td>Den Haag&nbsp;2500 BC,&nbsp;NL<br></td>
+                                                            </tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Telecom</th>
+                                                               <td>Tel (work place):  +31703405511<br></td>
+                                                            </tr><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></tr>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Other Contacts</th>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Guardian</th>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Custodian</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>CIBG (not final)</td>
+                                                   <td>
+                                                      <table class="contact_information_table">
+                                                         <tr>
+                                                            <th colspan="2">Represented Organization</th>
+                                                         </tr>
+                                                         <tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Address</th>
+                                                               <td>,&nbsp;NL<br></td>
+                                                            </tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Telecom</th>
+                                                               <td>
+                                                                  <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> NoInformation<br></td>
+                                                            </tr><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></tr>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div><br><div class="content">
+         <table class="header_table">
+            <tbody>
+               <tr class="td_creation_date">
+                  <th>Creation Date of the Document</th>
+                  <td>2025-04-08	21:34:51 (+02:00)</td>
+                  <th>Last Update of the Information</th>
+                  <td>2025-04-08	21:34:51 (+02:00)</td>
+                  <th>Original Document Language</th>
+                  <td>Dutch; Flemish-NETHERLANDS</td>
+               </tr>
+            </tbody>
+         </table><br><div class="wrap-collapsible"><input id="collapsible-clinical-sections" class="toggle" type="checkbox" checked="true"><label for="collapsible-clinical-sections" class="lbl-toggle-main">Clinical Sections</label><div class="collapsible-content-main">
+               <div class="content-inner-main">
+                  <div class="wrap-collapsible"><input id="collapsible-allergies-and-intolerances-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-allergies-and-intolerances-section" class="lbl-toggle-title">Allergies and adverse reactions Document</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-allergies-and-intolerances-original" class="toggle" type="checkbox"><label for="collapsible-allergies-and-intolerances-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <th class="narr_th">Type reactie</th>
+                                                
+                                                <th class="narr_th">Reactie symptoom</th>
+                                                
+                                                <th class="narr_th">Specifieke stof</th>
+                                                
+                                                <th class="narr_th">Duur</th>
+                                                
+                                                <th class="narr_th">Ernst</th>
+                                                
+                                                <th class="narr_th">Mate van kritiek zijn</th>
+                                                
+                                                <th class="narr_th">Status</th>
+                                                
+                                                <th class="narr_th">Zekerheid</th>
+                                                </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <td ID="allergy-d11e318">Allergic disposition</td>
+                                                
+                                                <td ID="manifestation-d11e406">dyspneu</td>
+                                                
+                                                <td>ADVIL OVAAL TABLET FILMOMHULD 400MG</td>
+                                                
+                                                <td>Vanaf: 2020-08-27</td>
+                                                
+                                                <td ID="severity--d11e442">licht</td>
+                                                
+                                                <td ID="criticality-d11e318">Low</td>
+                                                
+                                                <td></td>
+                                                
+                                                <td></td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-allergies-and-intolerances-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-allergies-and-intolerances-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <table class="translation_table">
+                                          <tbody>
+                                             <tr>
+                                                <th>Reaction Type</th>
+                                                <th>Clinical Manifestation</th>
+                                                <th>Agent</th>
+                                                <th>Duration</th>
+                                                <th>Severity</th>
+                                                <th>Criticality</th>
+                                                <th>Allergy Status</th>
+                                                <th>Certainty</th>
+                                                <tr>
+                                                   <td>Allergic disposition</td>
+                                                   <td>Dyspnea</td>
+                                                   <td>
+                                                      <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Unmapped concept. Nationally used concept for which no translations are available
+                                                            and no safe mappings are possible.</span></div> <i>ADVIL OVAAL TABLET FILMOMHULD 400MG</i></td>
+                                                   <td>From 2020-08-27</td>
+                                                   <td>Mild</td>
+                                                   <td>Low Risk</td>
+                                                   <td></td>
+                                                   <td></td>
+                                                </tr>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="wrap-collapsible"><input id="collapsible-current-problems-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-current-problems-section" class="lbl-toggle-title">Problem list - Reported</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-current-problems-original" class="toggle" type="checkbox"><label for="collapsible-current-problems-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <table xmlns:pharm="urn:hl7-org:pharm" class="narr_table">
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <th class="narr_th">Probleem</th>
+                                                
+                                                <th class="narr_th">Begindatum</th>
+                                                
+                                                <th class="narr_th">Diagnose bevestiging</th>
+                                                
+                                                <th class="narr_th">Gerelateerde zorgverlener</th>
+                                                
+                                                <th class="narr_th">Gerelateerde externe bron</th>
+                                                </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <td ID="Problems_None">No known problems</td>
+                                                
+                                                <td>Vanaf: </td>
+                                                
+                                                <td></td>
+                                                
+                                                <td></td>
+                                                
+                                                <td></td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-current-problems-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-current-problems-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table" width="100%">
+                                       <colgroup>
+                                          <col span="1" style="width: 15%;">
+                                          <col span="1" style="width: 15%;">
+                                          <col span="1" style="width: 15%;">
+                                          <col span="1" style="width: 35%;">
+                                          <col span="1" style="width: 20%;">
+                                       </colgroup>
+                                       <tbody>
+                                          <tr>
+                                             <td colspan="5">
+                                                <div class="tooltip-right"><span class="tooltiptext">The subject is not known to have any health problems or disabilities that have to
+                                                      be reported in this record. This can mean either that there are none known, or that
+                                                      those known are not relevant for the purpose of this record</span>No known problems</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><br xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><div xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="wrap-collapsible"><input id="collapsible-medication-summary-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-medication-summary-section-original" class="lbl-toggle-title">History of Medication use Narrative</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-medication-summary-original" class="toggle" type="checkbox"><label for="collapsible-medication-summary-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <table class="narr_table">
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <th class="narr_th">Medicijn</th>
+                                                
+                                                <th class="narr_th">Actief ingrediënt</th>
+                                                
+                                                <th class="narr_th">Sterkte</th>
+                                                
+                                                <th class="narr_th">Farmaceutische vorm</th>
+                                                
+                                                <th class="narr_th">Eenheden per keer</th>
+                                                
+                                                <th class="narr_th">Frequentie</th>
+                                                
+                                                <th class="narr_th">Toedieningsweg</th>
+                                                
+                                                <th class="narr_th">Doseerduur</th>
+                                                
+                                                <th class="narr_th">Reden van voorschrijven</th>
+                                                </tr>
+                                             </thead>
+                                          
+                                          <tbody></tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-medication-summary-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-medication-summary-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="medication_summary_table">
+                                       <colgroup class="medicinalproduct"></colgroup>
+                                       <colgroup class="activeingredient"></colgroup>
+                                       <colgroup class="strength"></colgroup>
+                                       <colgroup class="doseform"></colgroup>
+                                       <colgroup class="unitsperintake"></colgroup>
+                                       <colgroup class="frequencyofintakes"></colgroup>
+                                       <colgroup class="routeofadministration"></colgroup>
+                                       <colgroup class="duration"></colgroup>
+                                       <colgroup class="medicationreason"></colgroup>
+                                       <tr bgcolor="#E6F2FF">
+                                          <td colspan="8"><span class="tdtext">
+                                                <div class="tooltip-right"><span class="tooltiptext">There are no medications for the subject that have to be reported in this record.
+                                                      This can mean either that there are none known, or that those known are not relevant
+                                                      for the purpose of this record</span>No known medications</div></span><br></td>
+                                       </tr>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><div class="wrap-collapsible"><input id="collapsible-medical-devices-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-medical-devices-section-original" class="lbl-toggle-title">History of medical device use</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-medical-devices-original" class="toggle" type="checkbox"><label for="collapsible-medical-devices-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Geen informatie over hulpmiddelen beschikbaar.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-medical-devices-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-medical-devices-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <td colspan="2">
+                                                <div class="tooltip-right"><span class="tooltiptext">There is no information available regarding implanted or external devices for the
+                                                      subject</span>No information about devices</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-surgical-procedures-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-surgical-procedures-section-original" class="lbl-toggle-title">History of Procedures Document</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-surgical-procedures-original" class="toggle" type="checkbox"><label for="collapsible-surgical-procedures-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Geen informatie over operaties beschikbaar.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-surgical-procedures-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-surgical-procedures-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <td colspan="2">
+                                                <div class="tooltip-right"><span class="tooltiptext">There is no information available about the subject's past history of procedures</span>No information about past history of procedures</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><br><br></div>
+            </div>
+         </div>
+      </div><br><br></body>
+</html>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:dm="http://duometis.nl/functions"
+                  xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                  xmlns:hl7="urn:hl7-org:v3"
+                  xmlns:hl7nl="urn:hl7-nl:v3"
+                  xmlns:nf="http://www.nictiz.nl/functions"
+                  xmlns:ph="urn:hl7-org:pharm"
+                  xmlns:pharm="urn:ihe:pharm:medication"
+                  xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.3"/>
+   <id root="1.2.3" extension="1234-TEST"/>
+   <code code="60591-5"
+         codeSystem="2.16.840.1.113883.6.1"
+         displayName="Patiënt samenvatting"/>
+   <title>Patiënt samenvatting</title>
+   <effectiveTime value="20250702160726+0200"/>
+   <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="nl-NL"/>
+   <setId root="1.2.3" extension="5678-TEST"/>
+   <recordTarget typeCode="RCT" contextControlCode="OP">
+      <patientRole classCode="PAT">
+         <id root="2.16.840.1.113883.2.4.6.3" extension="999910942"/>
+         <addr>
+            <streetName>Knolweg</streetName>
+            <houseNumber>1000</houseNumber>
+            <buildingNumberSuffix>A 2</buildingNumberSuffix>
+            <postalCode>9999 XX</postalCode>
+            <city>STITSWERD</city>
+            <country>Nederland</country>
+            <unitID>Flat Oost</unitID>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <patient classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <given qualifier="BR">Gerard Jan</given>
+               <given qualifier="IN">G. J.</given>
+               <given qualifier="CL">Gerard</given>
+               <family>XXX_Bomele-van Zegels</family>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Man"/>
+            <birthTime value="19540822"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author typeCode="AUT" contextControlCode="OP">
+      <functionCode code="2211"
+                    codeSystem="2.16.840.1.113883.2.9.6.2.7"
+                    displayName="Generalist medical practitioners"/>
+      <time nullFlavor="NI"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <assignedAuthoringDevice nullFlavor="NI"/>
+         <representedOrganization nullFlavor="NI">
+            <id nullFlavor="NI"/>
+            <name nullFlavor="NI"/>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian>
+      <assignedCustodian>
+    <!-- To be replaced by definitive custodian -->
+         <representedCustodianOrganization>
+            <id root="2.999" extension="non-final-custodian"/>
+            <name>CIBG (not final)</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator typeCode="LA">
+      <time value="20250702160726+0200"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+    <!-- To be replaced by definitive legalAuthenticator -->
+         <id root="2.999" extension="non-final-legalAuthenticator"/>
+         <addr>
+            <postalCode>2500 BC</postalCode>
+            <city>Den Haag</city>
+            <country>NL</country>
+         </addr>
+         <telecom value="tel:+31703405511" use="WP"/>
+         <assignedPerson>
+            <name>
+               <family>Not available</family>
+               <given>Not available</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id root="2.999" extension="non-final-representedOrganization"/>
+            <name>NCPeH-NL</name>
+            <telecom value="tel:+31703405511" use="WP"/>
+            <addr>
+               <postalCode>2500 BC</postalCode>
+               <city>Den Haag</city>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <documentationOf typeCode="DOC">
+      <serviceEvent classCode="PCPR" moodCode="EVN">
+         <effectiveTime>
+            <high value="20250702160726+0200"/>
+         </effectiveTime>
+      </serviceEvent>
+   </documentationOf>
+   <relatedDocument typeCode="XFRM">
+      <parentDocument><!--TODO relation to PDF-->
+         <id root="2.999" extension="example"/>
+      </parentDocument>
+   </relatedDocument>
+   <component>
+      <structuredBody><!--Medication summary-->
+         <component>
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.3"/>
+               <templateId root="2.16.840.1.113883.10.20.1.8"/>
+               <code code="10160-0"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     displayName="Medicijngebruik"/>
+               <title>Medicijngebruik</title>
+               <text>
+                  <paragraph ID="Medication_Unknown">Geen bekende medicatie.</paragraph>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="INT">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id root="2.16.840.1.113883.2.4.3.46.10.6.1"
+                         extension="med-none-20250702160726"/>
+                     <code code="no-known-medications"
+                           codeSystem="2.16.840.1.113883.5.1150.1"
+                           displayName="No known medications"/>
+                     <text>
+                        <reference value="#Medication_Unknown"/>
+                     </text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="UNK" xsi:type="IVL_TS"/>
+                     <effectiveTime nullFlavor="NA"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND" nullFlavor="NA">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <!--Allergies, adverse reactions, alerts-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.12"/>
+               <code code="48765-2"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Allergieën en/of allergische reacties"/>
+               <title>Allergieën en/of allergische reacties</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Type reactie</th>
+                           <th>Reactie symptoom</th>
+                           <th>Specifieke stof</th>
+                           <th>Duur</th>
+                           <th>Ernst</th>
+                           <th>Mate van kritiek zijn</th>
+                           <th>Status</th>
+                           <th>Zekerheid</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td ID="allergy-d8e318">Allergic disposition</td>
+                           <td ID="manifestation-d8e406">dyspneu</td>
+                           <td>ADVIL OVAAL TABLET FILMOMHULD 400MG</td>
+                           <td>Vanaf: 2020-08-27</td>
+                           <td ID="severity--d8e439">licht</td>
+                           <td ID="criticality-d8e318">Low</td>
+                           <td/>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.16"/>
+                     <!--Type of propensity-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <effectiveTime>
+                        <low value="20200827"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ" inversionInd="false">
+                        <!--Allergy-->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.17"/>
+                           <!--Type of propensity-->
+                           <code code="609328004"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Allergic disposition"
+                                 xsi:type="CD">
+                              <translation xsi:type="CD"
+                                           code="419199007"
+                                           codeSystem="2.16.840.1.113883.6.96"
+                                           displayName="allergie voor substantie"/>
+                           </code>
+                           <text>
+                              <reference value="#allergy-d8e318"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <!--Duration (Onset-End date)-->
+                           <effectiveTime>
+                              <low value="20200827"/>
+                           </effectiveTime>
+                           <author>
+                              <time value="20200827"/>
+                              <assignedAuthor>
+                                 <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                                 <code code="01.000"
+                                       codeSystem="2.16.840.1.113883.2.4.15.111"
+                                       displayName="Arts"/>
+                                 <assignedPerson>
+                                    <name>K. H. G. Huis</name>
+                                 </assignedPerson>
+                                 <representedOrganization>
+                                    <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                                    <name>Gezondheidscentrum A</name>
+                                 </representedOrganization>
+                              </assignedAuthor>
+                           </author>
+                           <informant>
+                              <relatedEntity classCode="PAT">
+                                 <code code="ONESELF" codeSystem="2.16.840.1.113883.5.111"/>
+                                 <relatedPerson>
+                                    <name>Gerard XXX_Bomele</name>
+                                 </relatedPerson>
+                              </relatedEntity>
+                           </informant>
+                           <!--Contains agent (code)-->
+                           <participant typeCode="CSM">
+                              <participantRole classCode="MANU">
+                                 <playingEntity classCode="MMAT">
+                                    <code code="01613081"
+                                          codeSystem="2.16.840.1.113883.2.4.4.7"
+                                          codeSystemName="G-Standaard Handels Product Kode (HPK))"
+                                          displayName="ADVIL OVAAL TABLET FILMOMHULD 400MG"/>
+                                 </playingEntity>
+                              </participantRole>
+                           </participant>
+                           <entryRelationship typeCode="MFST">
+                              <observation classCode="OBS" moodCode="EVN">
+                                 <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.44"/>
+                                 <code code="404684003"
+                                       displayName="Clinical finding"
+                                       codeSystem="2.16.840.1.113883.6.96"/>
+                                 <text>
+                                    <reference value="#manifestation-d8e406"/>
+                                 </text>
+                                 <statusCode code="completed"/>
+                                 <effectiveTime>
+                                    <low nullFlavor="UNK"/>
+                                 </effectiveTime>
+                                 <!--Manifestation-->
+                                 <value xsi:type="CD"
+                                        code="267036007"
+                                        codeSystem="2.16.840.1.113883.6.96"
+                                        displayName="dyspneu"/>
+                                 <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.8"/>
+                                       <code code="SEV"
+                                             displayName="Severity"
+                                             codeSystem="2.16.840.1.113883.5.4"
+                                             codeSystemName="ActCode"/>
+                                       <text>
+                                          <reference value="#severity--d8e439"/>
+                                       </text>
+                                       <statusCode code="completed"/>
+                                       <!--Severity-->
+                                       <value xsi:type="CD"
+                                              code="255604002"
+                                              displayName="licht"
+                                              codeSystem="2.16.840.1.113883.6.96"
+                                              codeSystemName="SNOMED CT"/>
+                                    </observation>
+                                 </entryRelationship>
+                              </observation>
+                           </entryRelationship>
+                           <entryRelationship typeCode="SUBJ" inversionInd="true">
+                              <observation classCode="OBS" moodCode="EVN">
+                                 <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.33"/>
+                                 <code code="82606-5" codeSystem="2.16.840.1.113883.6.1"/>
+                                 <text>
+                                    <reference value="#criticality-d8e318"/>
+                                 </text>
+                                 <statusCode code="completed"/>
+                                 <!--Criticality-->
+                                 <value xsi:type="CD"
+                                        code="62482003"
+                                        displayName="Low"
+                                        codeSystem="2.16.840.1.113883.6.96"
+                                        codeSystemName="SNOMED CT"/>
+                              </observation>
+                           </entryRelationship>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.11"/>
+               <code code="47519-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="Voorgeschiedenis met verrichtingen"/>
+               <title>Voorgeschiedenis met verrichtingen</title>
+               <text>
+                  <paragraph ID="Procedures_Unknown">Geen informatie over operaties beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <procedure classCode="PROC" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.26"/>
+                     <id nullFlavor="NI"/>
+                     <code code="no-procedure-info"
+                           displayName="No information about past history of procedures"
+                           codeSystem="2.16.840.1.113883.5.1150.1"/>
+                     <text>
+                        <reference value="#Procedures_Unknown"/>
+                     </text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NA" xsi:type="IVL_TS"/>
+                  </procedure>
+               </entry>
+            </section>
+         </component>
+         <!--Active problems-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.9"/>
+               <templateId root="2.16.840.1.113883.10.20.1.11"/>
+               <code code="11450-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Probleemlijst"/>
+               <title>Probleemlijst</title>
+               <text>
+                  <paragraph ID="Problems_None">Geen bekende problemen.</paragraph>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id nullFlavor="NA"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id root="2.16.840.1.113883.2.4.3.46.10.6.1"
+                               extension="problems-none-20250702160726"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding"
+                                 codeSystemName="SNOMED CT"/>
+                           <text>
+                              <reference value="#Problems_None"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <value code="no-known-problems"
+                                  displayName="No known problems"
+                                  codeSystem="2.16.840.1.113883.5.1150.1"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section classCode="DOCSECT" moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.4"/>
+               <templateId root="2.16.840.1.113883.10.20.1.7"/>
+               <id nullFlavor="NI"/>
+               <code code="46264-8"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="Voorgeschiedenis van gebruik van hulpmiddel"/>
+               <title>Voorgeschiedenis van gebruik van hulpmiddel</title>
+               <text>
+                  <paragraph ID="Medical_Devices_None">Geen informatie over hulpmiddelen beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <supply classCode="SPLY" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.5"/>
+                     <text>
+                        <reference value="#Medical_Devices_None"/>
+                     </text>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <hl7:low nullFlavor="NA"/>
+                     </effectiveTime>
+                     <participant typeCode="DEV">
+                        <participantRole classCode="MANU">
+                           <playingDevice classCode="DEV" determinerCode="INSTANCE">
+                              <code code="no-device-info"
+                                    displayName="No information about devices"
+                                    codeSystem="2.16.840.1.113883.5.1150.1"/>
+                           </playingDevice>
+                        </participantRole>
+                     </participant>
+                  </supply>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

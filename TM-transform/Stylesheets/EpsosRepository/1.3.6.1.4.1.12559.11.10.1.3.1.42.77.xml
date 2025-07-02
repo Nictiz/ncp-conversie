@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.77" name="eHDSIPresenceAbsence">
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="10828004">
+        <designation lang="en-GB">Positive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11214006">
+        <designation lang="en-GB">Reactive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="131194007">
+        <designation lang="en-GB">Non-Reactive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="17621005">
+        <designation lang="en-GB">Normal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260347006">
+        <designation lang="en-GB">+</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260348001">
+        <designation lang="en-GB">++</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260349009">
+        <designation lang="en-GB">+++</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260350009">
+        <designation lang="en-GB">++++</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260373001">
+        <designation lang="en-GB">Detected</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260385009">
+        <designation lang="en-GB">Negative</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260389003">
+        <designation lang="en-GB">No reaction</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260392004">
+        <designation lang="en-GB">Non-patent</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260405006">
+        <designation lang="en-GB">Trace</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260408008">
+        <designation lang="en-GB">Weakly positive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260413007">
+        <designation lang="en-GB">None</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="260415000">
+        <designation lang="en-GB">Not detected</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="262008008">
+        <designation lang="en-GB">Not performed</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264868006">
+        <designation lang="en-GB">No growth</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264887000">
+        <designation lang="en-GB">Not isolated</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2667000">
+        <designation lang="en-GB">Absent</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="277025001">
+        <designation lang="en-GB">Proven</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="280416009">
+        <designation lang="en-GB">Indeterminate result</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="373066001">
+        <designation lang="en-GB">Yes</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="373067005">
+        <designation lang="en-GB">No</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="419984006">
+        <designation lang="en-GB">Inconclusive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42425007">
+        <designation lang="en-GB">Equivocal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="441517005">
+        <designation lang="en-GB">Present two plus out of three plus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="441521003">
+        <designation lang="en-GB">Present three plus out of three plus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="441614007">
+        <designation lang="en-GB">Present one plus out of three plus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="455371000124106">
+        <designation lang="en-GB">Invalid result</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="46651001">
+        <designation lang="en-GB">Isolated</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52101004">
+        <designation lang="en-GB">Present</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="62482003">
+        <designation lang="en-GB">Low</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="720735008">
+        <designation lang="en-GB">Presumptive positive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75540009">
+        <designation lang="en-GB">High</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82334004">
+        <designation lang="en-GB">Indeterminate</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89292003">
+        <designation lang="en-GB">Rare</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="895231008">
+        <designation lang="en-GB">Not detected in pooled specimen</designation>
+    </concept>
+</ValueSet>

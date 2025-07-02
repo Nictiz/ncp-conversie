@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenAlerts.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenAlgemeneBepalingen.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenAllergieintoleranties.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenContactmomenten.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenContactverslagen.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenLabbepalingen.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenMedicatieafspraken.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenEpisodes.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schematron/kz-vzvz-batchAntwoord.sch" type="application/xml" phase="#ALL" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<?xml-model href="../test_xslt/test-beschikbaarstellenOverdrachtconcerns-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenContactmomenten-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenContactVerslagen-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenAlgemeneUitslagen-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenLabUitslagen-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenMedicatieafspraken-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenAlerts-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenAllergieintoleranties-MIN.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<MCCI_IN200101 xmlns="urn:hl7-org:v3"
+               xmlns:pharm="urn:ihe:pharm:medication"
+               xmlns:hl7nl="urn:hl7-nl:v3"
+               xmlns:sdtc="urn:hl7-org:sdtc"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/MCCI_IN200101.xsd">
+   <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+   <creationTime value="20240916095633"/>
+   <versionCode code="NICTIZEd2005-Okt"/>
+   <interactionId extension="MCCI_IN200101" root="2.16.840.1.113883.1.6"/>
+   <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+   <transmissionQuantity value="8"/>
+   <acknowledgement typeCode="AA">
+      <targetTransmission><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetTransmission>
+   </acknowledgement>
+   <receiver>
+      <device>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+      </device>
+   </receiver>
+   <sender>
+      <device>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+      </device>
+   </sender>
+   <!-- overdrachtconcerns -->
+   <REPC_IN990111NL xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/REPC_IN990111NL.xsd">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="REPC_IN990111NL" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="00001112"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum B</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.16"/>
+               <code code="75310-3"
+                     displayName="Health concerns"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- Inhoudsverantwoordelijke  -->
+               <participant typeCode="RESP">
+                  <participantRole classCode="ASSIGNED">
+                     <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                     <scopingEntity classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.528.1.1007.3.3" extension="000001111"/>
+                     </scopingEntity>
+                  </participantRole>
+               </participant>
+               <component typeCode="COMP" contextControlCode="OP">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.212"/>
+                     <id extension="EpisodeA04" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                     <code code="CONC"
+                           codeSystem="2.16.840.1.113883.5.6"
+                           displayName="Concern"/>
+                     <statusCode code="active"/>
+                     <effectiveTime>
+                        <low value="20240916"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.213"/>
+                           <id extension="ProbleemA04" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                           <code code="282291009"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Diagnosis"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20240916"/>
+                           </effectiveTime>
+                           <value xsi:type="CD" code="A04" codeSystem="2.16.840.1.113883.2.4.4.31.1"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </REPC_IN990111NL>
+   <!-- contactmomenten -->
+   <PRPA_IN900350NL xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/PRPA_IN900350NL.xsd">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="PRPA_IN900350NL" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum D</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.10"/>
+               <code code="46240-8"
+                     displayName="History of hospitalizations+History of outpatient visits"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- Inhoudsverantwoordelijke  -->
+               <participant typeCode="RESP">
+                  <participantRole classCode="ASSIGNED">
+                     <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                     <scopingEntity classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.528.1.1007.3.3" extension="000001111"/>
+                     </scopingEntity>
+                  </participantRole>
+               </participant>
+               <component typeCode="COMP" contextControlCode="OP">
+                  <encounter classCode="ENC" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.201"/>
+                     <id extension="Contact01" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                     <code code="03"
+                           codeSystem="2.16.840.1.113883.2.4.4.30.14"
+                           displayName="Consult"
+                           codeSystemVersion="v3"/>
+                     <effectiveTime>
+                        <low value="20240916100000"/>
+                        <high value="20240916101500"/>
+                     </effectiveTime>
+                     <performer typeCode="PRF">
+                        <assignedEntity>
+                           <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                           <assignedPerson>
+                              <name>K. H. G. Huis</name>
+                           </assignedPerson>
+                        </assignedEntity>
+                     </performer>
+                  </encounter>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </PRPA_IN900350NL>
+   <!-- contactverslagen -->
+   <REPC_IN990101NL xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/REPC_IN990101NL.xsd">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="REPC_IN990101NL" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum C</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.14"/>
+               <code code="34900-1"
+                     displayName="General medicine Progress note"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- Inhoudsverantwoordelijke  -->
+               <participant typeCode="RESP">
+                  <participantRole classCode="ASSIGNED">
+                     <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                     <scopingEntity classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.528.1.1007.3.3" extension="000001111"/>
+                     </scopingEntity>
+                  </participantRole>
+               </participant>
+               <component typeCode="COMP" contextControlCode="OP">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.207"/>
+                     <id extension="ContactVerslag01" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                     <code code="34900-1"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="General medicine Progress note"
+                           codeSystemName="LOINC"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20240916"/>
+                     <!-- E-regel -->
+                     <entryRelationship typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.210"/>
+                           <code code="51848-0"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 codeSystemName="LOINC"
+                                 displayName="Evaluation note"/>
+                           <text>Moeheid/zwakte</text>
+                           <statusCode code="completed"/>
+                        </act>
+                     </entryRelationship>
+                  </act>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </REPC_IN990101NL>
+   <!-- diagnostische bepalingen -->
+   <POOB_IN990003NL xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/POOB_IN990003NL">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="POOB_IN990003NL" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum A</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.8"/>
+               <code code="27899-4"
+                     displayName="Diagnostic studies.non lab"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- Inhoudsverantwoordelijke  -->
+               <participant typeCode="RESP">
+                  <participantRole classCode="ASSIGNED">
+                     <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                     <scopingEntity classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.528.1.1007.3.3" extension="000001111"/>
+                     </scopingEntity>
+                  </participantRole>
+               </participant>
+               <component typeCode="COMP" contextControlCode="OP">
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.202"/>
+                     <id extension="AlgBep01" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                     <code code="1744"
+                           codeSystem="2.16.840.1.113883.2.4.4.30.45"
+                           displayName="Systolische bloeddruk"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20240916095633"/>
+                     <value xsi:type="PQ" value="120" unit="mm[Hg]"/>
+                  </observation>
+               </component>
+               <!--<component typeCode="COMP" contextControlCode="OP">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.202"/>
+                            <id extension="AlgBep02" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                            <code code="382" codeSystem="2.16.840.1.113883.2.4.4.30.45" displayName="Glucose nuchter, draagbare meter"/>
+                            <statusCode code="aborted"/>
+                            <effectiveTime value="{replace(format-dateTime(current-dateTime(), '[Y0001][M01][D01][H01][m01][s01][Z]'), ':', '')}"/>
+                            <value xsi:type="ANY" nullFlavor="UNK"/>
+                        </observation>
+                    </component>-->
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </POOB_IN990003NL>
+   <!-- labuitslagen -->
+   <POLB_IN364001NL03 xmlns:lab="urn:hl7:lab"
+                      xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/POLB_IN364001NL03">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="POLB_IN364001NL03" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum A</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.77"/>
+               <code code="26436-6"
+                     displayName="Laboratory studies"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- Inhoudsverantwoordelijke  -->
+               <participant typeCode="RESP">
+                  <participantRole classCode="ASSIGNED">
+                     <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                     <scopingEntity classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.528.1.1007.3.3" extension="000001111"/>
+                     </scopingEntity>
+                  </participantRole>
+               </participant>
+               <component typeCode="COMP" contextControlCode="OP">
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.7.10.31"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.3.1.6"/>
+                     <id extension="Lab01" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                     <code code="3755"
+                           codeSystem="2.16.840.1.113883.2.4.4.30.45"
+                           displayName="C-reactive proteïne (CRP) POC-test"/>
+                     <statusCode code="completed"/>
+                     <value xsi:type="PQ" value="12" unit="mg/L"/>
+                  </observation>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </POLB_IN364001NL03>
+   <!-- medicatieafspraken -->
+<!--   <QUMA_IN991203NL02 xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/REPC_IN990121NL.xsd">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="QUMA_IN991203NL02" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum A</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9265"/>
+               <code code="419891008"
+                     displayName="Medicatiegegevens"
+                     codeSystem="2.16.840.1.113883.6.96"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <component typeCode="COMP">
+                  <substanceAdministration classCode="SBADM" moodCode="RQO">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9235"/>
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9233"/>
+                     <id extension="Med01" root="2.16.840.1.113883.2.4.3.11.999.77.16076005.1"/>
+                     <code code="16076005"
+                           displayName="Medicatieafspraak"
+                           codeSystem="2.16.840.1.113883.6.96"
+                           codeSystemName="SNOMED CT"/>
+                     <text mediaType="text/plain">3x per dag 1 tablet</text>
+                     <routeCode code="9"
+                                codeSystem="2.16.840.1.113883.2.4.4.9"
+                                displayName="Oraal"
+                                codeSystemName="G-Standaard Toedieningswegen"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9254"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="27278"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    displayName="IBUPROFEN TABLET 400MG"
+                                    codeSystemName="G-Standaard PRK">
+                                 <translation code="51004"
+                                              codeSystem="2.16.840.1.113883.2.4.4.1"
+                                              displayName="IBUPROFEN 400MG TABLET"
+                                              codeSystemName="G-Standaard GPK"/>
+                              </code>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <time value="20240916080000"/>
+                        <assignedAuthor>
+                           <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                           <code code="01.000"
+                                 codeSystem="2.16.840.1.113883.2.4.15.111"
+                                 displayName="Arts"/>
+                           <assignedPerson>
+                              <name>K. H. G. Huis</name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                              <!-\-<name>Gezondheidscentrum A</name>-\->
+                              <addr use="WP">
+                                 <city>Maastricht</city>
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <!-\-Relatie naar medicamenteuze behandeling-\->
+                     <entryRelationship typeCode="COMP" inversionInd="true">
+                        <procedure classCode="PROC" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9084"/>
+                           <id root="2.16.840.1.113883.2.4.3.11.999.77.1.1" extension="MBH01"/>
+                           <code code="1"
+                                 displayName="Medicamenteuze behandeling"
+                                 codeSystem="2.16.840.1.113883.2.4.3.11.60.20.77.5.3"/>
+                        </procedure>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </QUMA_IN991203NL02>
+-->   <!-- alerts -->
+   <REPC_IN990121NL xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/REPC_IN990121NL.xsd">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="REPC_IN990121NL" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum A</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.18"/>
+               <code code="74018-3"
+                     displayName="Alert"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- Inhoudsverantwoordelijke  -->
+               <participant typeCode="RESP">
+                  <participantRole classCode="ASSIGNED">
+                     <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                     <scopingEntity classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.528.1.1007.3.3" extension="000001111"/>
+                     </scopingEntity>
+                  </participantRole>
+               </participant>
+               <component typeCode="COMP" contextControlCode="OP">
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.214"/>
+                     <id extension="Alert01" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                     <code code="74018-3"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           codeSystemName="LOINC"
+                           displayName="Alert"/>
+                     <statusCode code="completed"/>
+                     <value xsi:type="CE"
+                            code="97981000146105"
+                            codeSystem="2.16.840.1.113883.6.96"
+                            displayName="drager van multiresistente Stenotrophomonas maltophilia"/>
+                  </observation>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </REPC_IN990121NL>
+   <!-- allergie / intoleranties -->
+   <REPC_IN990131NL xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/REPC_IN990131NL.xsd">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240916095633"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="REPC_IN990131NL" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.20"/>
+               <code code="48765-2"
+                     displayName="Allergies and/or adverse reactions"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+                     <patient>
+                        <name>onbekend</name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- Inhoudsverantwoordelijke  -->
+               <participant typeCode="RESP">
+                  <participantRole classCode="ASSIGNED">
+                     <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                     <scopingEntity classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.528.1.1007.3.3" extension="000001111"/>
+                     </scopingEntity>
+                  </participantRole>
+               </participant>
+               <!-- Medicatieovergevoeligheid -->
+               <component typeCode="COMP" contextControlCode="OP">
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.215"/>
+                     <id extension="Allergie01" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                     <code code="CONC"
+                           codeSystem="2.16.840.1.113883.5.6"
+                           displayName="Concern"/>
+                     <statusCode code="active"/>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.66.10.216"/>
+                           <id extension="AllergieObs01" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                           <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                           <statusCode code="completed"/>
+                           <value xsi:type="CD"
+                                  code="419199007"
+                                  codeSystem="2.16.840.1.113883.6.96"
+                                  displayName="allergie voor substantie"/>
+                           <participant typeCode="CSM">
+                              <participantRole classCode="MANU">
+                                 <playingEntity classCode="MMAT">
+                                    <code code="4170"
+                                          codeSystem="2.16.840.1.113883.2.4.4.1.750"
+                                          codeSystemName="G-standaard Stofnaamcode (SNK)"
+                                          displayName="Prednisolon"/>
+                                 </playingEntity>
+                              </participantRole>
+                           </participant>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck> <queryId extension="queryId_012345ABCFED" root="1.2.3.999" /> <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </REPC_IN990131NL>
+</MCCI_IN200101>

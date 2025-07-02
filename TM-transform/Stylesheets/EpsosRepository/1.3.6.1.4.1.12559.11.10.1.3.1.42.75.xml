@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.75" name="eHDSIReferenceRangeAppliesTo">
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2038" codeSystemName="HL7 SexParameterForClinicalUseCS" code="female-typical">
+        <designation lang="en-GB">Apply female-typical setting or reference range</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2038" codeSystemName="HL7 SexParameterForClinicalUseCS" code="male-typical">
+        <designation lang="en-GB">Apply male-typical setting or reference range</designation>
+    </concept>
+</ValueSet>

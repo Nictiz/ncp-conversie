@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.53" name="eHDSIHospitalDischargeReportType">
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34105-7">
+        <designation lang="en-GB">Hospital Discharge summary</designation>
+    </concept>
+</ValueSet>

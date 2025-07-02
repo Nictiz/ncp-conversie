@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.57" name="eHDSICriticality">
+    <concept codeSystem="2.16.840.1.113883.4.642.4.130" codeSystemName="FHIR AllergyIntoleranceCriticality" code="high">
+        <designation lang="en-GB">High Risk</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.130" codeSystemName="FHIR AllergyIntoleranceCriticality" code="low">
+        <designation lang="en-GB">Low Risk</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.130" codeSystemName="FHIR AllergyIntoleranceCriticality" code="unable-to-assess">
+        <designation lang="en-GB">Unable to Assess Risk</designation>
+    </concept>
+</ValueSet>

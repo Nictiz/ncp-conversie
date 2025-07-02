@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assignedEntity xmlns="urn:hl7-org:v3">
+    <!-- To be replaced by definitive legalAuthenticator -->
+    <id root="2.999" extension="non-final-legalAuthenticator"/>
+    <addr>
+        <postalCode>2500 BC</postalCode>
+        <city>Den Haag</city>
+        <country>NL</country>
+    </addr>
+    <telecom value="tel:+31703405511" use="WP"/>
+    <assignedPerson>
+        <name>
+            <family>Not available</family>
+            <given>Not available</given>
+        </name>
+    </assignedPerson>
+    <representedOrganization>
+        <id root="2.999" extension="non-final-representedOrganization"/>
+        <name>NCPeH-NL</name>
+        <telecom value="tel:+31703405511" use="WP"/>
+        <addr>
+            <postalCode>2500 BC</postalCode>
+            <city>Den Haag</city>
+            <country>NL</country>
+        </addr>
+    </representedOrganization>
+</assignedEntity>

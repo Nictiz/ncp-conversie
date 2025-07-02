@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="2.16.840.1.113883.4.642.3.241" name="CompositionStatus">
+    <concept codeSystem="2.16.840.1.113883.4.642.4.242" codeSystemName="HL7 FHIR CompositionStatus" code="amended">
+        <designation lang="en-GB">Amended</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.242" codeSystemName="HL7 FHIR CompositionStatus" code="entered-in-error">
+        <designation lang="en-GB">Entered in Error</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.242" codeSystemName="HL7 FHIR CompositionStatus" code="final">
+        <designation lang="en-GB">Final</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.242" codeSystemName="HL7 FHIR CompositionStatus" code="preliminary">
+        <designation lang="en-GB">Preliminary</designation>
+    </concept>
+</ValueSet>

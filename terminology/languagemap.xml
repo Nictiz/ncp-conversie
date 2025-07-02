@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps>
+    <map language="nl-NL">
+        <code code="60591-5" codeSystem="2.16.840.1.113883.6.1" displayName="Patiënt samenvatting"/>
+        <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Probleemlijst"/>
+        <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" displayName="Wilsverklaring"/>
+        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergieën en/of allergische reacties"/>
+        <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" displayName="Relevante diagnostische tests en/of laboratoriumgegevens"/>
+        <code code="60590-7" codeSystem="2.16.840.1.113883.6.1" displayName="Verstrekte medicatie"/>
+        <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" displayName="Beoordeling van functioneren"/>
+        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" displayName="Zorgplan"/>
+        <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" displayName="Ziektegeschiedenis"/>
+        <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" displayName="Vaccinaties"/>
+        <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" displayName="Voorgeschiedenis met verrichtingen"/>
+        <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" displayName="Voorgeschiedenis van gebruik van hulpmiddel"/>
+        <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="Medicijngebruik"/>
+        <code code="10162-6" codeSystem="2.16.840.1.113883.6.1" displayName="Zwangerschapshistorie"/>
+        <code code="57828-6" codeSystem="2.16.840.1.113883.6.1" displayName="Lijst van voorgeschreven medicatie"/>
+        <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Sociale geschiedenis"/>
+        <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" displayName="Vitale functies"/>
+    </map>
+    <map language="en-US">
+        <code code="60591-5" codeSystem="2.16.840.1.113883.6.1" displayName="Patient summary Document"/>
+        <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem list - Reported"/>
+        <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" displayName="Advance directives"/>
+        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies and adverse reactions Document"/>
+        <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" displayName="Relevant diagnostic tests/laboratory data Narrative"/>
+        <code code="60590-7" codeSystem="2.16.840.1.113883.6.1" displayName="Medication dispensed.brief"/>
+        <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" displayName="Functional status assessment note"/>
+        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" displayName="Plan of care note"/>
+        <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" displayName="History of Past illness Narrative"/>
+        <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" displayName="History of Immunization Narrative"/>
+        <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" displayName="History of Procedures Document"/>
+        <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" displayName="History of medical device use"/>
+        <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="History of Medication use Narrative"/>
+        <code code="10162-6" codeSystem="2.16.840.1.113883.6.1" displayName="History of pregnancies Narrative"/>
+        <code code="57828-6" codeSystem="2.16.840.1.113883.6.1" displayName="Prescription list"/>
+        <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social history Narrative"/>
+        <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" displayName="Vital signs"/>
+    </map>
+</maps>

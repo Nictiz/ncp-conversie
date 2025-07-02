@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.73" name="eHDSIObservationInterpretation">
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="&lt;">
+        <designation lang="en-GB">Off scale low</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="&gt;">
+        <designation lang="en-GB">Off scale high</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="A">
+        <designation lang="en-GB">Abnormal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="AA">
+        <designation lang="en-GB">Critical abnormal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="B">
+        <designation lang="en-GB">Better</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="CAR">
+        <designation lang="en-GB">Carrier</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="D">
+        <designation lang="en-GB">Significant change down</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="DET">
+        <designation lang="en-GB">Detected</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="E">
+        <designation lang="en-GB">Equivocal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="EX">
+        <designation lang="en-GB">outside threshold</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="EXP">
+        <designation lang="en-GB">Expected</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="H">
+        <designation lang="en-GB">High</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="HH">
+        <designation lang="en-GB">Critical high</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="HU">
+        <designation lang="en-GB">Significantly high</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="HX">
+        <designation lang="en-GB">above high threshold</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="I">
+        <designation lang="en-GB">Intermediate</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="IE">
+        <designation lang="en-GB">Insufficient evidence</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="IND">
+        <designation lang="en-GB">Indeterminate</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="L">
+        <designation lang="en-GB">Low</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="LL">
+        <designation lang="en-GB">Critical low</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="LU">
+        <designation lang="en-GB">Significantly low</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="LX">
+        <designation lang="en-GB">below low threshold</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="N">
+        <designation lang="en-GB">Normal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="NCL">
+        <designation lang="en-GB">No CLSI defined breakpoint</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="ND">
+        <designation lang="en-GB">Not detected</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="NEG">
+        <designation lang="en-GB">Negative</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="NR">
+        <designation lang="en-GB">Non-reactive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="NS">
+        <designation lang="en-GB">Non-susceptible</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="POS">
+        <designation lang="en-GB">Positive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="R">
+        <designation lang="en-GB">Resistant</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="RR">
+        <designation lang="en-GB">Reactive</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="S">
+        <designation lang="en-GB">Susceptible</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="SDD">
+        <designation lang="en-GB">Susceptible-dose dependent</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="SYN-R">
+        <designation lang="en-GB">Synergy - resistant</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="SYN-S">
+        <designation lang="en-GB">Synergy - susceptible</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="U">
+        <designation lang="en-GB">Significant change up</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="UNE">
+        <designation lang="en-GB">Unexpected</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="W">
+        <designation lang="en-GB">Worse</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 v3 ObservationInterpretation" code="WR">
+        <designation lang="en-GB">Weakly reactive</designation>
+    </concept>
+</ValueSet>

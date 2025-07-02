@@ -1,0 +1,2693 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns:n1="urn:hl7-org:v3">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <!--Do NOT edit this HTML directly: it was generated via an XSLT transformation from a CDA
+                    Release 2 XML document.
+                -->
+      <title>Patient summary Document</title>
+      <style type="text/css">
+
+@import "ps.css";
+@import "ep.css";
+
+body {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    margin: 0;
+    padding: 1rem;
+    height: 100%;
+    /*text-rendering: optimizeLegibility;*/
+}
+
+div {}
+table {
+    width: 100%;
+}
+tr {}
+td {
+    font-size:12px;
+    padding:5px;
+    vertical-align: top;
+    text-align: left;
+}
+th {
+    color:#4A4A4A;
+    font-size:13px;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+
+ul {
+    padding-left: 1rem;
+}​
+.h1center {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #085a9f;
+    color: #FFF;
+    margin-bottom: 1rem;
+    padding: 0.5rem ;
+    border-radius: 4px
+}
+.header_table{
+    border-bottom:0 solid #666;
+}
+.header_table th {
+    color:#009fd1;
+    font-size: 12px;
+    border-bottom: 1px solid #009fd1
+}
+.header_table td {
+    font-size: 12px;
+}
+.sectionTitle{
+    color:#3871A9;
+    font-weight: bold;
+    font-size:16px;
+}
+.narr_table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table_caption {
+    border-bottom:0 solid #666;
+    width: 100%;
+}
+
+.table_caption th {
+    background-color:#9FBFDF;
+    color:#4A4A4A;
+    font-size:13px;
+    padding:6px;
+    border-bottom: 2px solid #4A4A4A;
+    -moz-border-radius: 0;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-radius: 6px 6px 0px 0px;
+    text-align:left;
+    vertical-align:middle;
+}
+
+.nullFlavor {
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: yellow;
+    font-weight: bold;
+    padding:5px;
+}
+.wrap-collapsible {
+    margin-bottom: 1.2rem 0px;
+    width: 100%;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+/*****************************/
+/* Default collapsible panel */
+/*****************************/
+.lbl-toggle {
+    display: block;
+
+    color: #009fd1;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+
+    padding: 0.5rem;
+
+    border: 2px solid #009fd1;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background: #FFF;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    transition: all 0.25s ease-out;
+}
+
+
+.lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: none;
+    overflow: visible;
+}
+
+.toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    background: white;
+    border-bottom: 2px solid #009fd1;
+    border-left: 2px solid #009fd1;
+    border-right: 2px solid #009fd1;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+}
+/*******************************************************/
+/* Collapsible panel for:                              */
+/*    - section titles in PS                           */
+/*    - substances in eP                               */
+/*******************************************************/
+.lbl-toggle-title {
+    display: block;
+
+    font-weight: bold;
+    color: #FFF;
+    font-size: 15px;
+    text-align: left;
+
+    padding: 0.5rem;
+
+    border: 2px solid #085a9f;
+    background: #085a9f;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle-title:hover {
+    color: #009fd1;
+}
+
+.lbl-toggle-title::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle-title::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content-title {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle-title + .collapsible-content-title {
+    max-height: none;
+    overflow: visible;
+}
+
+.toggle:checked + .lbl-toggle-title {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content-title .content-inner-title {
+    background: white;
+    border-bottom: 2px solid #085a9f;
+    border-left: 2px solid #085a9f;
+    border-right: 2px solid #085a9f;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+}
+
+/***************************************/
+/* collapsible panel for main blocks */
+/***************************************/
+.lbl-toggle-main {
+    display: block;
+
+    font-weight: bold;
+    color: #085a9f;
+    font-size: 15px;
+    text-align: left;
+
+    padding: 0.5rem;
+
+    border: 2px solid #085a9f;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    background: #FFF;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle-main:hover {
+    color: #009fd1;
+}
+
+.lbl-toggle-main::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle-main::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content-main {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle-main + .collapsible-content-main {
+    max-height: none;
+}
+
+.toggle:checked + .lbl-toggle-main {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content-main .content-inner-main {
+    border-bottom: 2px solid #085a9f;
+    border-left: 2px solid #085a9f;
+    border-right: 2px solid #085a9f;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+}
+
+/************/
+/* Tooltips */
+/************/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 160%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-right .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    background-color: white;
+    color: #3871A9;
+    text-align: left;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #3871A9;
+    border-width: 1px;
+    padding: 7px 7px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-right .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #3871A9 transparent transparent ;
+}
+
+.tooltip-right:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.narrative {
+    color: #085a9f;
+}
+
+.label {
+    color: white;
+    padding: 4px;
+}
+
+.otherContacts-personalRelationship {
+    background-color: #009fd1;
+}
+
+.otherContacts-roleClass {
+    background-color: #085a9f;
+}
+
+
+
+.container {
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.extended_header_block {
+    height:100%;
+}
+
+.narrative_wrapper {
+}
+
+.narrative_wrapper table {
+    width: 100%;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Translation table - table containing the coded translations */
+.translation_table{
+    width: 100%;
+    table-layout: fixed;
+}
+.translation_table th {
+    background: #E6F2FF;
+    color:#4A4A4A;
+    font-size:12px;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+
+.translation_table th.subtitle {
+    background: #009fd1;
+    color:#FFFFFF;
+    font-size:12px;
+    font-weight:bold;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+
+.translation_table td {
+    font-size:12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.translation_table tr:nth-child(even) {
+    background: #FFFFFF;
+}
+
+.translation_table tr:nth-child(odd) {
+    background: #E6F2FF;
+}
+
+/* Medication summary table - table containing the coded translations */
+.medication_summary_table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.medication_summary_table th {
+    color:#4A4A4A;
+    font-size:12px;
+    padding:6px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+}
+.medication_summary_table td {
+    font-size:12px;
+    vertical-align: top;
+    text-align: left;
+}
+.medication_summary_table tbody:nth-child(odd) {
+    background: #FFFFFF;
+}
+.medication_summary_table tbody:nth-child(even) {
+    background: #E6F2FF;
+}
+
+.extended_header_table{
+    border: 1px solid #009fd1;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    border-radius: 3px;
+}
+.extended_header_table th {
+    background-color:#E6F2FF;
+    color:#4A4A4A;
+    font-size:12px;
+    padding:6px;
+    vertical-align: top;
+    height: 20%;
+    text-align: left;
+    border-bottom: 1px solid #009fd1;
+}
+.extended_header_table td {
+    font-size:12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.contact_information_table{
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+.contact_information_table th {
+    background-color:#009fd1;
+    color:white;
+    font-size:11px;
+    vertical-align: top;
+    text-align: left;
+}
+.contact_information_table td {
+    background-color:white;
+    color:#009fd1;
+    font-size:11px;
+    vertical-align: top;
+    text-align: left;
+}
+.medicinalproduct {
+    width: 14%;
+}
+.activeingredient {
+    width: 12%;
+}
+.strength {
+    width: 10%;
+}
+.doseform {
+    width: 10%;
+}
+.unitsperintake {
+    width: 10%;
+}
+.frequencyofintakes {
+    width: 10%;
+}
+.routeofadministration {
+    width: 10%;
+}
+.duration {
+    width: 14%;
+}
+
+.medicationreason {
+    width: 10%;
+}
+
+
+
+/******************************************************************/
+/* Ingredients table - Table containing the different ingredients */
+/******************************************************************/
+.ingredients_table {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #009fd1;
+        }
+.ingredients_table th {
+    border: 1px;
+}
+.ingredients_table td {
+}
+
+/***************/
+/* eP table    */
+/***************/
+.ep_table {
+}
+
+.ep_table tr:nth-child(odd) {
+    background: #e3eff7
+}
+.ep_table tr:nth-child(even)  {
+    background: #FFF;
+}
+
+html, body {
+    background: #fff;
+    min-width: 700px;
+}
+
+/* ---- Timeline ---- */
+ol {
+    position: relative;
+    display: block;
+    margin: 10px;
+    margin-top: 50px;
+    height: 1px;
+    background: #085a9f;
+}
+ol::before,
+ol::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 3px;
+    border: 3px solid #085a9f;
+}
+ol::before {
+    top: -2px;
+    left:-3px;
+}
+ol::after {
+    right: -10px;
+    border: 5px solid transparent;
+    border-right: 0;
+    border-left: 10px solid #085a9f;
+}
+
+/* ---- Timeline elements ---- */
+/* li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 150px;
+    font: 12px arial;
+    height: 50px;
+}
+li .date {
+    position: absolute;
+    top: -35px;
+    left: 30%;
+    color: #000000;
+}
+li .point {
+    top: -2px;
+    left: 43%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #085a9f;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+}
+li .description {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    color: #000000;
+    font: bold 12px arial;
+}*/
+
+/***********************/
+/* Fieldset            */
+/***********************/
+
+fieldset {
+    font-family: 'Montserrat';
+    border: 2px solid #085a9f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+fieldset legend {
+    background: #085a9f;
+    color: #fff;
+    padding: 5px 10px ;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/******************************/
+/* Code System and ATC blocks */
+/******************************/
+.codeSystem {
+    background-color:#666;
+    margin-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.button {
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+    background-color:#007dc1;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #124d77;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:'Montserrat';
+    font-size:13px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #154682;
+}
+.button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+    background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+    background-color:#0061a7;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}
+
+.additionalInfo {
+    float: left;
+    font-style: italic;
+    color: #009fd1;
+}
+
+</style>
+   </head>
+   <body>
+      <h1 class="h1center">Patient summary Document</h1>
+      <div class="patient">
+         <div class="wrap-collapsible"><input id="collapsible-patient-header" class="toggle" type="checkbox" checked="true"><label for="collapsible-patient-header" class="lbl-toggle-main">Patient</label><div class="collapsible-content-main">
+               <div class="content-inner-main">
+                  <div>
+                     <table class="header_table">
+                        <tbody>
+                           <tr>
+                              <table class="header_table">
+                                 <tbody>
+                                    <tr>
+                                       <th colspan="2">Prefix</th>
+                                       <th colspan="2">Family Name</th>
+                                       <th>Given Name</th>
+                                    </tr>
+                                    <tr>
+                                       <td colspan="2"></td>
+                                       <td colspan="2">Schuman&nbsp;
+                                          </td>
+                                       <td>Robert&nbsp;
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                       <th style="width:140px;">Primary Patient Identifier</th>
+                                       <td>2-1234-W8</td>
+                                    </tr>
+                                    <tr>
+                                       <th style="width:140px;">Gender</th>
+                                       <td>Male</td>
+                                       <th style="width:140px;">Date of Birth</th>
+                                       <td>1886-06-29</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </tr>
+                        </tbody>
+                     </table><br><div class="wrap-collapsible"><input id="collapsible-extended-header" class="toggle" type="checkbox"><label for="collapsible-extended-header" class="lbl-toggle">See details</label><div class="collapsible-content">
+                           <div class="content-inner">
+                              <div id="extendedCdaHeader">
+                                 <div class="container">
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Patient</th>
+                                                </tr>
+                                                <tr>
+                                                   <td></td>
+                                                   <td>
+                                                      <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="contact_information_table">
+                                                         <colgroup>
+                                                            <col span="1" style="width: 30%;">
+                                                            <col span="1" style="width: 70%;">
+                                                         </colgroup>
+                                                         <tr>
+                                                            <th colspan="2">Contact Information</th>
+                                                         </tr>
+                                                         <tr></tr>
+                                                         <tr>
+                                                            <th>Address</th>
+                                                            <td>Breydelstraat 4<br>Brussels&nbsp;1040,&nbsp;BE<br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <th>Telecom</th>
+                                                            <td>Tel (home address):  0080067891011<br>Mailrobert.schuman@ec.europa.eu<br></td>
+                                                         </tr><br></table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Preferred HCP/Legal organization to contact</th>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Author (HCP)</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>António Pereira
+                                                      &nbsp;
+                                                      <span class="label otherContacts-roleClass">Medical doctors</span></td>
+                                                   <td>
+                                                      <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="contact_information_table">
+                                                         <colgroup>
+                                                            <col span="1" style="width: 30%;">
+                                                            <col span="1" style="width: 70%;">
+                                                         </colgroup>
+                                                         <tr>
+                                                            <th colspan="2">Contact Information</th>
+                                                         </tr>
+                                                         <tr></tr>
+                                                         <tr>
+                                                            <th>Address</th>
+                                                            <td>3, Alameda Santo António dos Capuchos<br>Lisbon&nbsp;1169-050,&nbsp;PT<br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <th>Telecom</th>
+                                                            <td>Tel (work place):  351211234568<br>Mailmedico@gmail.com<br></td>
+                                                         </tr><br></table>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Centro Hospitalar de Lisboa Central</td>
+                                                   <td>
+                                                      <table class="contact_information_table">
+                                                         <tr>
+                                                            <th colspan="2">Represented Organization</th>
+                                                         </tr>
+                                                         <tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Address</th>
+                                                               <td>3, Alameda Santo António dos Capuchos<br>Lisbon&nbsp;1169-050,&nbsp;PT<br></td>
+                                                            </tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Telecom</th>
+                                                               <td>Mail (work place):  hospital@gmail.com<br></td>
+                                                            </tr><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></tr>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Legal Authenticator</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>António Pereira</td>
+                                                   <td>
+                                                      <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="contact_information_table">
+                                                         <colgroup>
+                                                            <col span="1" style="width: 30%;">
+                                                            <col span="1" style="width: 70%;">
+                                                         </colgroup>
+                                                         <tr>
+                                                            <th colspan="2">Contact Information</th>
+                                                         </tr>
+                                                         <tr></tr>
+                                                         <tr>
+                                                            <th>Address</th>
+                                                            <td>3, Alameda Santo António dos Capuchos<br>Lisbon&nbsp;1169-050,&nbsp;PT<br></td>
+                                                         </tr>
+                                                         <tr>
+                                                            <th>Telecom</th>
+                                                            <td>Tel (work place):  351211234568<br>Mailmedico@gmail.com<br></td>
+                                                         </tr><br></table>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Centro Hospitalar de Lisboa Central</td>
+                                                   <td>
+                                                      <table class="contact_information_table">
+                                                         <tr>
+                                                            <th colspan="2">Represented Organization</th>
+                                                         </tr>
+                                                         <tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Address</th>
+                                                               <td>3, Alameda Santo António dos Capuchos<br>Lisbon&nbsp;1169-050,&nbsp;PT<br></td>
+                                                            </tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Telecom</th>
+                                                               <td>Mail (work place):  hospital@gmail.com<br></td>
+                                                            </tr><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></tr>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Other Contacts</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>Vitória Silva&nbsp;
+                                                      <span class="label otherContacts-roleClass">next of kin</span>&nbsp;
+                                                      <span class="label otherContacts-personalRelationship">Child</span></td>
+                                                   <td>
+                                                      <table class="contact_information_table">
+                                                         <tr>
+                                                            <th colspan="2">Contact Information</th>
+                                                         </tr>
+                                                         <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                            <th>Address</th>
+                                                            <td>147, Rua Augusta<br>Lisbon&nbsp;1100-049,&nbsp;PT<br></td>
+                                                         </tr>
+                                                         <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                            <th>Telecom</th>
+                                                            <td>Mailpaciente@gmail.com<br>Tel351211234570<br></td>
+                                                         </tr><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Guardian</th>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="item">
+                                       <div class="extended_header_block">
+                                          <table class="extended_header_table">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Custodian</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>Centro Hospitalar de Lisboa Central</td>
+                                                   <td>
+                                                      <table class="contact_information_table">
+                                                         <tr>
+                                                            <th colspan="2">Represented Organization</th>
+                                                         </tr>
+                                                         <tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Address</th>
+                                                               <td>3, Alameda Santo António dos Capuchos<br>Lisbon&nbsp;1169-050,&nbsp;PT<br></td>
+                                                            </tr>
+                                                            <tr xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                                               <th>Telecom</th>
+                                                               <td>Mail (work place):  hospital@gmail.com<br></td>
+                                                            </tr><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></tr>
+                                                      </table>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div><br><div class="content">
+         <table class="header_table">
+            <tbody>
+               <tr class="td_creation_date">
+                  <th>Creation Date of the Document</th>
+                  <td>2022-06-08	10:49:00 (+02:00)</td>
+                  <th>Last Update of the Information</th>
+                  <td>2010-10-01</td>
+                  <th>Original Document Language</th>
+                  <td>English-UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND</td>
+               </tr>
+            </tbody>
+         </table><br><div class="wrap-collapsible"><input id="collapsible-clinical-sections" class="toggle" type="checkbox" checked="true"><label for="collapsible-clinical-sections" class="lbl-toggle-main">Clinical Sections</label><div class="collapsible-content-main">
+               <div class="content-inner-main">
+                  <div class="wrap-collapsible"><input id="collapsible-allergies-and-intolerances-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-allergies-and-intolerances-section" class="lbl-toggle-title">Allergies and adverse reactions Document</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-allergies-and-intolerances-original" class="toggle" type="checkbox"><label for="collapsible-allergies-and-intolerances-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Food allergy to Kiwi fruit, Reaction: Eczema</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Food intolerance to Lactose, Reaction: Diarrhea</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Medication allergy to acetylsalicylic acid, Reaction: Asthma</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Allergy to Latex, Reaction: Urticaria</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          <colgroup>
+                                             <col width="15%">
+                                             <col width="10%">
+                                             <col width="10%">
+                                             <col width="10%">
+                                             <col width="10%">
+                                             <col width="10%">
+                                             <col width="10%">
+                                             <col width="10%">
+                                             <col width="15%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Reaction Type</th>
+                                                <th class="narr_th">Clinical Manifestation</th>
+                                                <th class="narr_th">Agent</th>
+                                                <th class="narr_th">Time</th>
+                                                <th class="narr_th">Severity</th>
+                                                <th class="narr_th">Criticality</th>
+                                                <th class="narr_th">Status</th>
+                                                <th class="narr_th">Certainty</th>
+                                                <th class="narr_th">Process of establishing a problem</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr">
+                                                <td>Propensity to adverse reaction<br></td>
+                                                <td ID="obs-2">Eczema<br></td>
+                                                <td>Kiwi fruit<br></td>
+                                                <td>since 1990-01-10</td>
+                                                <td>Moderate to severe<br></td>
+                                                <td>low risk</td>
+                                                <td>active</td>
+                                                <td>confirmed</td>
+                                                <td>Finding reported by subject or history provider</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr">
+                                                <td>Propensity to adverse reaction<br></td>
+                                                <td ID="obs-4">Diarrhea<br></td>
+                                                <td>Lactose<br></td>
+                                                <td>since 1983-05-05</td>
+                                                <td>Moderate to severe<br></td>
+                                                <td>high risk</td>
+                                                <td>active</td>
+                                                <td>confirmed</td>
+                                                <td>Finding reported by subject or history provider</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr">
+                                                <td>Propensity to adverse reaction<br></td>
+                                                <td ID="obs-6">Asthma<br></td>
+                                                <td>acetylsalicylic acid<br></td>
+                                                <td>from 1994 until 2010</td>
+                                                <td>Moderate to severe<br></td>
+                                                <td>high risk</td>
+                                                <td>resolved</td>
+                                                <td>confirmed</td>
+                                                <td>Finding reported by subject or history provider</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr">
+                                                <td>Propensity to adverse reaction<br></td>
+                                                <td ID="obs-8">Urticaria<br></td>
+                                                <td>Latex<br></td>
+                                                <td>since 1990-01-10</td>
+                                                <td>Moderate to severe<br></td>
+                                                <td>high risk</td>
+                                                <td>suspended</td>
+                                                <td>confirmed</td>
+                                                <td>Finding reported by subject or history provider</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-allergies-and-intolerances-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-allergies-and-intolerances-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <table class="translation_table">
+                                          <tbody>
+                                             <tr>
+                                                <th>Reaction Type</th>
+                                                <th>Clinical Manifestation</th>
+                                                <th>Agent</th>
+                                                <th>Duration</th>
+                                                <th>Severity</th>
+                                                <th>Criticality</th>
+                                                <th>Allergy Status</th>
+                                                <th>Certainty</th>
+                                                <tr>
+                                                   <td>Propensity to adverse reaction</td>
+                                                   <td>Eczema</td>
+                                                   <td>Kiwi fruit</td>
+                                                   <td>From 1990-01-10</td>
+                                                   <td>Moderate to severe</td>
+                                                   <td>Low Risk</td>
+                                                   <td>Active</td>
+                                                   <td></td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Propensity to adverse reaction</td>
+                                                   <td>Diarrhea</td>
+                                                   <td>Lactose</td>
+                                                   <td>From 1983-05-05</td>
+                                                   <td>Moderate to severe</td>
+                                                   <td>High Risk</td>
+                                                   <td>Active</td>
+                                                   <td></td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Propensity to adverse reaction</td>
+                                                   <td>Asthma</td>
+                                                   <td>acetylsalicylic acid</td>
+                                                   <td>From 1994 Until 2010</td>
+                                                   <td>Moderate to severe</td>
+                                                   <td>High Risk</td>
+                                                   <td>Resolved</td>
+                                                   <td></td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Propensity to adverse reaction</td>
+                                                   <td>Urticaria</td>
+                                                   <td>Latex</td>
+                                                   <td>From 1990-01-10</td>
+                                                   <td>Moderate to severe</td>
+                                                   <td>High Risk</td>
+                                                   <td>Inactive</td>
+                                                   <td></td>
+                                                </tr>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="wrap-collapsible"><input id="collapsible-coded-results-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-coded-results-section" class="lbl-toggle-title">Relevant diagnostic tests/laboratory data Narrative</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-coded-results-original" class="toggle" type="checkbox"><label for="collapsible-coded-results-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Coded Results</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Diagnostic Date</th>
+                                                <th class="narr_th">Blood Group</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-28">
+                                                <td>2019-11-22</td>
+                                                <td>Blood Group: O+</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Diagnostic Date</th>
+                                                <th class="narr_th">Result type</th>
+                                                <th class="narr_th">Result value</th>
+                                                <th class="narr_th">Performer</th>
+                                                <th class="narr_th">Reporter</th>
+                                                <th class="narr_th">Comment</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-29">
+                                                <td>2022-06-14</td>
+                                                <td>Magnetic resonance imaging (MRI)</td>
+                                                <td>Source of Measurement</td>
+                                                <td>Schuman Robert</td>
+                                                <td>Ursula Von Der Leyen, European Commission Radiology dept.</td>
+                                                <td ID="comment-2">Comment line</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-coded-results-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-coded-results-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Diagnostic Date</th>
+                                             <th>Result Type</th>
+                                             <th>Result Value</th>
+                                             <th>Performer</th>
+                                             <th>Reporter</th>
+                                          </tr>
+                                          <tr>
+                                             <td>2019-11-22</td>
+                                             <td>ABO and Rh group panel - Blood</td>
+                                             <td>Blood group O Rh(D) positive</td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>2022-06-14</td>
+                                             <td>Magnetic resonance imaging (MRI)</td>
+                                             <td>Source of Measurement</td>
+                                             <td>Schuman Robert</td>
+                                             <td>Ursula Von Der Leyen
+                                                ,&nbsp;
+                                                European Commission Radiology dept.</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><br xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="wrap-collapsible"><input id="collapsible-current-problems-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-current-problems-section" class="lbl-toggle-title">Problem list - Reported</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-current-problems-original" class="toggle" type="checkbox"><label for="collapsible-current-problems-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Predominantly allergic asthma since 1994-10-03</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Postprocedural hypothyroidism since 1997-10-06</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Other specified cardiac arrhythmias since 2013-01-09</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Type 2 diabetes mellitus since 2013-01-09</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Severe pre-eclampsia since 2017-05-06 active</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Acute tubulo-interstitial nephritis (Moderate to severe) since
+                                          2017-05-07
+                                          </p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm">Rare disease Cornelia de Lange syndrome since 2017-05-07</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Active Problem</th>
+                                                <th class="narr_th">Problem Type</th>
+                                                <th class="narr_th">Time</th>
+                                                <th class="narr_th">Problem Status</th>
+                                                <th class="narr_th">Severity</th>
+                                             </tr>
+                                          </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="pca-1a">
+                                                <td>Predominantly allergic asthma<br></td>
+                                                <td>Clinical finding<br></td>
+                                                <td>since 1994-10-03</td>
+                                                <td>active</td>
+                                                <td></td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="pca-2a">
+                                                <td>Postprocedural hypothyroidism<br></td>
+                                                <td>Clinical finding<br></td>
+                                                <td>since 1997-10-06</td>
+                                                <td>active</td>
+                                                <td></td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="pca-3a">
+                                                <td>Other specified cardiac arrhythmias<br></td>
+                                                <td>Clinical finding<br></td>
+                                                <td>since 2013-01-09</td>
+                                                <td>active</td>
+                                                <td></td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="pca-4a">
+                                                <td>Type 2 diabetes mellitus<br></td>
+                                                <td>Clinical finding<br></td>
+                                                <td>since 2013-01-09</td>
+                                                <td>active</td>
+                                                <td></td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="pca-5a">
+                                                <td>Severe pre-eclampsia<br></td>
+                                                <td>Problem<br></td>
+                                                <td>since 2017-05-06</td>
+                                                <td>active</td>
+                                                <td>Severe</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="pca-6a">
+                                                <td>Acute tubulo-interstitial nephritis<br></td>
+                                                <td>Problem<br></td>
+                                                <td>since 2017-05-07</td>
+                                                <td>active</td>
+                                                <td>Moderate to severe</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-current-problems-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-current-problems-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table" width="100%">
+                                       <colgroup>
+                                          <col span="1" style="width: 15%;">
+                                          <col span="1" style="width: 15%;">
+                                          <col span="1" style="width: 15%;">
+                                          <col span="1" style="width: 35%;">
+                                          <col span="1" style="width: 20%;">
+                                       </colgroup>
+                                       <tbody>
+                                          <tr>
+                                             <th>Active Problem</th>
+                                             <th>Onset Date</th>
+                                             <th>Diagnosis Assertion Status</th>
+                                             <th>Related Health Professional</th>
+                                             <th>Related External Resource</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Asthma (J45)</td>
+                                             <td>1994-10-03</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Postprocedural endocrine and metabolic disorders, not elsewhere classified (E89)</td>
+                                             <td>1997-10-06</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Other cardiac arrhythmias (I49)</td>
+                                             <td>2013-01-09</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Pre-eclampsia (O14)</td>
+                                             <td>2017-05-06</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Acute tubulo-interstitial nephritis (N10)</td>
+                                             <td>2017-05-07</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <th class="subtitle" colspan="5">Rare Diseases</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Cornelia de Lange syndrome (199)</td>
+                                             <td>2017-05-07</td>
+                                             <td></td>
+                                             <td>
+                                                <div>
+                                                   <table>
+                                                      <tr>
+                                                         <td>Doctor Rare Disease</td>
+                                                         <td>
+                                                            <table xmlns:pharm="urn:hl7-org:pharm" class="contact_information_table">
+                                                               <colgroup>
+                                                                  <col span="1" style="width: 30%;">
+                                                                  <col span="1" style="width: 70%;">
+                                                               </colgroup>
+                                                               <tr>
+                                                                  <th colspan="2">Contact Information</th>
+                                                               </tr>
+                                                               <tr></tr>
+                                                               <tr>
+                                                                  <th>Address</th>
+                                                                  <td>Breydelstraat 4 <br>Brussels,&nbsp;BE<br></td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th>Telecom</th>
+                                                                  <td>Mail (work place):  doctor@rarediseasecenter.com<br></td>
+                                                               </tr><br></table>
+                                                         </td>
+                                                      </tr>
+                                                   </table>
+                                                </div>
+                                                <div>
+                                                   <table>
+                                                      <tr>
+                                                         <td>Rare Disease center</td>
+                                                         <td>
+                                                            <table class="contact_information_table">
+                                                               <tr>
+                                                                  <th colspan="2">Represented Organization</th>
+                                                               </tr>
+                                                               <tr>
+                                                                  <tr xmlns:pharm="urn:hl7-org:pharm">
+                                                                     <th>Address</th>
+                                                                     <td>Breydelstraat 4 <br>Brussels,&nbsp;BE<br></td>
+                                                                  </tr>
+                                                                  <tr xmlns:pharm="urn:hl7-org:pharm">
+                                                                     <th>Telecom</th>
+                                                                     <td>Mail (work place):  rdc@rarediseasecenter.com<br></td>
+                                                                  </tr><br xmlns:pharm="urn:hl7-org:pharm"></tr>
+                                                            </table>
+                                                         </td>
+                                                      </tr>
+                                                   </table>
+                                                </div>
+                                             </td>
+                                             <td>https://www.orpha.net/consor/cgi-bin/OC_Exp.php?Expert=199</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><br xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><div xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="wrap-collapsible"><input id="collapsible-medication-summary-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-medication-summary-section-original" class="lbl-toggle-title">History of Medication use Narrative</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-medication-summary-original" class="toggle" type="checkbox"><label for="collapsible-medication-summary-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p>Eutirox : levothyroxine sodium 100 ug Tablet : 1 ACM since 1997-10-06 (Oral use)</p>
+                                       <p>Triapin : ramipril 5 mg, felodipine 5 mg Prolonged-release tablet : 2 ACM since 2017-05-06</p>
+                                       <p>Tresiba : insulin degludec [100 [IU] / mL] Solution for injection in pre-filled pen
+                                          : 10 [IU] per day since 2012-04-30 (Subcutaneous use)</p>
+                                       <p>Augmentin : amoxicillin 500 mg, clavulanic acid 125 mg Film-coated tablet : 1 every
+                                          8 h between 2017-05-07 and 2017-05-21</p>
+                                       <p>Combivent Unidose : salbutamol [2.5 mg / 2.5 mL] ipratropium bromide [0.5 mg / 2.5
+                                          mL] Nebuliser solution [in Single-dose container, 2.5 mL] : 2.5 mL every 8 h since
+                                          2015-01-02</p>
+                                       <table class="narr_table">
+                                          
+                                          <colgroup>
+                                             
+                                             <col width="15%">
+                                             
+                                             <col width="30%">
+                                             
+                                             <col width="20%">
+                                             
+                                             <col width="5%">
+                                             
+                                             <col width="10%">
+                                             
+                                             <col width="10%">
+                                             
+                                             <col width="10%">
+                                             </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <th class="narr_th">Name (Class)</th>
+                                                
+                                                <th class="narr_th">Active ingredients [Strength]</th>
+                                                
+                                                <th class="narr_th">Dose Form [Package]</th>
+                                                
+                                                <th class="narr_th">Dose Quantity</th>
+                                                
+                                                <th class="narr_th">Dosage</th>
+                                                
+                                                <th class="narr_th">Time</th>
+                                                
+                                                <th class="narr_th">Route</th>
+                                                
+                                                <th class="narr_th">Medical reason</th>
+                                                </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="sub-1a">
+                                                
+                                                <td valign="top">Eutirox</td>
+                                                
+                                                <td valign="top">
+                                                   levothyroxine sodium (100 ug / 1)
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td>
+                                                   Tablet
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td></td>
+                                                
+                                                <td valign="top">Event : ACM</td>
+                                                
+                                                <td>since 1997-10-06</td>
+                                                
+                                                <td>
+                                                   Oral use
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td>
+                                                   Medical reason
+                                                   <br>
+                                                   </td>
+                                                </tr>
+                                             
+                                             <tr class="narr_tr" ID="sub-2a">
+                                                
+                                                <td valign="top">Triapin
+                                                   <br> (
+                                                   ramipril and felodipine)
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td>
+                                                   
+                                                   <ul>
+                                                      <li>
+                                                         ramipril (5 mg/1)
+                                                         </li>
+                                                      <li>
+                                                         felodipine (5 mg/1)
+                                                         </li>
+                                                   </ul>
+                                                   </td>
+                                                
+                                                <td valign="top">
+                                                   Prolonged-release tablet
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td valign="top">2</td>
+                                                
+                                                <td valign="top">Event : ACM</td>
+                                                
+                                                <td valign="top">since 2017-05-06</td>
+                                                
+                                                <td></td>
+                                                </tr>
+                                             
+                                             <tr class="narr_tr" ID="sub-3a">
+                                                
+                                                <td valign="top">Tresiba</td>
+                                                
+                                                <td valign="top">
+                                                   insulin degludec (100 [IU]/1 mL)</td>
+                                                
+                                                <td valign="top">
+                                                   Solution for injection in pre-filled pen
+                                                   </td>
+                                                
+                                                <td valign="top">10 [IU]</td>
+                                                
+                                                <td valign="top">Period : 1 d</td>
+                                                
+                                                <td>since 2012-04-30</td>
+                                                
+                                                <td valign="top">
+                                                   Subcutaneous use
+                                                   <br>
+                                                   </td>
+                                                </tr>
+                                             
+                                             <tr class="narr_tr" ID="sub-4a">
+                                                
+                                                <td valign="top">Augmentin
+                                                   <br>(
+                                                   amoxicillin and enzyme inhibitor)</td>
+                                                
+                                                <td valign="top">
+                                                   
+                                                   <ul>
+                                                      <li>
+                                                         amoxicillin (500 mg/1)
+                                                         </li>
+                                                      <li>Translation : clavulanic acid {CAS: 58001-44-8} (Ingredient name : clavulanic acid)</li>
+                                                   </ul>
+                                                   </td>
+                                                
+                                                <td valign="top">
+                                                   Film-coated tablet
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td valign="top">1</td>
+                                                
+                                                <td valign="top">
+                                                   Period : 8 h</td>
+                                                
+                                                <td valign="top">between 2017-05-07 and 2017-05-21</td>
+                                                
+                                                <td></td>
+                                                </tr>
+                                             
+                                             <tr class="narr_tr" ID="sub-5a">
+                                                
+                                                <td valign="top">Combivent Unidose
+                                                   <br> (
+                                                   salbutamol and ipratropium bromide)</td>
+                                                
+                                                <td valign="top">
+                                                   
+                                                   <ul>
+                                                      <li>
+                                                         salbutamol (2.5 mg/2.5 mL)
+                                                         </li>
+                                                      <li>
+                                                         ipratropium bromide (0.5 mg/2.5 mL)
+                                                         </li>
+                                                   </ul>
+                                                   </td>
+                                                
+                                                <td valign="top">
+                                                   Nebuliser solution
+                                                   <br> [Package form :
+                                                   Single-dose container
+                                                   <br> capacityQuantity : 2.5 mL]</td>
+                                                
+                                                <td valign="top">2.5 mL</td>
+                                                
+                                                <td valign="top">
+                                                   Period : 8 h</td>
+                                                
+                                                <td valign="top">since 2015-01-02</td>
+                                                
+                                                <td></td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-medication-summary-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-medication-summary-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="medication_summary_table">
+                                       <colgroup class="medicinalproduct"></colgroup>
+                                       <colgroup class="activeingredient"></colgroup>
+                                       <colgroup class="strength"></colgroup>
+                                       <colgroup class="doseform"></colgroup>
+                                       <colgroup class="unitsperintake"></colgroup>
+                                       <colgroup class="frequencyofintakes"></colgroup>
+                                       <colgroup class="routeofadministration"></colgroup>
+                                       <colgroup class="duration"></colgroup>
+                                       <colgroup class="medicationreason"></colgroup>
+                                       <tr bgcolor="#E6F2FF">
+                                          <th>Medicinal Product</th>
+                                          <th>Active Ingredient</th>
+                                          <th>Strength</th>
+                                          <th>Dose Form</th>
+                                          <th>Units per Intake</th>
+                                          <th>Frequency of Intakes</th>
+                                          <th>Route of Administration</th>
+                                          <th>Duration of Treatment</th>
+                                          <th>Medication Reason</th>
+                                       </tr>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>Eutirox</b></td>
+                                             <td>levothyroxine sodium (H03AA01)</td>
+                                             <td>100 microgram per unit</td>
+                                             <td>Tablet</td>
+                                             <td>1 unit(s) -
+                                                2 unit(s)</td>
+                                             <td>before breakfast (from lat. ante cibus matutinus)</td>
+                                             <td>Oral use</td>
+                                             <td>From 1997-10-06</td>
+                                             <td>Other hypothyroidism</td>
+                                          </tr>
+                                       </tbody>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>ramipril and felodipine</b></td>
+                                             <td>ramipril (C09AA05)</td>
+                                             <td>5 milligram per unit</td>
+                                             <td>Prolonged-release tablet</td>
+                                             <td>2 unit(s)&nbsp;
+                                                </td>
+                                             <td>before breakfast (from lat. ante cibus matutinus)</td>
+                                             <td></td>
+                                             <td>From 2017-05-06</td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td></td>
+                                             <td>felodipine (C08CA02)</td>
+                                             <td>5 milligram per unit</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                       </tbody>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>Tresiba</b></td>
+                                             <td>insulin degludec (A10AE06)</td>
+                                             <td>100 international unit 
+                                                /
+                                                 1 milliliter</td>
+                                             <td>Solution for injection in pre-filled pen</td>
+                                             <td>10 unit(s)&nbsp;
+                                                </td>
+                                             <td>1 Time(s) per day</td>
+                                             <td>Subcutaneous use</td>
+                                             <td>From 2012-04-30</td>
+                                             <td></td>
+                                          </tr>
+                                       </tbody>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>amoxicillin and beta-lactamase inhibitor</b></td>
+                                             <td>amoxicillin (J01CA04)</td>
+                                             <td>500 milligram per unit</td>
+                                             <td>Film-coated tablet</td>
+                                             <td>1 unit(s)&nbsp;
+                                                </td>
+                                             <td>Every&nbsp;8&nbsp;hour</td>
+                                             <td></td>
+                                             <td>From 2017-05-07 Until 2017-05-21</td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td></td>
+                                             <td>clavulanic acid</td>
+                                             <td>125 milligram per unit</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                       </tbody>
+                                       <tbody>
+                                          <tr>
+                                             <td><b>salbutamol and ipratropium bromide</b></td>
+                                             <td>salbutamol (R03AC02)</td>
+                                             <td>2.5 milligram 
+                                                /
+                                                 2.5 milliliter</td>
+                                             <td>Nebuliser solution</td>
+                                             <td>2.5 milliliter&nbsp;
+                                                </td>
+                                             <td>1 Time(s) per 8 hour</td>
+                                             <td></td>
+                                             <td>From 2015-01-02</td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td></td>
+                                             <td>ipratropium bromide (R03BB01)</td>
+                                             <td>0.5 milligram 
+                                                /
+                                                 2.5 milliliter</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><br xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><div class="wrap-collapsible"><input id="collapsible-medical-devices-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-medical-devices-section-original" class="lbl-toggle-title">History of medical device use</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-medical-devices-original" class="toggle" type="checkbox"><label for="collapsible-medical-devices-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2014-10-20: Implantable defibrillator (Serial number: ABC-Device-ID, OID:
+                                          2.999)
+                                          </p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2014-10-20 - 2022-06-08: Bone screw (Serial number: ABC-Device-ID-2, OID:
+                                          2.999)
+                                          </p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table" ID="sup-1a">
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <th class="narr_th">Device Type</th>
+                                                
+                                                <th class="narr_th">Device ID</th>
+                                                
+                                                <th class="narr_th">Implant date</th>
+                                                </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <td>
+                                                   Implantable defibrillator
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td>2.999 ABC-Device-ID</td>
+                                                
+                                                <td>2014-10-20</td>
+                                                </tr>
+                                             
+                                             <tr class="narr_tr">
+                                                
+                                                <td>
+                                                   Bone screw
+                                                   <br>
+                                                   </td>
+                                                
+                                                <td>2.999 ABC-Device-ID- 2</td>
+                                                
+                                                <td>2014-10-20 - 2022-06-08</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-medical-devices-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-medical-devices-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Device/Implant</th>
+                                             <th>Device ID</th>
+                                             <th>Implant Date</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Implantable defibrillator</td>
+                                             <td>ABC-Device-ID</td>
+                                             <td>From 2014-10-20</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Bone screw</td>
+                                             <td>ABC-Device-ID-2</td>
+                                             <td>From 2014-10-20 Until 2022-06-08</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-surgical-procedures-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-surgical-procedures-section-original" class="lbl-toggle-title">History of Procedures Document</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-surgical-procedures-original" class="toggle" type="checkbox"><label for="collapsible-surgical-procedures-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Implantation of heart assist system, 2014-10-20</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Cesarean section, 2012-04-14</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Thyroidectomy, 1997-06-05</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          <thead>
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Procedure</th>
+                                                <th class="narr_th">Procedure Date</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr class="narr_tr" ID="pro-1a">
+                                                <td>Implantation of heart
+                                                   assist system<br></td>
+                                                <td>2014-10-20</td>
+                                             </tr>
+                                             <tr class="narr_tr" ID="pro-2a">
+                                                <td>Cesarean
+                                                   section<br></td>
+                                                <td>2012-04-14</td>
+                                             </tr>
+                                             <tr class="narr_tr" ID="pro-3a">
+                                                <td>Thyroidectomy<br></td>
+                                                <td>1997-06-05</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-surgical-procedures-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-surgical-procedures-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Procedure</th>
+                                             <th>Body Site</th>
+                                             <th>Procedure Date</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Implantation of heart assist system</td>
+                                             <td>Skin structure of shoulder</td>
+                                             <td>2014-10-20</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Cesarean section</td>
+                                             <td></td>
+                                             <td>2012-04-14</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Thyroidectomy</td>
+                                             <td></td>
+                                             <td>1997-06-05</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-history-of-past-illnesses-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-history-of-past-illnesses-section" class="lbl-toggle-title">History of Past illness Narrative</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-history-of-past-illnesses-original" class="toggle" type="checkbox"><label for="collapsible-history-of-past-illnesses-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Health Status</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Carcinoma in situ: Thyroid and other endocrine glands, between 1997-10-01 and 1997-10-06,
+                                          Disorder in remission.</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Diabetes mellitus arising in pregnancy, between 2011-10-12 and 2012-04-30, Disorder
+                                          in remission.</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Closed/Inactive Problem</th>
+                                                <th class="narr_th">Problem Type</th>
+                                                <th class="narr_th">Time</th>
+                                                <th class="narr_th">Problem Status</th>
+                                                <th class="narr_th">Health Status</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="prob-1a">
+                                                <td>Carcinoma in situ: Thyroid and other endocrine glands<br></td>
+                                                <td>Problem<br></td>
+                                                <td>between 1997-10-01 and 1997-10-06</td>
+                                                <td>completed</td>
+                                                <td>Disorder in remission</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="prob-2a">
+                                                <td>Diabetes mellitus arising in pregnancy<br></td>
+                                                <td>Problem<br></td>
+                                                <td>between 2011-10-12 and 2012-04-30</td>
+                                                <td>completed</td>
+                                                <td>Disorder in remission</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-history-of-past-illnesses-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-history-of-past-illnesses-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table" width="100%">
+                                       <colgroup>
+                                          <col span="1" style="width: 15%;">
+                                          <col span="1" style="width: 8%;">
+                                          <col span="1" style="width: 8%;">
+                                          <col span="1" style="width: 10%;">
+                                          <col span="1" style="width: 10%;">
+                                          <col span="1" style="width: 30%;">
+                                          <col span="1" style="width: 19%;">
+                                       </colgroup>
+                                       <tbody>
+                                          <tr>
+                                             <th>Closed/Inactive Problem</th>
+                                             <th>Onset Date</th>
+                                             <th>End Date</th>
+                                             <th>Problem Status</th>
+                                             <th>Diagnosis Assertion Status</th>
+                                             <th>Related Health Professional</th>
+                                             <th>Related External Resource</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Carcinoma in situ of other and unspecified sites (D09)</td>
+                                             <td>1997-10-01</td>
+                                             <td>1997-10-06</td>
+                                             <td>Inactive</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Diabetes mellitus in pregnancy (O24)</td>
+                                             <td>2011-10-12</td>
+                                             <td>2012-04-30</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                          </tr>
+                                          <tr>
+                                             <th class="subtitle" colspan="7">Rare Diseases</th>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><div class="wrap-collapsible"><input id="collapsible-immunizations-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-immunizations-section" class="lbl-toggle-title">History of Immunization Narrative</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-immunizations-original" class="toggle" type="checkbox"><label for="collapsible-immunizations-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Hepatitis B virus vaccine Engerix B (2294189) 1983-01-02</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Diphtheria + tetanus + pertussis + poliomyelitis vaccine Tetravac (2782480) 1983-01-02</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Haemophilus influenzae Type b vaccine Hiberix (2751881) 1983-01-02</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Human papillomavirus vaccine Cervarix (5055173) 1994-05-20</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          
+                                          <colgroup>
+                                             
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             <col width="8%">
+                                             </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Vaccination</th>
+                                                <th class="narr_th">Brand Name</th>
+                                                <th class="narr_th">Vaccination Date</th>
+                                                <th class="narr_th">Agent</th>
+                                                <th class="narr_th">Marketing Authorization Holder</th>
+                                                <th class="narr_th">Dose number in series</th>
+                                                <th class="narr_th">Batch/lot number</th>
+                                                <th class="narr_th">Administering Center</th>
+                                                <th class="narr_th">Health Professional Identification</th>
+                                                <th class="narr_th">Country of Vaccination</th>
+                                                <th class="narr_th">Annotations</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="sub-6a">
+                                                <td>Hepatitis B virus
+                                                   vaccine<br></td>
+                                                <td>Engerix B (2294189)</td>
+                                                <td>1983-01-02</td>
+                                                <td>Acute Hepatitis B</td>
+                                                <td>SmithKline Beecham Biologicals S.A</td>
+                                                <td>12</td>
+                                                <td>1</td>
+                                                <td>Brussels vaccination center</td>
+                                                <td>Gregory House</td>
+                                                <td>BE</td>
+                                                <td></td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="sub-7a">
+                                                <td>Diphtheria + tetanus
+                                                   + pertussis + poliomyelitis vaccine<br></td>
+                                                <td>Tetravac (2782480)</td>
+                                                <td>1983-01-02</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="sub-8a">
+                                                <td>Haemophilus
+                                                   influenzae Type b vaccine<br></td>
+                                                <td>Hiberix (2751881)</td>
+                                                <td>1983-01-02</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="sub-9a">
+                                                <td>Human papillomavirus
+                                                   vaccine<br></td>
+                                                <td>Cervarix (5055173)</td>
+                                                <td>1994-05-20</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-immunizationsSectionCode-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-immunizationsSectionCode-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Vaccination</th>
+                                             <th>Brand Name</th>
+                                             <th>Vaccination Date</th>
+                                             <th>Agent</th>
+                                             <th>Marketing Authorization Holder</th>
+                                             <th>Dose Number in Series</th>
+                                             <th>Batch/Lot Number</th>
+                                             <th>Administering Center</th>
+                                             <th>Health Professional Identification</th>
+                                             <th>Country of Vaccination</th>
+                                             <th>Administered</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Hepatitis B virus antigen-containing vaccine product</td>
+                                             <td>Engerix B (2294189)</td>
+                                             <td>1983-01-02
+                                                &nbsp;
+                                                </td>
+                                             <td>Acute hepatitis B</td>
+                                             <td>SmithKline Beecham Biologicals S.A</td>
+                                             <td>12</td>
+                                             <td>1</td>
+                                             <td>Brussels vaccination center
+                                                &nbsp;
+                                                </td>
+                                             <td>Gregory House
+                                                &nbsp;
+                                                </td>
+                                             <td>
+                                                BE
+                                                
+                                                &nbsp;
+                                                </td>
+                                             <td><font color="green">✔</font></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Tetanus vaccines</td>
+                                             <td>Tetravac (2782480)</td>
+                                             <td>1983-01-02
+                                                &nbsp;
+                                                </td>
+                                             <td>
+                                                <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> unknown</td>
+                                             <td>
+                                                <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> unknown</td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td><font color="green">✔</font></td>
+                                          </tr>
+                                          <tr>
+                                             <td>Haemophilus influenzae B vaccines</td>
+                                             <td>Hiberix (2751881)</td>
+                                             <td>1983-01-02
+                                                &nbsp;
+                                                </td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td><font color="green">✔</font></td>
+                                          </tr>
+                                          <tr>
+                                             <td>papillomavirus (human types 16, 18)</td>
+                                             <td>Cervarix (5055173)</td>
+                                             <td>
+                                                <div class="tooltip-right"><i class="fas fa-exclamation-circle" style="color:#085a9f" aria-hidden="true"></i><span class="tooltiptext">Missing Information</span></div> not applicable
+                                                &nbsp;
+                                                </td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td></td>
+                                             <td><font color="red">✖</font></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-functional-status-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-functional-status-section" class="lbl-toggle-title">Functional status assessment note</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-functional-status-original" class="toggle" type="checkbox"><label for="collapsible-functional-status-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Functional statusses</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Bed mobility - self-performance during assessment period</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Walking (with assistive device if used)</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table"><span style="font-weight:bold; ">Date: 2022-06-13 [ID: 2.999.13]</span><colgroup>
+                                             <col width="40%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Obs. time</th>
+                                                <th class="narr_th">Obs. code</th>
+                                                <th class="narr_th">Onset time</th>
+                                                <th class="narr_th">Result</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-30a">
+                                                <td>2022-06-13</td>
+                                                <td>Bed mobility - self-performance during assessment period<br></td>
+                                                <td>2022-06-13</td>
+                                                <td>MILD impairment for mobility of joint
+                                                   </td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="obs-31a">
+                                                <td>2022-06-13</td>
+                                                <td>Walking (with assistive device if used)<br></td>
+                                                <td>2022-06-13</td>
+                                                <td>MILD impairment for mobility of joint
+                                                   </td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-functional-status-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-functional-status-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Functional Assessment Date</th>
+                                             <th>Functional Assessment</th>
+                                             <th>Onset Date</th>
+                                             <th>Functional Assessment Result</th>
+                                          </tr>
+                                          <tr>
+                                             <td>2022-06-13</td>
+                                             <td>Bed mobility - self-performance during assessment period</td>
+                                             <td>2022-06-13</td>
+                                             <td>MILD impairment for mobility of joint</td>
+                                          </tr>
+                                          <tr>
+                                             <td>2022-06-13</td>
+                                             <td>Walking (with assistive device if used)</td>
+                                             <td>2022-06-13</td>
+                                             <td>MILD impairment for mobility of joint</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-social-history-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-social-history-section-original" class="lbl-toggle-title">Social history Narrative</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-social-history-original" class="toggle" type="checkbox"><label for="collapsible-social-history-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Tobacco use and exposure: 0.5 {pack}/d since 2017-04-15</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Alcohol intake: 4 {glass}/d since 2016-04-15</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Observation Type</th>
+                                                <th class="narr_th">Observation Value</th>
+                                                <th class="narr_th">Observation Time</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-24a">
+                                                <td>Tobacco use and exposure<br></td>
+                                                <td>0.5 {pack}/d</td>
+                                                <td>since 2017-04-15</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="obs-25a">
+                                                <td>Alcohol intake<br></td>
+                                                <td>4 {glass}/d</td>
+                                                <td>since 2016-04-15</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-social-history-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-social-history-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Observation Type</th>
+                                             <th>Duration</th>
+                                             <th>Observation Value</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Tobacco use and exposure</td>
+                                             <td>From 2017-04-15 Until 2022</td>
+                                             <td>0.5 pack&nbsp;per day</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Alcoholic beverage intake</td>
+                                             <td>From 2016-04-15</td>
+                                             <td>4 glass&nbsp;per day</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-pregnancy-history-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-pregnancy-history-section-original" class="lbl-toggle-title">History of pregnancies Narrative</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-pregnancy-history-original" class="toggle" type="checkbox"><label for="collapsible-pregnancy-history-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Current Pregnancy status</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Observation Date</th>
+                                                <th class="narr_th">Pregnancy status</th>
+                                                <th class="narr_th">Delivery Date Estimated</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-21a">
+                                                <td>2022-06-15<br></td>
+                                                <td>pregnant</td>
+                                                <td>2023-02-15</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">History of previous pregnancies</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          <colgroup>
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Outcome</th>
+                                                <th class="narr_th">Number</th>
+                                                <th class="narr_th">Outcome date(s)</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-22a">
+                                                <td>20200205</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="obs-22b">
+                                                <td>20210908</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Previous pregnancies overview</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table">
+                                          <colgroup>
+                                             <col width="60%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Outcome date(s)</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-23a">
+                                                <td>Livebirth<br></td>
+                                                <td>2</td>
+                                                <td>2020-02-05, 2021-09-08</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="obs-23b">
+                                                <td>Termination of pregnancy<br></td>
+                                                <td>1</td>
+                                                <td>2010-07-03</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-pregnancy-history-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-pregnancy-history-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Current Pregnancy Status</th>
+                                             <th>Observation Date</th>
+                                             <th>Status</th>
+                                             <th>Delivery date Estimated</th>
+                                             <tr>
+                                                <td></td>
+                                                <td>2022-06-15</td>
+                                                <td>Pregnancy</td>
+                                                <td>2023-02-14</td>
+                                             </tr>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>History of Previous Pregnancies</th>
+                                             <th>Outcome</th>
+                                             <th>Number of Children</th>
+                                          </tr>
+                                          <tr>
+                                             <td></td>
+                                             <td>Livebirth</td>
+                                             <td>2</td>
+                                          </tr>
+                                          <tr>
+                                             <td></td>
+                                             <td>Termination of pregnancy</td>
+                                             <td>1</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tbody>
+                                             <tr>
+                                                <th>Outcome Dates</th>
+                                             </tr>
+                                             <tr>
+                                                <td>2020-02-05</td>
+                                             </tr>
+                                             <tr>
+                                                <td>2021-09-08</td>
+                                             </tr>
+                                          </tbody>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-vital-signs-section-original" class="toggle" type="checkbox" checked="true"><label for="collapsible-vital-signs-section-original" class="lbl-toggle-title">Vital signs</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-vital-signs-original" class="toggle" type="checkbox"><label for="collapsible-vital-signs-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Vital Signs</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Diastolic blood pressure: 110 mm[Hg]</p>
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Systolic blood pressure: 160 mm[Hg]</p>
+                                       <table xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="narr_table"><span style="font-weight:bold; ">Date: 2017-05-06 [ID: 2.999.10.1]</span><colgroup>
+                                             <col width="40%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                             <col width="20%">
+                                          </colgroup>
+                                          
+                                          <thead>
+                                             
+                                             <tr class="narr_tr">
+                                                <th class="narr_th">Obs. Type</th>
+                                                <th class="narr_th">Obs. Value</th>
+                                                <th class="narr_th">Obs. time</th>
+                                                <th class="narr_th">Obs. ID</th>
+                                             </tr>
+                                             </thead>
+                                          
+                                          <tbody>
+                                             
+                                             <tr class="narr_tr" ID="obs-26a">
+                                                <td>Diastolic blood pressure<br></td>
+                                                <td>110 mm[Hg]</td>
+                                                <td>2017-05-06</td>
+                                                <td>2.999</td>
+                                             </tr>
+                                             
+                                             <tr class="narr_tr" ID="obs-27a">
+                                                <td>Systolic blood pressure<br></td>
+                                                <td>160 mm[Hg]</td>
+                                                <td>2017-05-06</td>
+                                                <td>2.999</td>
+                                             </tr>
+                                             </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div><br><div class="wrap-collapsible"><input id="collapsible-vital-signs-translated" class="toggle" type="checkbox" checked="true"><label for="collapsible-vital-signs-translated" class="lbl-toggle">Translated coded</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <table class="translation_table">
+                                       <tbody>
+                                          <tr>
+                                             <th>Date</th>
+                                             <th>Systolic blood pressure</th>
+                                             <th>Diastolic blood pressure</th>
+                                          </tr>
+                                          <tr>
+                                             <td>2017-05-06</td>
+                                             <td>160 millimeter of mercury</td>
+                                             <td>110 millimeter of mercury</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><br><br><div class="wrap-collapsible"><input id="collapsible-advance-directives-section" class="toggle" type="checkbox" checked="true"><label for="collapsible-advance-directives-section" class="lbl-toggle-title">Advance directives</label><div class="collapsible-content-title">
+                        <div class="content-inner-title">
+                           <div class="wrap-collapsible"><input id="collapsible-advance-directives-original" class="toggle" type="checkbox"><label for="collapsible-advance-directives-original" class="lbl-toggle">Original narrative</label><div class="collapsible-content">
+                                 <div class="content-inner">
+                                    <div class="narrative_wrapper">
+                                       <p xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Narrative text for Advance directive section</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div><br><br></body>
+</html>

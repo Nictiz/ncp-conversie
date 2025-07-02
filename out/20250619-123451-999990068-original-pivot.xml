@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:dm="http://duometis.nl/functions"
+                  xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                  xmlns:hl7="urn:hl7-org:v3"
+                  xmlns:hl7nl="urn:hl7-nl:v3"
+                  xmlns:nf="http://www.nictiz.nl/functions"
+                  xmlns:ph="urn:hl7-org:pharm"
+                  xmlns:pharm="urn:ihe:pharm:medication"
+                  xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.3"/>
+   <id root="1.2.3" extension="1234-TEST"/>
+   <code code="60591-5"
+         codeSystem="2.16.840.1.113883.6.1"
+         displayName="Patiënt samenvatting"/>
+   <title>Patiënt samenvatting</title>
+   <effectiveTime value="20250630111204+0200"/>
+   <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="nl-NL"/>
+   <setId root="1.2.3" extension="5678-TEST"/>
+   <recordTarget typeCode="RCT" contextControlCode="OP">
+      <patientRole classCode="PAT">
+         <id extension="999990068" root="2.16.840.1.113883.2.4.6.3"/>
+         <addr>
+            <streetName>Zuiderparklaan</streetName>
+            <houseNumber>12</houseNumber>
+            <postalCode>2574 HA</postalCode>
+            <city>’S-GRAVENHAGE</city>
+            <country>NL</country>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <patient classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <given qualifier="IN">R.</given>
+               <family>Groeman</family>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Gender"/>
+            <birthTime value="19470909"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author typeCode="AUT" contextControlCode="OP">
+      <functionCode code="2211"
+                    codeSystem="2.16.840.1.113883.2.9.6.2.7"
+                    displayName="Generalist medical practitioners"/>
+      <time nullFlavor="NI"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id extension="900029799" root="2.16.528.1.1007.3.1"/>
+         <id extension="10000056" root="2.16.840.1.113883.2.4.6.6"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <assignedAuthoringDevice nullFlavor="NI"/>
+         <representedOrganization>
+            <id extension="90000380" root="2.16.528.1.1007.3.3"/>
+            <name>Test XIS Leverancier 01</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <city>Amsterdam</city>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian>
+      <assignedCustodian>
+    <!-- To be replaced by definitive custodian -->
+         <representedCustodianOrganization>
+            <id root="2.999" extension="non-final-custodian"/>
+            <name>CIBG (not final)</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator typeCode="LA">
+      <time value="20250630111204+0200"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+    <!-- To be replaced by definitive legalAuthenticator -->
+         <id root="2.999" extension="non-final-legalAuthenticator"/>
+         <addr>
+            <postalCode>2500 BC</postalCode>
+            <city>Den Haag</city>
+            <country>NL</country>
+         </addr>
+         <telecom value="tel:+31703405511" use="WP"/>
+         <assignedPerson>
+            <name>
+               <family>Not available</family>
+               <given>Not available</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id root="2.999" extension="non-final-representedOrganization"/>
+            <name>NCPeH-NL</name>
+            <telecom value="tel:+31703405511" use="WP"/>
+            <addr>
+               <postalCode>2500 BC</postalCode>
+               <city>Den Haag</city>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <participant typeCode="IND">
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+      <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+      <associatedEntity classCode="PRS">
+         <addr>
+            <streetName>Tt.Melissaweg</streetName>
+            <houseNumber>23</houseNumber>
+            <postalCode>1033 SP</postalCode>
+            <city>Amsterdam</city>
+            <country>NL</country>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <associatedPerson>
+            <name>
+               <given nullFlavor="NI"/>
+               <family qualifier="BR">Bernard</family>
+            </name>
+         </associatedPerson>
+      </associatedEntity>
+   </participant>
+   <documentationOf typeCode="DOC">
+      <serviceEvent classCode="PCPR" moodCode="EVN">
+         <effectiveTime>
+            <high value="20250630111204+0200"/>
+         </effectiveTime>
+      </serviceEvent>
+   </documentationOf>
+   <relatedDocument typeCode="XFRM">
+      <parentDocument><!--TODO relation to PDF-->
+         <id root="2.999" extension="example"/>
+      </parentDocument>
+   </relatedDocument>
+   <component>
+      <structuredBody><!--Medication summary-->
+         <component>
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.3"/>
+               <templateId root="2.16.840.1.113883.10.20.1.8"/>
+               <code code="10160-0"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     displayName="Medicijngebruik"/>
+               <title>Medicijngebruik</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Medicijn</th>
+                           <th>Actief ingrediënt</th>
+                           <th>Sterkte</th>
+                           <th>Farmaceutische vorm</th>
+                           <th>Eenheden per keer</th>
+                           <th>Frequentie</th>
+                           <th>Toedieningsweg</th>
+                           <th>Doseerduur</th>
+                           <th>Reden van voorschrijven</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Ibuprofen tablet 600mg</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>ORAAL</td>
+                           <td>Vanaf: 2025-01-27 00:00 tot: 2025-02-25</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Acenocoumarol auro tablet 1mg</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>ORAAL</td>
+                           <td>Vanaf: 2025-01-27 00:00 tot: 2025-02-19</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Zinkoxide 10% in hca creme fna 100gr. Zinkoxide 10 gram per 100 gram
+Hydrocortison crème 90 gram per 100 gram</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>CUTAAN</td>
+                           <td>Vanaf: 2025-01-27 00:00 tot: 2025-02-24</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Pantoprazol tablet msr 40mg</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>ORAAL</td>
+                           <td>Vanaf: 2020-05-14 00:00 tot: 2020-05-29 00:00</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Paracetamol tablet  500mg</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>ORAAL</td>
+                           <td>Vanaf: 2020-05-14 00:00 tot: 2020-05-19 00:00</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Fluticason inhalatiepoeder 250ug/do 60do diskus</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>INHALATIE</td>
+                           <td>Vanaf: 2020-05-14 00:00 tot: 2020-05-29 00:00</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Amoxicilline/clavulaanzuur tablet 500/125mg</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>ORAAL</td>
+                           <td>Vanaf: 2020-04-17 00:00 tot: 2020-04-24 00:00</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Salbutamol inhalpdr 100ug/do patr 200do</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>INHALATIE</td>
+                           <td>Vanaf: 2020-05-22 00:00 tot: 2020-05-26 00:00</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="VoorschriftNC_0000011005_1-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">1 x per dag 2 stuk</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20250127000000"/>
+                        <high value="20250225"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="9" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="ORAAL"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code code="17469"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    codeSystemName="G-Standaard PRK"
+                                    displayName="Ibuprofen tablet 600mg">
+                                 <translation code="42080" codeSystem="2.16.840.1.113883.2.4.4.1"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="M01AE01"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="IBUPROFEN"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="VoorschriftNC_0000011008_2-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">1 x per dag 1 stuk (gedurende 2 dagen)
+1 x per dag 2 stuk (gedurende 1 dag)
+1 x per dag 1 stuk (gedurende 2 dagen)
+1 x per dag 2 stuk (gedurende 1 dag)
+1 x per dag 1 stuk (gedurende 2 dagen)
+1 x per dag 2 stuk (gedurende 1 dag)
+1 x per dag 1 stuk (gedurende 2 dagen)
+1 x per dag 2 stuk (gedurende 1 dag)
+1 x per dag 1 stuk (gedurende 2 dagen)
+1 x per dag 2 stuk (gedurende 1 dag)
+1 x per dag 1 stuk (gedurende 2 dagen)
+1 x per dag 2 stuk (gedurende 1 dag)
+1 x per dag 1 stuk (gedurende 2 dagen)
+1 x per dag 2 stuk (gedurende 1 dag)
+1 x per dag 1 stuk (gedurende 2 dagen)</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20250127000000"/>
+                        <high value="20250219"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="9" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="ORAAL"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code code="1101196"
+                                    codeSystem="2.16.840.1.113883.2.4.4.7"
+                                    codeSystemName="G-Standaard HPK"
+                                    displayName="Acenocoumarol auro tablet 1mg">
+                                 <translation code="7323" codeSystem="2.16.840.1.113883.2.4.4.10"/>
+                                 <translation code="20303" codeSystem="2.16.840.1.113883.2.4.4.1"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="B01AA07"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="ACENOCOUMAROL"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="VoorschriftNC_0000011077_3-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">2 x per dag 1 dosis</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20250127000000"/>
+                        <high value="20250224"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="53"
+                                codeSystem="2.16.840.1.113883.2.4.4.9"
+                                displayName="CUTAAN"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code codeSystem="2.16.840.1.113883.2.4.3.124.90000380.4.60.1"
+                                    nullFlavor="OTH">
+                                 <originalText>Zinkoxide 10% in hca creme fna 100gr. Zinkoxide 10 gram per 100 gram
+Hydrocortison crème 90 gram per 100 gram</originalText>
+                              </code>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="Voorschrift_CS00009743_1-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">1 x per dag 1 stuk</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20200514000000"/>
+                        <high value="20200529000000"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="9" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="ORAAL"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code code="43044"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    codeSystemName="G-Standaard PRK"
+                                    displayName="Pantoprazol tablet msr 40mg">
+                                 <translation code="96938" codeSystem="2.16.840.1.113883.2.4.4.1"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="A02BC02"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="PANTOPRAZOLE"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="Voorschrift_CS00009744_2-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">6 x per dag 1 stuk zo nodig</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20200514000000"/>
+                        <high value="20200519000000"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="9" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="ORAAL"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code code="67903"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    codeSystemName="G-Standaard PRK"
+                                    displayName="Paracetamol tablet  500mg">
+                                 <translation code="2194" codeSystem="2.16.840.1.113883.2.4.4.1"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="N02BE01"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="PARACETAMOL"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="Voorschrift_CS00009745_3-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">2 x per dag 1 dosis</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20200514000000"/>
+                        <high value="20200529000000"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="62"
+                                codeSystem="2.16.840.1.113883.2.4.4.9"
+                                displayName="INHALATIE"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code code="45632"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    codeSystemName="G-Standaard PRK"
+                                    displayName="Fluticason inhalatiepoeder 250ug/do 60do diskus">
+                                 <translation code="92495" codeSystem="2.16.840.1.113883.2.4.4.1"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="R03BA05"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="FLUTICASONE"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="Voorschrift_CS00009763_4-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">3 x per dag 1 stuk</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20200417000000"/>
+                        <high value="20200424000000"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="9" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="ORAAL"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code code="17809"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    codeSystemName="G-Standaard PRK"
+                                    displayName="Amoxicilline/clavulaanzuur tablet 500/125mg">
+                                 <translation code="43079" codeSystem="2.16.840.1.113883.2.4.4.1"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="J01CR02"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="AMOXICILLIN AND BETA-LACTAMASE INHIBITOR"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="Voorschrift_CS00009764_5-"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.60"/>
+                     <text mediaType="text/plain">3 tot 4 x per dag 1 dosis</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20200522000000"/>
+                        <high value="20200526000000"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <routeCode code="62"
+                                codeSystem="2.16.840.1.113883.2.4.4.9"
+                                displayName="INHALATIE"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code code="73040"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    codeSystemName="G-Standaard PRK"
+                                    displayName="Salbutamol inhalpdr 100ug/do patr 200do">
+                                 <translation code="99473" codeSystem="2.16.840.1.113883.2.4.4.1"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="R03AC02"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="SALBUTAMOL"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <!--Allergies, adverse reactions, alerts-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.12"/>
+               <code code="48765-2"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Allergieën en/of allergische reacties"/>
+               <title>Allergieën en/of allergische reacties</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Type reactie</th>
+                           <th>Reactie symptoom</th>
+                           <th>Specifieke stof</th>
+                           <th>Duur</th>
+                           <th>Ernst</th>
+                           <th>Mate van kritiek zijn</th>
+                           <th>Status</th>
+                           <th>Zekerheid</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td ID="allergy-d10e218">Propensity to adverse reaction</td>
+                           <td/>
+                           <td>PENICILLINES</td>
+                           <td>Vanaf: 2020-05-26</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="allergy-d10e285">Propensity to adverse reaction</td>
+                           <td/>
+                           <td>AMOXICILLINE/AMPICILLINE</td>
+                           <td>Vanaf: 2020-05-26</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.16"/>
+                     <!--Type of propensity-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <effectiveTime>
+                        <low value="20200526"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ" inversionInd="false">
+                                                  
+                                <!--Allergy-->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.17"/>
+                           <!--Type of propensity-->
+                           <code code="420134006"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Propensity to adverse reaction"
+                                 xsi:type="CD">
+                              <translation xsi:type="CD"
+                                           code="419511003"
+                                           codeSystem="2.16.840.1.113883.6.96"
+                                           displayName="neiging tot ongewenste reactie op medicatie en/of drug"/>
+                           </code>
+                           <text>
+                              <reference value="#allergy-d10e218"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <!--Duration (Onset-End date)-->
+                           <effectiveTime>
+                              <low value="20200526"/>
+                           </effectiveTime>
+                           <!--Contains agent (code)-->
+                           <participant typeCode="CSM">
+                              <participantRole classCode="MANU">
+                                 <playingEntity classCode="MMAT">
+                                    <code code="000035"
+                                          codeSystem="2.16.840.1.113883.2.4.4.1.902.122"
+                                          displayName="PENICILLINES"/>
+                                 </playingEntity>
+                              </participantRole>
+                           </participant>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.16"/>
+                     <!--Type of propensity-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <effectiveTime>
+                        <low value="20200526"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ" inversionInd="false">
+                                                  
+                                <!--Allergy-->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.17"/>
+                           <!--Type of propensity-->
+                           <code code="420134006"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Propensity to adverse reaction"
+                                 xsi:type="CD">
+                              <translation xsi:type="CD"
+                                           code="419511003"
+                                           codeSystem="2.16.840.1.113883.6.96"
+                                           displayName="neiging tot ongewenste reactie op medicatie en/of drug"/>
+                           </code>
+                           <text>
+                              <reference value="#allergy-d10e285"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <!--Duration (Onset-End date)-->
+                           <effectiveTime>
+                              <low value="20200526"/>
+                           </effectiveTime>
+                           <!--Contains agent (code)-->
+                           <participant typeCode="CSM">
+                              <participantRole classCode="MANU">
+                                 <playingEntity classCode="MMAT">
+                                    <code code="000057"
+                                          codeSystem="2.16.840.1.113883.2.4.4.1.902.122"
+                                          displayName="AMOXICILLINE/AMPICILLINE"/>
+                                 </playingEntity>
+                              </participantRole>
+                           </participant>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.11"/>
+               <code code="47519-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="Voorgeschiedenis met verrichtingen"/>
+               <title>Voorgeschiedenis met verrichtingen</title>
+               <text>
+                  <paragraph ID="Procedures_Unknown">Geen informatie over operaties beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <procedure classCode="PROC" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.26"/>
+                     <id nullFlavor="NI"/>
+                     <code code="no-procedure-info"
+                           displayName="No information about past history of procedures"
+                           codeSystem="2.16.840.1.113883.5.1150.1"/>
+                     <text>
+                        <reference value="#Procedures_Unknown"/>
+                     </text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NA" xsi:type="IVL_TS"/>
+                  </procedure>
+               </entry>
+            </section>
+         </component>
+         <!--Active problems-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.9"/>
+               <templateId root="2.16.840.1.113883.10.20.1.11"/>
+               <code code="11450-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Probleemlijst"/>
+               <title>Probleemlijst</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Probleem</th>
+                           <th>Begindatum</th>
+                           <th>Diagnose bevestiging</th>
+                           <th>Gerelateerde zorgverlener</th>
+                           <th>Gerelateerde externe bron</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td ID="problem-d10e509">ASTMA</td>
+                           <td>Vanaf: 2024-07-25 10:53</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e531">COPD</td>
+                           <td>Vanaf: 2020-05-14 16:53</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e553">SPORTBEOEFENING</td>
+                           <td>Vanaf: 2020-05-14 00:00</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e575">VERKEERSDEELNAME</td>
+                           <td>Vanaf: 2020-05-14 00:00</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e793">Astma</td>
+                           <td>Vanaf: 2024-09-27</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e837">Hooikoorts/allergische rinitis</td>
+                           <td>Vanaf: 2020-04-19</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e881">Boezemfibrilleren/-fladderen</td>
+                           <td>Vanaf: 2020-04-19</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e925">Emfyseem/COPD</td>
+                           <td>Vanaf: 2020-04-14</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e969">Boezemfibrilleren/-fladderen</td>
+                           <td>Vanaf: 2018-09-22</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e1013">Geen ziekte</td>
+                           <td>Vanaf: 2024-09-27</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d10e1058">Hoesten</td>
+                           <td>Vanaf: 2020-04-14</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id nullFlavor="NI"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="completed"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20240725105300"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="ContraIndicatie_1347"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.24"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e509"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20240725105300"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="1347"
+                                  codeSystem="2.16.840.1.113883.2.4.4.1.902.40"
+                                  displayName="ASTMA"
+                                  xsi:type="CE"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id nullFlavor="NI"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="completed"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20200514165300"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="ContraIndicatie_1348"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.24"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e531"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20200514165300"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="1348"
+                                  codeSystem="2.16.840.1.113883.2.4.4.1.902.40"
+                                  displayName="COPD"
+                                  xsi:type="CE"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id nullFlavor="NI"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="completed"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20200514000000"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="ContraIndicatie_210"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.24"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e553"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20200514000000"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="210"
+                                  codeSystem="2.16.840.1.113883.2.4.4.1.902.40"
+                                  displayName="SPORTBEOEFENING"
+                                  xsi:type="CE"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id nullFlavor="NI"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="completed"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20200514000000"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="ContraIndicatie_219"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.24"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e575"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20200514000000"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="219"
+                                  codeSystem="2.16.840.1.113883.2.4.4.1.902.40"
+                                  displayName="VERKEERSDEELNAME"
+                                  xsi:type="CE"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="Concern_0000039003"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.20"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20240927"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Diagnose_ICPCR96"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.27"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e793"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20240927"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="R96"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  codeSystemName="ICPC-1-NL"
+                                  displayName="Astma"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="Concern_CS00033461"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.20"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20200419"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Diagnose_ICPCR97"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.27"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e837"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20200419"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="R97"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  codeSystemName="ICPC-1-NL"
+                                  displayName="Hooikoorts/allergische rinitis"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="Concern_CS00033462"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.20"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20200419"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Diagnose_ICPCK78"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.27"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e881"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20200419"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="K78"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  codeSystemName="ICPC-1-NL"
+                                  displayName="Boezemfibrilleren/-fladderen"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="Concern_CS00033381"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.20"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20200414"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Diagnose_ICPCR95"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.27"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e925"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20200414"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="R95"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  codeSystemName="ICPC-1-NL"
+                                  displayName="Emfyseem/COPD"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="Concern_CS00033376"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.20"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20180922"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Diagnose_ICPCK78"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.27"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e969"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20180922"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="K78"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  codeSystemName="ICPC-1-NL"
+                                  displayName="Boezemfibrilleren/-fladderen"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="Concern_0000039007"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.20"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20240927"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Diagnose_ICPCA97"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.27"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e1013"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20240927"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="A97"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  codeSystemName="ICPC-1-NL"
+                                  displayName="Geen ziekte"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="Concern_0000038975"
+                         root="2.16.840.1.113883.2.4.3.124.90000380.4.20"/>
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20200414"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Diagnose_ICPCR05"
+                               root="2.16.840.1.113883.2.4.3.124.90000380.4.27"/>
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d10e1058"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20200414"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <value code="R05"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  codeSystemName="ICPC-1-NL"
+                                  displayName="Hoesten"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section classCode="DOCSECT" moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.4"/>
+               <templateId root="2.16.840.1.113883.10.20.1.7"/>
+               <id nullFlavor="NI"/>
+               <code code="46264-8"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="Voorgeschiedenis van gebruik van hulpmiddel"/>
+               <title>Voorgeschiedenis van gebruik van hulpmiddel</title>
+               <text>
+                  <paragraph ID="Medical_Devices_None">Geen informatie over hulpmiddelen beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <supply classCode="SPLY" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.5"/>
+                     <text>
+                        <reference value="#Medical_Devices_None"/>
+                     </text>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <hl7:low nullFlavor="NA"/>
+                     </effectiveTime>
+                     <participant typeCode="DEV">
+                        <participantRole classCode="MANU">
+                           <playingDevice classCode="DEV" determinerCode="INSTANCE">
+                              <code code="no-device-info"
+                                    displayName="No information about devices"
+                                    codeSystem="2.16.840.1.113883.5.1150.1"/>
+                           </playingDevice>
+                        </participantRole>
+                     </participant>
+                  </supply>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

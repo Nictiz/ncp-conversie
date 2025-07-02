@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenAlerts.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenAlgemeneBepalingen.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenAllergieintoleranties.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenContactmomenten.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenContactverslagen.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenLabbepalingen.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenMedicatieafspraken.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="file:/C:/Publicaties/Nictiz/AcuteZorg/PS_2.1.0/schematron_closed_warnings/acutezorg-beschikbaarstellenEpisodes.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+-->
+<?xml-model href="file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schematron/kz-vzvz-batchAntwoord.sch" type="application/xml" phase="#ALL" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenOverdrachtconcerns-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenContactmomenten-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenContactVerslagen-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenAlgemeneBepalingen-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenLabUitslagen-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenMedicatieafspraken-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenAlerts-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../test_xslt/test-beschikbaarstellenAllergieintoleranties-MAX.sch" phase="#ALL" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<MCCI_IN200101 xmlns="urn:hl7-org:v3"
+               xmlns:pharm="urn:ihe:pharm:medication"
+               xmlns:hl7nl="urn:hl7-nl:v3"
+               xmlns:sdtc="urn:hl7-org:sdtc"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/MCCI_IN200101.xsd">
+   <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+   <creationTime value="20240813161021"/>
+   <versionCode code="NICTIZEd2005-Okt"/>
+   <interactionId extension="MCCI_IN200101" root="2.16.840.1.113883.1.6"/>
+   <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+   <transmissionQuantity value="8"/>
+   <acknowledgement typeCode="AA">
+      <targetTransmission><id extension="ID_012345ABCFED" root="1.2.3.999" /></targetTransmission>
+   </acknowledgement>
+   <receiver>
+      <device>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+      </device>
+   </receiver>
+   <sender>
+      <device>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+      </device>
+   </sender>
+</MCCI_IN200101>

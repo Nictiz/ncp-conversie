@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="2.16.840.1.113883.1.11.10228" name="v3.ConfidentialityClassification">
+    <concept codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" code="L">
+        <designation lang="en-GB">low</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" code="M">
+        <designation lang="en-GB">moderate</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" code="N">
+        <designation lang="en-GB">normal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" code="R">
+        <designation lang="en-GB">restricted</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" code="U">
+        <designation lang="en-GB">unrestricted</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" code="V">
+        <designation lang="en-GB">very restricted</designation>
+    </concept>
+</ValueSet>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="2.16.840.1.113883.4.642.3.1" name="AdministrativeGender">
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2" codeSystemName="FHIR_AdministrativeGenderCode" code="female">
+        <designation lang="en-GB">Female</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2" codeSystemName="FHIR_AdministrativeGenderCode" code="male">
+        <designation lang="en-GB">Male</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2" codeSystemName="FHIR_AdministrativeGenderCode" code="other">
+        <designation lang="en-GB">Other</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2" codeSystemName="FHIR_AdministrativeGenderCode" code="unknown">
+        <designation lang="en-GB">Unknown</designation>
+    </concept>
+</ValueSet>

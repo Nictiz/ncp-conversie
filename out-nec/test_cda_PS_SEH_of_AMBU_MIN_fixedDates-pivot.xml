@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:dm="http://duometis.nl/functions"
+                  xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                  xmlns:hl7="urn:hl7-org:v3"
+                  xmlns:hl7nl="urn:hl7-nl:v3"
+                  xmlns:nf="http://www.nictiz.nl/functions"
+                  xmlns:ph="urn:hl7-org:pharm"
+                  xmlns:pharm="urn:ihe:pharm:medication"
+                  xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.3"/>
+   <id root="1.2.3" extension="1234-TEST"/>
+   <!--No mapping-->
+   <code code="60591-5"
+         codeSystem="2.16.840.1.113883.6.1"
+         displayName="Patient summary Document"/>
+   <title>Patiënt samenvatting</title>
+   <effectiveTime value="20250702160732+0200"/>
+   <!--No mapping-->
+   <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="nl-NL"/>
+   <setId root="1.2.3" extension="5678-TEST"/>
+   <recordTarget typeCode="RCT" contextControlCode="OP">
+      <patientRole classCode="PAT">
+         <id root="2.16.840.1.113883.2.4.6.3" extension="999911016"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <patient classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <family>onbekend</family>
+               <given>onbekend</given>
+            </name>
+            <!--CTS-->
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Man"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author typeCode="AUT" contextControlCode="OP">
+      <!--No mapping-->
+      <functionCode code="2211"
+                    codeSystem="2.16.840.1.113883.2.9.6.2.7"
+                    displayName="Generalist medical practitioners"/>
+      <time nullFlavor="NI"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id root="2.16.528.1.1007.3.2" extension="00001112"/>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <assignedAuthoringDevice nullFlavor="NI"/>
+         <representedOrganization>
+            <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+            <name>Gezondheidscentrum B</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <author typeCode="AUT" contextControlCode="OP">
+      <!--No mapping-->
+      <functionCode code="2211"
+                    codeSystem="2.16.840.1.113883.2.9.6.2.7"
+                    displayName="Generalist medical practitioners"/>
+      <time nullFlavor="NI"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <assignedAuthoringDevice nullFlavor="NI"/>
+         <representedOrganization nullFlavor="NI">
+            <id nullFlavor="NI"/>
+            <name nullFlavor="NI"/>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian>
+      <assignedCustodian>
+    <!-- To be replaced by definitive custodian -->
+         <representedCustodianOrganization>
+            <id root="2.999" extension="non-final-custodian"/>
+            <name>CIBG (not final)</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator typeCode="LA">
+      <time value="20250702160732+0200"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+    <!-- To be replaced by definitive legalAuthenticator -->
+         <id root="2.999" extension="non-final-legalAuthenticator"/>
+         <addr>
+            <postalCode>2500 BC</postalCode>
+            <city>Den Haag</city>
+            <country>NL</country>
+         </addr>
+         <telecom value="tel:+31703405511" use="WP"/>
+         <assignedPerson>
+            <name>
+               <family>Not available</family>
+               <given>Not available</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id root="2.999" extension="non-final-representedOrganization"/>
+            <name>NCPeH-NL</name>
+            <telecom value="tel:+31703405511" use="WP"/>
+            <addr>
+               <postalCode>2500 BC</postalCode>
+               <city>Den Haag</city>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <participant typeCode="IND">
+      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+      <!--No mapping-->
+      <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+      <associatedEntity classCode="PRS">
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <associatedPerson/>
+      </associatedEntity>
+   </participant>
+   <documentationOf typeCode="DOC">
+      <serviceEvent classCode="PCPR" moodCode="EVN">
+         <effectiveTime>
+            <high value="20250702160732+0200"/>
+         </effectiveTime>
+      </serviceEvent>
+   </documentationOf>
+   <relatedDocument typeCode="XFRM">
+      <parentDocument><!--TODO relation to PDF-->
+         <id root="2.999" extension="example"/>
+      </parentDocument>
+   </relatedDocument>
+   <component>
+      <structuredBody><!--Medication summary-->
+         <component>
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.3"/>
+               <templateId root="2.16.840.1.113883.10.20.1.8"/>
+               <!--No mapping-->
+               <code code="10160-0"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     displayName="History of Medication use Narrative"/>
+               <title>Medicijngebruik</title>
+               <text>
+                  <paragraph ID="Medication_Unknown">Geen bekende medicatie.</paragraph>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="INT">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <id root="2.16.840.1.113883.2.4.3.46.10.6.1"
+                         extension="med-none-20250702160732"/>
+                     <!--No mapping-->
+                     <code code="no-known-medications"
+                           codeSystem="2.16.840.1.113883.5.1150.1"
+                           displayName="No known medications"/>
+                     <text>
+                        <reference value="#Medication_Unknown"/>
+                     </text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="UNK" xsi:type="IVL_TS"/>
+                     <effectiveTime nullFlavor="NA"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND" nullFlavor="NA">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <!--Allergies, adverse reactions, alerts-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.12"/>
+               <!--No mapping-->
+               <code code="48765-2"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Allergies and adverse reactions Document"/>
+               <title>Allergieën en/of allergische reacties</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Type reactie</th>
+                           <th>Reactie symptoom</th>
+                           <th>Specifieke stof</th>
+                           <th>Duur</th>
+                           <th>Ernst</th>
+                           <th>Mate van kritiek zijn</th>
+                           <th>Status</th>
+                           <th>Zekerheid</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td ID="allergy-d8e1084">Allergic disposition</td>
+                           <td/>
+                           <td>Prednisolon</td>
+                           <td>Vanaf: </td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.16"/>
+                     <!--Type of propensity-->
+                     <!--No mapping-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <entryRelationship typeCode="SUBJ" inversionInd="false">
+                        <!--Allergy-->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.17"/>
+                           <!--Type of propensity-->
+                           <!--CTS-->
+                           <code code="609328004"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Allergic disposition"
+                                 xsi:type="CD">
+                              <translation xsi:type="CD"
+                                           code="419199007"
+                                           codeSystem="2.16.840.1.113883.6.96"
+                                           displayName="allergie voor substantie"/>
+                           </code>
+                           <text>
+                              <reference value="#allergy-d8e1084"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <!--Duration (Onset-End date)-->
+                           <!--Contains agent (code)-->
+                           <participant typeCode="CSM">
+                              <participantRole classCode="MANU">
+                                 <playingEntity classCode="MMAT">
+                                    <!--Codesytem from unencoded list, provide originalText-->
+                                    <code nullFlavor="OTH" codeSystem="2.16.840.1.113883.5.1008">
+                                       <originalText>Prednisolon</originalText>
+                                       <translation code="4170"
+                                                    codeSystem="2.16.840.1.113883.2.4.4.1.750"
+                                                    codeSystemName="G-standaard Stofnaamcode (SNK)"
+                                                    displayName="Prednisolon"/>
+                                    </code>
+                                 </playingEntity>
+                              </participantRole>
+                           </participant>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.11"/>
+               <!--No mapping-->
+               <code code="47519-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="History of Procedures Document"/>
+               <title>Voorgeschiedenis met verrichtingen</title>
+               <text>
+                  <paragraph ID="Procedures_Unknown">Geen informatie over operaties beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <procedure classCode="PROC" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.26"/>
+                     <id nullFlavor="NI"/>
+                     <!--No mapping-->
+                     <code code="no-procedure-info"
+                           displayName="No information about past history of procedures"
+                           codeSystem="2.16.840.1.113883.5.1150.1"/>
+                     <text>
+                        <reference value="#Procedures_Unknown"/>
+                     </text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NA" xsi:type="IVL_TS"/>
+                  </procedure>
+               </entry>
+            </section>
+         </component>
+         <!--Active problems-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.9"/>
+               <templateId root="2.16.840.1.113883.10.20.1.11"/>
+               <!--No mapping-->
+               <code code="11450-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Problem list - Reported"/>
+               <title>Probleemlijst</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Probleem</th>
+                           <th>Begindatum</th>
+                           <th>Diagnose bevestiging</th>
+                           <th>Gerelateerde zorgverlener</th>
+                           <th>Gerelateerde externe bron</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td ID="problem-d8e183"> No translation for code: A04</td>
+                           <td>Vanaf: 2024-09-16</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td ID="problem-d8e938">drager van multiresistente Stenotrophomonas maltophilia</td>
+                           <td>Vanaf: </td>
+                           <td/>
+                           <td/>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id extension="EpisodeA04" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                     <!--No mapping-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <!--Onset date-->
+                     <effectiveTime>
+                        <low value="20240916"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="ProbleemA04" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                           <!--No mapping-->
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d8e183"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20240916"/>
+                           </effectiveTime>
+                           <!--Problem-->
+                           <!--NEC-->
+                           <value nullFlavor="OTH"
+                                  codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                  xsi:type="CD">
+                              <originalText/>
+                              <translation code="A04"
+                                           codeSystem="2.16.840.1.113883.2.4.4.31.1"
+                                           displayName="General weakness/tiredness/ill-feeling"
+                                           xsi:type="CD"/>
+                           </value>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id nullFlavor="NI"/>
+                     <!--No mapping-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="completed"/>
+                     <!--Onset date-->
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id extension="Alert01" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                           <!--No mapping-->
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding (finding)"/>
+                           <text>
+                              <reference value="#problem-d8e938"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <!--Problem-->
+                           <!--No mapping-->
+                           <value xsi:type="CE"
+                                  code="97981000146105"
+                                  codeSystem="2.16.840.1.113883.6.96"
+                                  displayName="drager van multiresistente Stenotrophomonas maltophilia"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section classCode="DOCSECT" moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.4"/>
+               <templateId root="2.16.840.1.113883.10.20.1.7"/>
+               <id nullFlavor="NI"/>
+               <!--No mapping-->
+               <code code="46264-8"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="History of medical device use"/>
+               <title>Voorgeschiedenis van gebruik van hulpmiddel</title>
+               <text>
+                  <paragraph ID="Medical_Devices_None">Geen informatie over hulpmiddelen beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <supply classCode="SPLY" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.5"/>
+                     <text>
+                        <reference value="#Medical_Devices_None"/>
+                     </text>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <hl7:low nullFlavor="NA"/>
+                     </effectiveTime>
+                     <participant typeCode="DEV">
+                        <participantRole classCode="MANU">
+                           <playingDevice classCode="DEV" determinerCode="INSTANCE">
+                              <!--No mapping-->
+                              <code code="no-device-info"
+                                    displayName="No information about devices"
+                                    codeSystem="2.16.840.1.113883.5.1150.1"/>
+                           </playingDevice>
+                        </participantRole>
+                     </participant>
+                  </supply>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

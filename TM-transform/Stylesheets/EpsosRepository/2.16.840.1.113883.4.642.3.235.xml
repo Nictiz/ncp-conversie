@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="2.16.840.1.113883.4.642.3.235" name="DiagnosticReportStatus">
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="amended">
+        <designation lang="en-GB">Amended</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="appended">
+        <designation lang="en-GB">Appended</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="cancelled">
+        <designation lang="en-GB">Cancelled</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="corrected">
+        <designation lang="en-GB">Corrected</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="entered-in-error">
+        <designation lang="en-GB">Entered in Error</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="final">
+        <designation lang="en-GB">Final</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="partial">
+        <designation lang="en-GB">Partial</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="preliminary">
+        <designation lang="en-GB">Preliminary</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="registered">
+        <designation lang="en-GB">Registered</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.236" codeSystemName="HL7 FHIR DiagnosticReportStatus" code="unknown">
+        <designation lang="en-GB">Unknown</designation>
+    </concept>
+</ValueSet>

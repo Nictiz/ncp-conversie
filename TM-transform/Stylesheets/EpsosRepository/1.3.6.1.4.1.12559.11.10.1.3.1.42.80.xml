@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.80" name="eHDSIBodyStructureLocation">
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24028007">
+        <designation lang="en-GB">Right</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255549009">
+        <designation lang="en-GB">Anterior</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255551008">
+        <designation lang="en-GB">Posterior</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="255561001">
+        <designation lang="en-GB">Medial</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="261089000">
+        <designation lang="en-GB">Inferior</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="261122009">
+        <designation lang="en-GB">Lower</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="261183002">
+        <designation lang="en-GB">Upper</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="26283006">
+        <designation lang="en-GB">Superficial</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264217000">
+        <designation lang="en-GB">Superior</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3583002">
+        <designation lang="en-GB">Caudal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="40415009">
+        <designation lang="en-GB">Proximal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="46053002">
+        <designation lang="en-GB">Distal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="49370004">
+        <designation lang="en-GB">Lateral</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57195005">
+        <designation lang="en-GB">Basal</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="66787007">
+        <designation lang="en-GB">Cephalic</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="7771000">
+        <designation lang="en-GB">Left</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="795002">
+        <designation lang="en-GB">Deep</designation>
+    </concept>
+</ValueSet>

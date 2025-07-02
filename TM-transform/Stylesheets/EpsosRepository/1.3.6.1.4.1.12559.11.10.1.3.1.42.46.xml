@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.46" name="eHDSIDisplayLabel">
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="1">
+        <designation lang="en-GB">Active Ingredient</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="10">
+        <designation lang="en-GB">Clinical Manifestation</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="108">
+        <designation lang="en-GB">Original narrative</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="109">
+        <designation lang="en-GB">Translated coded</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="11">
+        <designation lang="en-GB">Closed/Inactive Problem</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="110">
+        <designation lang="en-GB">Clinical Sections</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="112">
+        <designation lang="en-GB">Code System</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="113">
+        <designation lang="en-GB">Code</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="114">
+        <designation lang="en-GB">Name</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="115">
+        <designation lang="en-GB">Dispensed Number of Packages</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="116">
+        <designation lang="en-GB">&apos;If substitution of brand name is marked as not allowed, pharmacists may still consider dispensing the national equivalent even though the brand name might be slightly different. This is a known situation: the same pharmaceutical company is marketing the same medicinal product in different countries with slightly different names due to marketing reasons. If the pharmacist is certain that this is the case, the systems allows the input of the new brand name.&apos;</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="117">
+        <designation lang="en-GB">Original Document Language</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="118">
+        <designation lang="en-GB">Diagnostic Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="119">
+        <designation lang="en-GB">Blood Group</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="12">
+        <designation lang="en-GB">Contact Information</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="122">
+        <designation lang="en-GB">Administered</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="123">
+        <designation lang="en-GB">Severity</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="124">
+        <designation lang="en-GB">Marketing Authorization Holder</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="125">
+        <designation lang="en-GB">Primary Patient Identifier</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="126">
+        <designation lang="en-GB">Secondary Patient Identifier</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="127">
+        <designation lang="en-GB">Represented Organization</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="128">
+        <designation lang="en-GB">Medicinal Product</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="129">
+        <designation lang="en-GB">Prescription Details</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="13">
+        <designation lang="en-GB">Country</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="130">
+        <designation lang="en-GB">Dispensation Details</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="131">
+        <designation lang="en-GB">Creation Date of the Document</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="132">
+        <designation lang="en-GB">Last Update of the Information</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="133">
+        <designation lang="en-GB">There is no information available regarding the subject&apos;s allergy conditions</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="134">
+        <designation lang="en-GB">The subject has no known allergy conditions</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="138">
+        <designation lang="en-GB">There is no information available regarding implanted or external devices for the subject</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="139">
+        <designation lang="en-GB">There are no devices known to be implanted in or used by the subject that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="140">
+        <designation lang="en-GB">There is no information available about the subject&apos;s medication use or administration</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="141">
+        <designation lang="en-GB">There are no medications for the subject that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="142">
+        <designation lang="en-GB">There is no information available about the subject&apos;s current health problems or disability</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="143">
+        <designation lang="en-GB">The subject is not known to have any health problems or disabilities that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="144">
+        <designation lang="en-GB">There is no information available about the subject&apos;s past history of procedures</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="145">
+        <designation lang="en-GB">The subject has no history of procedures that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="146">
+        <designation lang="en-GB">Missing Information</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="147">
+        <designation lang="en-GB">From</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="148">
+        <designation lang="en-GB">Until</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="149">
+        <designation lang="en-GB">Around</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="150">
+        <designation lang="en-GB">Duration of Treatment</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="151">
+        <designation lang="en-GB">The date of the organizer should match the date of the observations</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="152">
+        <designation lang="en-GB">Dose Number in Series</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="153">
+        <designation lang="en-GB">Unmapped concept. Nationally used concept for which no translations are available and no safe mappings are possible.</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="154">
+        <designation lang="en-GB">Body Site</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="155">
+        <designation lang="en-GB">Duration</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="156">
+        <designation lang="en-GB">Criticality</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="157">
+        <designation lang="en-GB">Allergy Status</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="158">
+        <designation lang="en-GB">Certainty</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="159">
+        <designation lang="en-GB">Result Type</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="16">
+        <designation lang="en-GB">Custodian</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="160">
+        <designation lang="en-GB">Result Value</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="161">
+        <designation lang="en-GB">Performer</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="162">
+        <designation lang="en-GB">Reporter</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="163">
+        <designation lang="en-GB">Functional Assessment Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="164">
+        <designation lang="en-GB">Functional Assessment</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="166">
+        <designation lang="en-GB">Functional Assessment Result</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="167">
+        <designation lang="en-GB">Problem Status</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="169">
+        <designation lang="en-GB">Batch/Lot Number</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="17">
+        <designation lang="en-GB">Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="170">
+        <designation lang="en-GB">Administering Center</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="171">
+        <designation lang="en-GB">Health Professional Identification</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="172">
+        <designation lang="en-GB">Country of Vaccination</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="173">
+        <designation lang="en-GB">Medication Reason</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="174">
+        <designation lang="en-GB">Current Pregnancy Status</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="175">
+        <designation lang="en-GB">Observation Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="176">
+        <designation lang="en-GB">Status</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="177">
+        <designation lang="en-GB">History of Previous Pregnancies</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="178">
+        <designation lang="en-GB">Outcome</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="179">
+        <designation lang="en-GB">Number of Children</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="18">
+        <designation lang="en-GB">Date To</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="180">
+        <designation lang="en-GB">Outcome Dates</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="182">
+        <designation lang="en-GB">Organization Contact Information</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="184">
+        <designation lang="en-GB">Medicinal Product Identifier</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="185">
+        <designation lang="en-GB">Medicinal Product Package Identifier</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="186">
+        <designation lang="en-GB">Pharmaceutical Product Identifier</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="187">
+        <designation lang="en-GB">Address</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="188">
+        <designation lang="en-GB">Telecom</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="189">
+        <designation lang="en-GB">Part</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="19">
+        <designation lang="en-GB">Date of Birth</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="190">
+        <designation lang="en-GB">Time(s) per</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="191">
+        <designation lang="en-GB">Packaging Details</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="192">
+        <designation lang="en-GB">Description</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="193">
+        <designation lang="en-GB">Original</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="194">
+        <designation lang="en-GB">English</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="195">
+        <designation lang="en-GB">Translated</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="196">
+        <designation lang="en-GB">Info</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="197">
+        <designation lang="en-GB">No information</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="198">
+        <designation lang="en-GB">Rare Diseases</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="199">
+        <designation lang="en-GB">Diagnosis Assertion Status</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="2">
+        <designation lang="en-GB">Active Problem</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="20">
+        <designation lang="en-GB">Date of Prescription</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="200">
+        <designation lang="en-GB">Related Health Professional</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="201">
+        <designation lang="en-GB">Related External Resource</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="202">
+        <designation lang="en-GB">Mark the checkbox if brand name (when allowed) has been substituted or package size has been changed</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="203">
+        <designation lang="en-GB">Device ID</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="21">
+        <designation lang="en-GB">Device/Implant</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="22">
+        <designation lang="en-GB">Dispense</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="23">
+        <designation lang="en-GB">Dispensed Package Size</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="24">
+        <designation lang="en-GB">Dispensed Product</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="25">
+        <designation lang="en-GB">Dose Form</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="26">
+        <designation lang="en-GB">End Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="27">
+        <designation lang="en-GB">Every</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="28">
+        <designation lang="en-GB">Facility ID</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="29">
+        <designation lang="en-GB">Facility Name</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="3">
+        <designation lang="en-GB">Address</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="30">
+        <designation lang="en-GB">Family Name</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="31">
+        <designation lang="en-GB">for</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="32">
+        <designation lang="en-GB">Frequency of Intakes</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="33">
+        <designation lang="en-GB">Gender</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="34">
+        <designation lang="en-GB">Given Name</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="35">
+        <designation lang="en-GB">Guardian</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="36">
+        <designation lang="en-GB">Implant Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="37">
+        <designation lang="en-GB">Instructions to patient</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="38">
+        <designation lang="en-GB">Is substitution of brand name allowed?</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="4">
+        <designation lang="en-GB">Advise to the dispenser</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="40">
+        <designation lang="en-GB">Legal Authenticator</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="41">
+        <designation lang="en-GB">National Insurance Number</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="42">
+        <designation lang="en-GB">No</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="43">
+        <designation lang="en-GB">Number of Packages</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="44">
+        <designation lang="en-GB">Observation Type</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="45">
+        <designation lang="en-GB">Onset Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="46">
+        <designation lang="en-GB">Organisation Identifier</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="47">
+        <designation lang="en-GB">Organisation Name</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="49">
+        <designation lang="en-GB">Other Contacts</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="5">
+        <designation lang="en-GB">Agent</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="50">
+        <designation lang="en-GB">Package Size</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="51">
+        <designation lang="en-GB">Patient</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="53">
+        <designation lang="en-GB">per unit</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="54">
+        <designation lang="en-GB">Preferred HCP/Legal organization to contact</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="55">
+        <designation lang="en-GB">Prefix</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="56">
+        <designation lang="en-GB">Prescriber</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="58">
+        <designation lang="en-GB">Prescription ID</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="6">
+        <designation lang="en-GB">at</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="62">
+        <designation lang="en-GB">Procedure</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="63">
+        <designation lang="en-GB">Procedure Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="64">
+        <designation lang="en-GB">Profession</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="65">
+        <designation lang="en-GB">Reaction Type</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="66">
+        <designation lang="en-GB">Regional/National Health ID</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="67">
+        <designation lang="en-GB">Route of Administration</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="68">
+        <designation lang="en-GB">See details</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="69">
+        <designation lang="en-GB">Specialty</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="7">
+        <designation lang="en-GB">Author (HCP)</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="70">
+        <designation lang="en-GB">Strength</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="71">
+        <designation lang="en-GB">Substitute</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="72">
+        <designation lang="en-GB">The Active Problem section is missing !</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="73">
+        <designation lang="en-GB">The Allergies, Adverse Reactions, Alerts section is missing !</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="74">
+        <designation lang="en-GB">The Medical Devices and Implants section is missing !</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="75">
+        <designation lang="en-GB">The Medication Summary section is missing !</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="76">
+        <designation lang="en-GB">The History of Procedures section is missing !</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="77">
+        <designation lang="en-GB">unit(s)</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="78">
+        <designation lang="en-GB">Units per Intake</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="79">
+        <designation lang="en-GB">Vaccination</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="8">
+        <designation lang="en-GB">Authoring Device</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="80">
+        <designation lang="en-GB">Vaccination Date</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="81">
+        <designation lang="en-GB">Yes</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="84">
+        <designation lang="en-GB">Observation Value</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="85">
+        <designation lang="en-GB">Date From</designation>
+    </concept>
+    <concept codeSystem="1.3.6.1.4.1.12559.11.10.1.3.1.44.4" codeSystemName="epSOSDisplayLabels" code="9">
+        <designation lang="en-GB">Brand Name</designation>
+    </concept>
+</ValueSet>

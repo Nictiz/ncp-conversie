@@ -1,0 +1,1 @@
+The 'mapping.xml' file is a placeholder which needs to be replaced with the current mapping files from https://github.com/Nictiz/ncp-terminologie

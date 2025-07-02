@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.72" name="eHDSIAnimalSpecies">
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125076001">
+        <designation lang="en-GB">Domestic Guinea pig</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125097000">
+        <designation lang="en-GB">Capra hircus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125099002">
+        <designation lang="en-GB">Ovis aries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="34618005">
+        <designation lang="en-GB">Bos taurus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="388445009">
+        <designation lang="en-GB">Equus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="448169003">
+        <designation lang="en-GB">Domestic cat</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="448771007">
+        <designation lang="en-GB">Domestic dog</designation>
+    </concept>
+</ValueSet>

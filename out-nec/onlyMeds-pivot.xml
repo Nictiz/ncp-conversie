@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:dm="http://duometis.nl/functions"
+                  xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                  xmlns:hl7="urn:hl7-org:v3"
+                  xmlns:hl7nl="urn:hl7-nl:v3"
+                  xmlns:nf="http://www.nictiz.nl/functions"
+                  xmlns:ph="urn:hl7-org:pharm"
+                  xmlns:pharm="urn:ihe:pharm:medication"
+                  xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.1.3"/>
+   <id root="1.2.3" extension="1234-TEST"/>
+   <!--No mapping-->
+   <code code="60591-5"
+         codeSystem="2.16.840.1.113883.6.1"
+         displayName="Patient summary Document"/>
+   <title>Patiënt samenvatting</title>
+   <effectiveTime value="20250702160728+0200"/>
+   <!--No mapping-->
+   <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="nl-NL"/>
+   <setId root="1.2.3" extension="5678-TEST"/>
+   <recordTarget typeCode="RCT" contextControlCode="OP">
+      <patientRole classCode="PAT">
+         <id root="2.16.840.1.113883.2.4.6.3" extension="999910942"/>
+         <addr>
+            <streetName>Knolweg</streetName>
+            <houseNumber>1000</houseNumber>
+            <buildingNumberSuffix>A 2</buildingNumberSuffix>
+            <postalCode>9999 XX</postalCode>
+            <city>STITSWERD</city>
+            <country>Nederland</country>
+            <unitID>Flat Oost</unitID>
+         </addr>
+         <telecom nullFlavor="NI"/>
+         <patient classCode="PSN" determinerCode="INSTANCE">
+            <name>
+               <given qualifier="BR">Gerard Jan</given>
+               <given qualifier="IN">G. J.</given>
+               <given qualifier="CL">Gerard</given>
+               <family>XXX_Bomele-van Zegels</family>
+            </name>
+            <!--CTS-->
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Man"/>
+            <birthTime value="19540822"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author typeCode="AUT" contextControlCode="OP">
+      <!--No mapping-->
+      <functionCode code="2211"
+                    codeSystem="2.16.840.1.113883.2.9.6.2.7"
+                    displayName="Generalist medical practitioners"/>
+      <time nullFlavor="NI"/>
+      <assignedAuthor classCode="ASSIGNED">
+         <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+         <addr nullFlavor="NI"/>
+         <telecom nullFlavor="NI"/>
+         <assignedAuthoringDevice nullFlavor="NI"/>
+         <representedOrganization>
+            <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+            <name>Gezondheidscentrum A</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian>
+      <assignedCustodian>
+    <!-- To be replaced by definitive custodian -->
+         <representedCustodianOrganization>
+            <id root="2.999" extension="non-final-custodian"/>
+            <name>CIBG (not final)</name>
+            <telecom nullFlavor="NI"/>
+            <addr>
+               <country>NL</country>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator typeCode="LA">
+      <time value="20250702160728+0200"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+    <!-- To be replaced by definitive legalAuthenticator -->
+         <id root="2.999" extension="non-final-legalAuthenticator"/>
+         <addr>
+            <postalCode>2500 BC</postalCode>
+            <city>Den Haag</city>
+            <country>NL</country>
+         </addr>
+         <telecom value="tel:+31703405511" use="WP"/>
+         <assignedPerson>
+            <name>
+               <family>Not available</family>
+               <given>Not available</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id root="2.999" extension="non-final-representedOrganization"/>
+            <name>NCPeH-NL</name>
+            <telecom value="tel:+31703405511" use="WP"/>
+            <addr>
+               <postalCode>2500 BC</postalCode>
+               <city>Den Haag</city>
+               <country>NL</country>
+            </addr>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <documentationOf typeCode="DOC">
+      <serviceEvent classCode="PCPR" moodCode="EVN">
+         <effectiveTime>
+            <high value="20250702160728+0200"/>
+         </effectiveTime>
+      </serviceEvent>
+   </documentationOf>
+   <relatedDocument typeCode="XFRM">
+      <parentDocument><!--TODO relation to PDF-->
+         <id root="2.999" extension="example"/>
+      </parentDocument>
+   </relatedDocument>
+   <component>
+      <structuredBody><!--Medication summary-->
+         <component>
+            <section classCode="DOCSECT">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.3"/>
+               <templateId root="2.16.840.1.113883.10.20.1.8"/>
+               <!--No mapping-->
+               <code code="10160-0"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     displayName="History of Medication use Narrative"/>
+               <title>Medicijngebruik</title>
+               <text>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Medicijn</th>
+                           <th>Actief ingrediënt</th>
+                           <th>Sterkte</th>
+                           <th>Farmaceutische vorm</th>
+                           <th>Eenheden per keer</th>
+                           <th>Frequentie</th>
+                           <th>Toedieningsweg</th>
+                           <th>Doseerduur</th>
+                           <th>Reden van voorschrijven</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>IBUPROFEN TABLET 600MG</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>Oraal</td>
+                           <td>Vanaf: 2024-08-13 00:00 tot: 2024-09-11 23:59</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>Zinkoxide 10% in hydrocortisoncrème FNA 100 gr</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>cutaan</td>
+                           <td>Vanaf: 2024-08-13 00:00 tot: 2024-09-10 23:59</td>
+                           <td/>
+                        </tr>
+                        <tr>
+                           <td>ACENOCOUMAROL TABLET 1MG</td>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td/>
+                           <td>oraal</td>
+                           <td>Vanaf: 2024-08-13 00:00 tot: 2024-09-05 23:59</td>
+                           <td/>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="Med01-" root="2.16.840.1.113883.2.4.3.11.999.77.16076005.1"/>
+                     <text mediaType="text/plain">Vanaf vandaag, voor 9 dagen, 1 maal per dag 2 stuks, Oraal</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20240813000000"/>
+                        <high value="20240911235900"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <!--CTS-->
+                     <routeCode code="9"
+                                codeSystem="2.16.840.1.113883.2.4.4.9"
+                                displayName="Oraal"
+                                codeSystemName="G-Standaard Toedieningswegen"/>
+                     <doseQuantity>
+                        <center value="2" unit="1">
+                           <!--No mapping-->
+                           <translation value="2"
+                                        code="245"
+                                        displayName="stuk"
+                                        codeSystem="2.16.840.1.113883.2.4.4.1.900.2"
+                                        codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                        </center>
+                     </doseQuantity>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <!--CTS-->
+                              <code code="17469"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    displayName="IBUPROFEN TABLET 600MG"
+                                    codeSystemName="G-Standaard PRK">
+                                 <translation code="42080"
+                                              codeSystem="2.16.840.1.113883.2.4.4.1"
+                                              displayName="IBUPROFEN 600MG TABLET"
+                                              codeSystemName="G-Standaard GPK"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="M01AE01"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="IBUPROFEN"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="Med02_magistraal-"
+                         root="2.16.840.1.113883.2.4.3.11.999.77.16076005.1"/>
+                     <text mediaType="text/plain">Vanaf vandaag, voor 28 dagen, 1 maal per 12 uur, cutaan</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20240813000000"/>
+                        <high value="20240910235900"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <!--CTS-->
+                     <routeCode code="53"
+                                codeSystem="2.16.840.1.113883.2.4.4.9"
+                                displayName="cutaan"
+                                codeSystemName="G-Standaard Toedieningswegen"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <code nullFlavor="OTH"/>
+                              <name>Zinkoxide 10% in hydrocortisoncrème FNA 100 gr</name>
+                              <ph:desc>Titel: Zinkoxide 10% in hydrocortisoncrème FNA 100 gr Regel: zinkoxide 10gr Regel: hydrocortisoncrème FNA 100gr</ph:desc>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.4"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                     <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                     <id extension="ed03_cyclischschema-"
+                         root="2.16.840.1.113883.2.4.3.11.999.77.16076005.1"/>
+                     <text mediaType="text/plain">Vanaf vandaag, voorr 23 dagen, cyclus van 3 dagen: steeds eerst gedurende 2 dagen 1 maal per dag 1 stuk, dan gedurende 1 dag 1 maal
+                                per dag 2 stuks, oraal</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20240813000000"/>
+                        <high value="20240905235900"/>
+                     </effectiveTime>
+                     <effectiveTime nullFlavor="UNK"/>
+                     <!--CTS-->
+                     <routeCode code="9"
+                                codeSystem="2.16.840.1.113883.2.4.4.9"
+                                displayName="oraal"
+                                codeSystemName="G-Standaard Toedieningswegen"/>
+                     <consumable typeCode="CSM">
+                        <manufacturedProduct>
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.31"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.32"/>
+                              <!--CTS-->
+                              <code code="7323"
+                                    codeSystem="2.16.840.1.113883.2.4.4.10"
+                                    displayName="ACENOCOUMAROL TABLET 1MG"
+                                    codeSystemName="G-Standaard PRK">
+                                 <translation code="20303"
+                                              codeSystem="2.16.840.1.113883.2.4.4.1"
+                                              displayName="ACENOCOUMAROL TABLET 1MG"
+                                              codeSystemName="G-Standaard GPK"/>
+                              </code>
+                              <ph:asSpecializedKind classCode="GRIC">
+                                 <ph:generalizedMaterialKind classCode="MMAT" determinerCode="KIND">
+                                    <ph:code code="B01AA07"
+                                             codeSystem="2.16.840.1.113883.6.73"
+                                             codeSystemName="Anatomical Therapeutic Chemical"
+                                             displayName="ACENOCOUMAROL"/>
+                                 </ph:generalizedMaterialKind>
+                              </ph:asSpecializedKind>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <!--Allergies, adverse reactions, alerts-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.12"/>
+               <!--No mapping-->
+               <code code="48765-2"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Allergies and adverse reactions Document"/>
+               <title>Allergieën en/of allergische reacties</title>
+               <text>
+                  <paragraph ID="Allergies_NoInformation">Geen informatie over allergieën.</paragraph>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.16"/>
+                     <id nullFlavor="NI"/>
+                     <!--No mapping-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <entryRelationship typeCode="SUBJ" inversionInd="false">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.17"/>
+                           <id root="2.16.840.1.113883.2.4.3.46.10.6.1"
+                               extension="allergies-none-20250702160728"/>
+                           <!--No mapping-->
+                           <code code="420134006"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 codeSystemName="SNOMED CT"
+                                 displayName="Propensity to adverse reaction"/>
+                           <text>
+                              <reference value="#Allergies_NoInformation"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <!--No mapping-->
+                           <value code="no-allergy-info"
+                                  displayName="No information about allergies"
+                                  codeSystem="2.16.840.1.113883.5.1150.1"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.11"/>
+               <!--No mapping-->
+               <code code="47519-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="History of Procedures Document"/>
+               <title>Voorgeschiedenis met verrichtingen</title>
+               <text>
+                  <paragraph ID="Procedures_Unknown">Geen informatie over operaties beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <procedure classCode="PROC" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.26"/>
+                     <id nullFlavor="NI"/>
+                     <!--No mapping-->
+                     <code code="no-procedure-info"
+                           displayName="No information about past history of procedures"
+                           codeSystem="2.16.840.1.113883.5.1150.1"/>
+                     <text>
+                        <reference value="#Procedures_Unknown"/>
+                     </text>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NA" xsi:type="IVL_TS"/>
+                  </procedure>
+               </entry>
+            </section>
+         </component>
+         <!--Active problems-->
+         <component>
+            <section moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.9"/>
+               <templateId root="2.16.840.1.113883.10.20.1.11"/>
+               <!--No mapping-->
+               <code code="11450-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Problem list - Reported"/>
+               <title>Probleemlijst</title>
+               <text>
+                  <paragraph ID="Problems_None">Geen bekende problemen.</paragraph>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.15"/>
+                     <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                     <id nullFlavor="NA"/>
+                     <!--No mapping-->
+                     <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                     <statusCode code="active"/>
+                     <entryRelationship inversionInd="false" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.7"/>
+                           <id root="2.16.840.1.113883.2.4.3.46.10.6.1"
+                               extension="problems-none-20250702160728"/>
+                           <!--No mapping-->
+                           <code code="404684003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Clinical finding"
+                                 codeSystemName="SNOMED CT"/>
+                           <text>
+                              <reference value="#Problems_None"/>
+                           </text>
+                           <statusCode code="completed"/>
+                           <!--No mapping-->
+                           <value code="no-known-problems"
+                                  displayName="No known problems"
+                                  codeSystem="2.16.840.1.113883.5.1150.1"
+                                  xsi:type="CD"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section classCode="DOCSECT" moodCode="EVN">
+               <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.2.4"/>
+               <templateId root="2.16.840.1.113883.10.20.1.7"/>
+               <id nullFlavor="NI"/>
+               <!--No mapping-->
+               <code code="46264-8"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     codeSystemVersion="2.59"
+                     displayName="History of medical device use"/>
+               <title>Voorgeschiedenis van gebruik van hulpmiddel</title>
+               <text>
+                  <paragraph ID="Medical_Devices_None">Geen informatie over hulpmiddelen beschikbaar.</paragraph>
+               </text>
+               <entry>
+                  <supply classCode="SPLY" moodCode="EVN">
+                     <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.5"/>
+                     <text>
+                        <reference value="#Medical_Devices_None"/>
+                     </text>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <hl7:low nullFlavor="NA"/>
+                     </effectiveTime>
+                     <participant typeCode="DEV">
+                        <participantRole classCode="MANU">
+                           <playingDevice classCode="DEV" determinerCode="INSTANCE">
+                              <!--No mapping-->
+                              <code code="no-device-info"
+                                    displayName="No information about devices"
+                                    codeSystem="2.16.840.1.113883.5.1150.1"/>
+                           </playingDevice>
+                        </participantRole>
+                     </participant>
+                  </supply>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.66" name="eHDSILabStudyType">
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18717-9">
+        <designation lang="en-GB">Blood bank studies (set)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18719-5">
+        <designation lang="en-GB">Chemistry studies (set)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18722-9">
+        <designation lang="en-GB">Fertility studies (set)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18723-7">
+        <designation lang="en-GB">Hematology studies (set)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18725-2">
+        <designation lang="en-GB">Microbiology studies (set)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="18728-6">
+        <designation lang="en-GB">Toxicology studies (set)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="26436-6">
+        <designation lang="en-GB">Laboratory studies (set)</designation>
+    </concept>
+</ValueSet>

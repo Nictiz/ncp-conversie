@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="2.16.840.1.113883.4.642.3.3181" name="SexParameterForClinicalUse">
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2038" codeSystemName="HL7 SexParameterForClinicalUseCS" code="female-typical">
+        <designation lang="en-GB">Apply female-typical setting or reference range</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2038" codeSystemName="HL7 SexParameterForClinicalUseCS" code="male-typical">
+        <designation lang="en-GB">Apply male-typical setting or reference range</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.2038" codeSystemName="HL7 SexParameterForClinicalUseCS" code="specified">
+        <designation lang="en-GB">Apply specified setting or reference range</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.4.642.4.1048" codeSystemName="HL7 DataAbsentReason" code="unknown">
+        <designation lang="en-GB">Unknown</designation>
+    </concept>
+</ValueSet>

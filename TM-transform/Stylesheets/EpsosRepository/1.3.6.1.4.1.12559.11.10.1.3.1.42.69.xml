@@ -1,0 +1,2287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet oid="1.3.6.1.4.1.12559.11.10.1.3.1.42.69" name="eHDSIMorphologicAbnormality">
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1003500000">
+        <designation lang="en-GB">Osteoporotic compression fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="10122001">
+        <designation lang="en-GB">Accretion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="103614000">
+        <designation lang="en-GB">Follicular cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="103627001">
+        <designation lang="en-GB">Cystic inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="103641005">
+        <designation lang="en-GB">Reactive cellular changes associated with atrophy</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="103678008">
+        <designation lang="en-GB">Endometriotic cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="103681003">
+        <designation lang="en-GB">Impaired tissue repair</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="103691009">
+        <designation lang="en-GB">Acute myeloid leukemia with maturation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="10376009">
+        <designation lang="en-GB">Papillary carcinoma in situ</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1052347005">
+        <designation lang="en-GB">Bullous eruption</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="10690002">
+        <designation lang="en-GB">Atheromatous embolus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="107669003">
+        <designation lang="en-GB">Degenerative abnormality</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="107671003">
+        <designation lang="en-GB">Vascular sclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="107675007">
+        <designation lang="en-GB">Chromosomal morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="108369006">
+        <designation lang="en-GB">Neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="110426005">
+        <designation lang="en-GB">Aphtha</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="110433005">
+        <designation lang="en-GB">Inflammatory thrombosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="110445001">
+        <designation lang="en-GB">Focal hyperkeratosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="110450007">
+        <designation lang="en-GB">Langerhans&apos; cell histiocytosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="110451006">
+        <designation lang="en-GB">Spindle cell nodule</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="111017005">
+        <designation lang="en-GB">Injection site scar</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11224003">
+        <designation lang="en-GB">Chronic membranous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112633009">
+        <designation lang="en-GB">Surgical wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112638000">
+        <designation lang="en-GB">Displacement</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112641009">
+        <designation lang="en-GB">Telangiectasis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112649006">
+        <designation lang="en-GB">Hemorrhagic inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112654002">
+        <designation lang="en-GB">Deposition of sodium urate crystals</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112656000">
+        <designation lang="en-GB">Deposition of calcium hydroxyapatite crystals</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112674009">
+        <designation lang="en-GB">Fibrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="112681002">
+        <designation lang="en-GB">Intradermal nevus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1148561000">
+        <designation lang="en-GB">Bleeding superficial ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="115227001">
+        <designation lang="en-GB">Lipomatous neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="115233005">
+        <designation lang="en-GB">Germ cell neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="115238001">
+        <designation lang="en-GB">Giant cell tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="115240006">
+        <designation lang="en-GB">Glioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1156654007">
+        <designation lang="en-GB">Benign tubular adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1156661006">
+        <designation lang="en-GB">Benign adrenal cortical adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1156873009">
+        <designation lang="en-GB">Benign fibroadenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1156905002">
+        <designation lang="en-GB">Null cell pituitary adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1156923005">
+        <designation lang="en-GB">Medulloblastoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1156930004">
+        <designation lang="en-GB">Benign neurofibroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1156974002">
+        <designation lang="en-GB">Oligodendroglioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1157043006">
+        <designation lang="en-GB">Astrocytoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1157050005">
+        <designation lang="en-GB">Benign fibroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1157073002">
+        <designation lang="en-GB">Benign papilloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1157139005">
+        <designation lang="en-GB">Malignant carcinoid tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="116208002">
+        <designation lang="en-GB">Abscess of wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162492000">
+        <designation lang="en-GB">Tumor bed</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162576007">
+        <designation lang="en-GB">Plasma cell myeloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162588009">
+        <designation lang="en-GB">Chronic myeloid leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162635006">
+        <designation lang="en-GB">Malignant melanoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162765005">
+        <designation lang="en-GB">Malignant seminoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162767002">
+        <designation lang="en-GB">Squamous cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162768007">
+        <designation lang="en-GB">Leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162814007">
+        <designation lang="en-GB">Non-infiltrating intraductal carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162815008">
+        <designation lang="en-GB">Liposarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162890002">
+        <designation lang="en-GB">Leiomyoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162893000">
+        <designation lang="en-GB">Squamous cell carcinoma in situ</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1162928000">
+        <designation lang="en-GB">Acute myeloid leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163005009">
+        <designation lang="en-GB">Hodgkin lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163016002">
+        <designation lang="en-GB">Chondrosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163022006">
+        <designation lang="en-GB">Leiomyosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163043007">
+        <designation lang="en-GB">Malignant lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163214006">
+        <designation lang="en-GB">Pressure injury</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163375002">
+        <designation lang="en-GB">Glioblastoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163403006">
+        <designation lang="en-GB">Pigmented nevus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163405004">
+        <designation lang="en-GB">Osteosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1163436007">
+        <designation lang="en-GB">Neuroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11639007">
+        <designation lang="en-GB">Puncture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="11671000">
+        <designation lang="en-GB">Adenoid cystic carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1172592001">
+        <designation lang="en-GB">Non-Hodgkin lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1172709000">
+        <designation lang="en-GB">Lymphoid leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1179374007">
+        <designation lang="en-GB">Kaposi sarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="118622000">
+        <designation lang="en-GB">Fistula</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1186904005">
+        <designation lang="en-GB">Ependymoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1186968006">
+        <designation lang="en-GB">Malignant adenomatous neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187107005">
+        <designation lang="en-GB">Plasmacytoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187136005">
+        <designation lang="en-GB">Primary cutaneous T-cell lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187137001">
+        <designation lang="en-GB">Squamous intraepithelial neoplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187138006">
+        <designation lang="en-GB">Carcinoma in situ</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187225007">
+        <designation lang="en-GB">Malignant epithelial neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187227004">
+        <designation lang="en-GB">Benign adenomatous neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187306007">
+        <designation lang="en-GB">Clear cell renal cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187332001">
+        <designation lang="en-GB">Adenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187375007">
+        <designation lang="en-GB">Adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187383001">
+        <designation lang="en-GB">Gastrointestinal stromal tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187396000">
+        <designation lang="en-GB">Sarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187425009">
+        <designation lang="en-GB">Carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1187428006">
+        <designation lang="en-GB">Thymoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12143007">
+        <designation lang="en-GB">Embryonic cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12167004">
+        <designation lang="en-GB">Lymphocyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12169001">
+        <designation lang="en-GB">Granular cell tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="123250005">
+        <designation lang="en-GB">Synovial cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="123630003">
+        <designation lang="en-GB">Focal acute inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="123631004">
+        <designation lang="en-GB">Diffuse acute inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1237086002">
+        <designation lang="en-GB">Blood retention</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1237295003">
+        <designation lang="en-GB">Retracted structure</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="123749006">
+        <designation lang="en-GB">Chronic proliferative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12393003">
+        <designation lang="en-GB">Purpura</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12402003">
+        <designation lang="en-GB">Scar</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1240414004">
+        <designation lang="en-GB">Malignant neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1251519006">
+        <designation lang="en-GB">Myelodysplastic neoplasm with low blasts</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1251594002">
+        <designation lang="en-GB">Urine retention</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125245002">
+        <designation lang="en-GB">Retained foreign body</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125263002">
+        <designation lang="en-GB">Sliding hernia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125271003">
+        <designation lang="en-GB">Thrombosed aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125272005">
+        <designation lang="en-GB">Expanding aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125273000">
+        <designation lang="en-GB">Calcified aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125274006">
+        <designation lang="en-GB">Multiple aneurysms</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125284007">
+        <designation lang="en-GB">Single diverticulum</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125285008">
+        <designation lang="en-GB">Multiple diverticula</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125357009">
+        <designation lang="en-GB">Focal fibroelastosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125358004">
+        <designation lang="en-GB">Diffuse fibroelastosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125524008">
+        <designation lang="en-GB">Diffuse hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125568005">
+        <designation lang="en-GB">Focal fibromatosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="125671007">
+        <designation lang="en-GB">Rupture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12582004">
+        <designation lang="en-GB">Internal fistula</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12747003">
+        <designation lang="en-GB">Microcalcification</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="127561000">
+        <designation lang="en-GB">Valgus deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="127562007">
+        <designation lang="en-GB">Varus deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="127579001">
+        <designation lang="en-GB">Meningeal neoplasm (morphology)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="127581004">
+        <designation lang="en-GB">Mastocytosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12794006">
+        <designation lang="en-GB">Nonsuppurative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="127962001">
+        <designation lang="en-GB">Meckel&apos;s diverticulum</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128305008">
+        <designation lang="en-GB">Opacity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12835000">
+        <designation lang="en-GB">Multiple injuries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="12856003">
+        <designation lang="en-GB">Varix</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128585006">
+        <designation lang="en-GB">Anomalous pulmonary vein</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128586007">
+        <designation lang="en-GB">Pulmonary chamber of cor triatriatum</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128589000">
+        <designation lang="en-GB">Systemic collateral artery to lung</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128617001">
+        <designation lang="en-GB">Arteriovenous fistula</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128623006">
+        <designation lang="en-GB">Myelodysplastic neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128632008">
+        <designation lang="en-GB">Non-small cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128651002">
+        <designation lang="en-GB">Lactating adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128696009">
+        <designation lang="en-GB">Intraductal micropapillary carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128717008">
+        <designation lang="en-GB">Thymic carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128736003">
+        <designation lang="en-GB">Solitary fibrous tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128738002">
+        <designation lang="en-GB">Myofibroblastoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128765009">
+        <designation lang="en-GB">Adenomyoepithelioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128799007">
+        <designation lang="en-GB">Hodgkin lymphoma, lymphocyte-rich</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128822004">
+        <designation lang="en-GB">Precursor cell lymphoblastic leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128831004">
+        <designation lang="en-GB">Chronic myelomonocytic leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128841001">
+        <designation lang="en-GB">Polycythemia vera</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128843003">
+        <designation lang="en-GB">Primary myelofibrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128844009">
+        <designation lang="en-GB">Essential thrombocythemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="128859003">
+        <designation lang="en-GB">Villous adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="129256008">
+        <designation lang="en-GB">Torsion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="129258009">
+        <designation lang="en-GB">Redundant tissue</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="129263008">
+        <designation lang="en-GB">Impacted tooth</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13018008">
+        <designation lang="en-GB">Neovascularization</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13331008">
+        <designation lang="en-GB">Atrophy</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1338007">
+        <designation lang="en-GB">Basal cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="133853005">
+        <designation lang="en-GB">Epiretinal membrane</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="133855003">
+        <designation lang="en-GB">Radial scar</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="134222005">
+        <designation lang="en-GB">Penetrating wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="134328007">
+        <designation lang="en-GB">Lipoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="134352000">
+        <designation lang="en-GB">Incised wound - morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13467000">
+        <designation lang="en-GB">Pseudocyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13705009">
+        <designation lang="en-GB">Partial obstruction</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13713005">
+        <designation lang="en-GB">Thromboembolus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="13924000">
+        <designation lang="en-GB">Wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="14156004">
+        <designation lang="en-GB">Racemose aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="14350002">
+        <designation lang="en-GB">Angiomatosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="14799000">
+        <designation lang="en-GB">Neoplasm, metastatic</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="15074003">
+        <designation lang="en-GB">Neurogenic ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1522000">
+        <designation lang="en-GB">Plaque</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="15498001">
+        <designation lang="en-GB">Superficial ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="15690004">
+        <designation lang="en-GB">Tortuosity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16080000">
+        <designation lang="en-GB">Fibrin deposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16224871000119101">
+        <designation lang="en-GB">Morton&apos;s neuroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16225231000119104">
+        <designation lang="en-GB">Pilonidal cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16227651000119102">
+        <designation lang="en-GB">Catheter exit site</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16277007">
+        <designation lang="en-GB">Collapse</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16640008">
+        <designation lang="en-GB">Separation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="16759001">
+        <designation lang="en-GB">Chronic eosinophilic inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="17307002">
+        <designation lang="en-GB">Transudate</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1736008">
+        <designation lang="en-GB">Anteversion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="17372009">
+        <designation lang="en-GB">Granuloma pyogenicum</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="174637007">
+        <designation lang="en-GB">Angiectasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="17672001">
+        <designation lang="en-GB">Accumulation of fluid</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="177418003">
+        <designation lang="en-GB">Ruptured cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="177658007">
+        <designation lang="en-GB">Fibrinous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="17941002">
+        <designation lang="en-GB">Arteriolosclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="18016009">
+        <designation lang="en-GB">Phlebosclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="1806006">
+        <designation lang="en-GB">Eruption</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="18115005">
+        <designation lang="en-GB">Pathologic calcification</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="18126004">
+        <designation lang="en-GB">Diverticulitis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="18655006">
+        <designation lang="en-GB">Depigmentation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="18695008">
+        <designation lang="en-GB">Hyaline body</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="18802003">
+        <designation lang="en-GB">External fistula</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="189607006">
+        <designation lang="en-GB">Carcinoid tumor - morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="189982000">
+        <designation lang="en-GB">Reticulosarcoma morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19227008">
+        <designation lang="en-GB">Foreign body</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19340000">
+        <designation lang="en-GB">Malignant lymphoma, lymphoplasmacytic</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19571008">
+        <designation lang="en-GB">Multiple open wounds</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19633006">
+        <designation lang="en-GB">Mucous cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19672005">
+        <designation lang="en-GB">Condyloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19685008">
+        <designation lang="en-GB">Stasis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19897006">
+        <designation lang="en-GB">Malignant peripheral nerve sheath tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19909003">
+        <designation lang="en-GB">Complement deposit</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19921004">
+        <designation lang="en-GB">Crushing injury (morphology)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19928005">
+        <designation lang="en-GB">Fibromatosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19929002">
+        <designation lang="en-GB">Angiomyolipoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19940005">
+        <designation lang="en-GB">Lichenification</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="19952003">
+        <designation lang="en-GB">Elastic vascular sclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20365006">
+        <designation lang="en-GB">Squamous intraepithelial neoplasia, high grade</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20369000">
+        <designation lang="en-GB">Chronic mucous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20456003">
+        <designation lang="en-GB">Loose body</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2052000">
+        <designation lang="en-GB">Acute necrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20601007">
+        <designation lang="en-GB">Flattening deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20717008">
+        <designation lang="en-GB">Atherosclerotic fibrous plaque</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20741006">
+        <designation lang="en-GB">Hydrops</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20776008">
+        <designation lang="en-GB">Adenolymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="20946005">
+        <designation lang="en-GB">Fracture, closed</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="21008007">
+        <designation lang="en-GB">Cystadenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="21326004">
+        <designation lang="en-GB">Combined small cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="21465002">
+        <designation lang="en-GB">Abnormally short and broad growth</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="21947006">
+        <designation lang="en-GB">Compression fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22024005">
+        <designation lang="en-GB">Lipoadenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22036004">
+        <designation lang="en-GB">Pseudoaneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22039006">
+        <designation lang="en-GB">Ruptured aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22197008">
+        <designation lang="en-GB">Burkitt cell leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22217002">
+        <designation lang="en-GB">Mixed glioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2227007">
+        <designation lang="en-GB">Adrenal cortical carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22341001">
+        <designation lang="en-GB">Thrombosed varices</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22427006">
+        <designation lang="en-GB">Elastoid degeneration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22640007">
+        <designation lang="en-GB">Pathologic fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22641006">
+        <designation lang="en-GB">Serous effusion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22687000">
+        <designation lang="en-GB">Large cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="22694002">
+        <designation lang="en-GB">Adenocarcinoma with apocrine metaplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="23382007">
+        <designation lang="en-GB">Stress fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24016004">
+        <designation lang="en-GB">Corrected transposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24072005">
+        <designation lang="en-GB">Acute leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24389009">
+        <designation lang="en-GB">Injection site granuloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24531002">
+        <designation lang="en-GB">Complex caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24551003">
+        <designation lang="en-GB">Arteriovenous malformation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="245857005">
+        <designation lang="en-GB">Stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="245860003">
+        <designation lang="en-GB">Urinary conduit site</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="24811005">
+        <designation lang="en-GB">Serous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25081006">
+        <designation lang="en-GB">Nephroblastoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25201003">
+        <designation lang="en-GB">Epidermal nevus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="252994001">
+        <designation lang="en-GB">Benign squamous cell tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="253053003">
+        <designation lang="en-GB">Benign hemangioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="253057002">
+        <designation lang="en-GB">Benign lymphangioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="253086004">
+        <designation lang="en-GB">Cellular schwannoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25322007">
+        <designation lang="en-GB">Dilatation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25370001">
+        <designation lang="en-GB">Hepatocellular carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25499005">
+        <designation lang="en-GB">Seborrheic keratosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2557004">
+        <designation lang="en-GB">Chronic leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25694009">
+        <designation lang="en-GB">Papule</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25723000">
+        <designation lang="en-GB">Dysplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25889007">
+        <designation lang="en-GB">Benign fibrous histiocytoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="25910003">
+        <designation lang="en-GB">Papillary carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="259681001">
+        <designation lang="en-GB">Macrocytic erythrocyte</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="26036001">
+        <designation lang="en-GB">Obstruction</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="26317001">
+        <designation lang="en-GB">Acute ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="263697003">
+        <designation lang="en-GB">Bucket handle tear</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="263722006">
+        <designation lang="en-GB">Complete rupture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="26396009">
+        <designation lang="en-GB">Subluxation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264293000">
+        <designation lang="en-GB">Coronary artery graft</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264364002">
+        <designation lang="en-GB">Ileostomy - stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264585001">
+        <designation lang="en-GB">Colostomy - stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="264600004">
+        <designation lang="en-GB">Peripheral artery graft</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="26696002">
+        <designation lang="en-GB">Chemical burn</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="26996000">
+        <designation lang="en-GB">Hyperkeratosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27058005">
+        <designation lang="en-GB">Necrotizing granulomatous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27090000">
+        <designation lang="en-GB">Transitional cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27266007">
+        <designation lang="en-GB">Pseudo-obstruction</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="272725004">
+        <designation lang="en-GB">External stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="272726003">
+        <designation lang="en-GB">Gastrostomy</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27317008">
+        <designation lang="en-GB">Complete transposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27367001">
+        <designation lang="en-GB">Wrinkle</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27515001">
+        <designation lang="en-GB">Avulsion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27551008">
+        <designation lang="en-GB">Stricture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2763006">
+        <designation lang="en-GB">Comedo</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27876002">
+        <designation lang="en-GB">Multiple infarcts</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27881006">
+        <designation lang="en-GB">Bony callus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="27925004">
+        <designation lang="en-GB">Nodule</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="280699007">
+        <designation lang="en-GB">Abdominal stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="28087009">
+        <designation lang="en-GB">Delayed union of fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="281600005">
+        <designation lang="en-GB">Intestinal stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="28727003">
+        <designation lang="en-GB">Odontogenic cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="28950004">
+        <designation lang="en-GB">Acute promyelocytic leukemia with PML::RARA fusion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="28960008">
+        <designation lang="en-GB">Arteriosclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="29185008">
+        <designation lang="en-GB">Fatty degeneration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="29483008">
+        <designation lang="en-GB">Calcified atheromatous plaque</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="29696001">
+        <designation lang="en-GB">Prolapse</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="2985005">
+        <designation lang="en-GB">Paget&apos;s disease, mammary</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30098003">
+        <designation lang="en-GB">Hyperemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30156004">
+        <designation lang="en-GB">Cribriform carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30213001">
+        <designation lang="en-GB">Lymphatic edema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30217000">
+        <designation lang="en-GB">Proliferation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30285000">
+        <designation lang="en-GB">Verruca</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30425001">
+        <designation lang="en-GB">Osteolysis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="307575002">
+        <designation lang="en-GB">Benign pheochromocytoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30812002">
+        <designation lang="en-GB">Overriding structures</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="308492005">
+        <designation lang="en-GB">Contusion - lesion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="308497004">
+        <designation lang="en-GB">Strain - lesion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30924005">
+        <designation lang="en-GB">Rhabdomyosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="30962008">
+        <designation lang="en-GB">Acute myelomonocytic leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31069005">
+        <designation lang="en-GB">Fibroepithelial polyp</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31113003">
+        <designation lang="en-GB">Diverticulum</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31186001">
+        <designation lang="en-GB">Chondroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="312288001">
+        <designation lang="en-GB">Vascular graft</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="312317000">
+        <designation lang="en-GB">Arteriovenous graft</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="314923001">
+        <designation lang="en-GB">Low grade B-cell lymphoma morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="314926009">
+        <designation lang="en-GB">T-cell lymphoma morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31653004">
+        <designation lang="en-GB">Fibromuscular dysplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31739005">
+        <designation lang="en-GB">Lateral abnormal curvature</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31807009">
+        <designation lang="en-GB">Persistent embryonic structure</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="31980008">
+        <designation lang="en-GB">Necrotizing inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="32416003">
+        <designation lang="en-GB">Atypical hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="32651000">
+        <designation lang="en-GB">Arteriolosclerosis with fibrinoid necrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="32693004">
+        <designation lang="en-GB">Demyelination</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="32913002">
+        <designation lang="en-GB">Medullary carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="32968003">
+        <designation lang="en-GB">Inflammatory carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="33080003">
+        <designation lang="en-GB">Fracture, ununited</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="33377007">
+        <designation lang="en-GB">Cavernous hemangioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="33593002">
+        <designation lang="en-GB">Vascular wall degeneration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3380003">
+        <designation lang="en-GB">Superficial injury</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="33851008">
+        <designation lang="en-GB">Subacute necrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="33889003">
+        <designation lang="en-GB">Atypical lobular hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="339008">
+        <designation lang="en-GB">Blister</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3404009">
+        <designation lang="en-GB">Bite wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="34058006">
+        <designation lang="en-GB">Bowing deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="34337008">
+        <designation lang="en-GB">Prolactinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="34360000">
+        <designation lang="en-GB">Fibrous histiocytoma, malignant</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="34494002">
+        <designation lang="en-GB">Communicating cerebrospinal fluid retention</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="34807008">
+        <designation lang="en-GB">Congenital incomplete expansion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="34882000">
+        <designation lang="en-GB">Giant fibroadenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="35566002">
+        <designation lang="en-GB">Hematoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="35601003">
+        <designation lang="en-GB">Monoclonal gammopathy of undetermined significance</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="35828005">
+        <designation lang="en-GB">Malacia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="35933005">
+        <designation lang="en-GB">Laceration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="36024000">
+        <designation lang="en-GB">Gangrene</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="361687001">
+        <designation lang="en-GB">Renal pelvis stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="36191001">
+        <designation lang="en-GB">Perforation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="36195005">
+        <designation lang="en-GB">Nodular hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="363563002">
+        <designation lang="en-GB">Entrapment</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="36390009">
+        <designation lang="en-GB">Chronic suppurative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="36504009">
+        <designation lang="en-GB">Ankylosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="36639000">
+        <designation lang="en-GB">Psoriasiform rash</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="367643001">
+        <designation lang="en-GB">Cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="367644007">
+        <designation lang="en-GB">Simple cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="367646009">
+        <designation lang="en-GB">Pus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="367647000">
+        <designation lang="en-GB">Fibrocystic change</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3679006">
+        <designation lang="en-GB">Polycystic change</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="36850000">
+        <designation lang="en-GB">Retention</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37058002">
+        <designation lang="en-GB">Foreign body giant cell granuloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37068007">
+        <designation lang="en-GB">Lateral displacement</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="371520008">
+        <designation lang="en-GB">Developmental failure of fusion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37205004">
+        <designation lang="en-GB">Superficial wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="372152003">
+        <designation lang="en-GB">Sarcoma, metastatic</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="372158004">
+        <designation lang="en-GB">Malignant melanoma, metastatic</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37279009">
+        <designation lang="en-GB">Amyloid tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37719003">
+        <designation lang="en-GB">Milium</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37782003">
+        <designation lang="en-GB">Damage</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="37904008">
+        <designation lang="en-GB">Chronic bleeding ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="38045000">
+        <designation lang="en-GB">Cold injury</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="38109001">
+        <designation lang="en-GB">Osseous metaplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3839000">
+        <designation lang="en-GB">Lipid-rich carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="384709000">
+        <designation lang="en-GB">Sprain</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="38542009">
+        <designation lang="en-GB">Nodular glomerulosclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="385627004">
+        <designation lang="en-GB">Cellulitis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="386152007">
+        <designation lang="en-GB">Hydrocele</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="38716007">
+        <designation lang="en-GB">Atherosclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3875003">
+        <designation lang="en-GB">Tophus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="38785003">
+        <designation lang="en-GB">Air leakage</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="3898006">
+        <designation lang="en-GB">Neoplasm, benign</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="39000009">
+        <designation lang="en-GB">Hemangiosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="39391009">
+        <designation lang="en-GB">Chronic serous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="396224008">
+        <designation lang="en-GB">Endometriosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="396339007">
+        <designation lang="en-GB">Thrombus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="396351009">
+        <designation lang="en-GB">Congenital septal defect</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="39718000">
+        <designation lang="en-GB">Congenital failure to migrate</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="397350003">
+        <designation lang="en-GB">Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="397423009">
+        <designation lang="en-GB">Transjugular intrahepatic portosystemic shunt</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="399898009">
+        <designation lang="en-GB">Misalignment</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="400048001">
+        <designation lang="en-GB">Excoriation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="400061001">
+        <designation lang="en-GB">Abrasion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="40009002">
+        <designation lang="en-GB">Craniopharyngioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="400163001">
+        <designation lang="en-GB">Malignant fibromatous neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="400177003">
+        <designation lang="en-GB">Neoplasm and/or hamartoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="400183000">
+        <designation lang="en-GB">Exfoliative lesion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="40411000">
+        <designation lang="en-GB">Follicular lymphoma, grade 3</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="40518009">
+        <designation lang="en-GB">Acute superficial ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="405719001">
+        <designation lang="en-GB">Chronic ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="406102004">
+        <designation lang="en-GB">Dysplasia with neoplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="40772000">
+        <designation lang="en-GB">Fibrous plaque</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="40829002">
+        <designation lang="en-GB">Acute edema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="408737001">
+        <designation lang="en-GB">Malposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="408764000">
+        <designation lang="en-GB">Filtering bleb</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="409774005">
+        <designation lang="en-GB">Inflammatory morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="409776007">
+        <designation lang="en-GB">Acute inflammatory morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="409777003">
+        <designation lang="en-GB">Chronic inflammatory morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="409781003">
+        <designation lang="en-GB">Focal chronic inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41034006">
+        <designation lang="en-GB">Suppurative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="410723003">
+        <designation lang="en-GB">Wound dehiscence</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41086002">
+        <designation lang="en-GB">Congenital smallness</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41329004">
+        <designation lang="en-GB">Polyp</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="414402003">
+        <designation lang="en-GB">Hernial opening</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="414403008">
+        <designation lang="en-GB">Hernia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41444002">
+        <designation lang="en-GB">Invagination</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="414450004">
+        <designation lang="en-GB">Idiopathic hypereosinophilic syndrome</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="414629003">
+        <designation lang="en-GB">Lymphoproliferative disorder</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="414655002">
+        <designation lang="en-GB">Mature (peripheral) T-cell neoplasm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4147007">
+        <designation lang="en-GB">Mass</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="414794006">
+        <designation lang="en-GB">Myeloid proliferation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="415582006">
+        <designation lang="en-GB">Stenosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="415588005">
+        <designation lang="en-GB">Stoma AND/OR site of stoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41570003">
+        <designation lang="en-GB">Carbuncle</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41605001">
+        <designation lang="en-GB">Ulcerative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="416502004">
+        <designation lang="en-GB">Suture line</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="416939005">
+        <designation lang="en-GB">Proliferative mass</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41699000">
+        <designation lang="en-GB">Effusion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="417271000">
+        <designation lang="en-GB">Hydatidiform mole, benign</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41796003">
+        <designation lang="en-GB">Anastomosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="417992006">
+        <designation lang="en-GB">Sebaceous cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="418560003">
+        <designation lang="en-GB">Absence</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="419093005">
+        <designation lang="en-GB">Trichilemmal cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41915009">
+        <designation lang="en-GB">Stasis ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="41919003">
+        <designation lang="en-GB">Juvenile carcinoma of the breast</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="419351001">
+        <designation lang="en-GB">Sinus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4196002">
+        <designation lang="en-GB">Eversion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="419670003">
+        <designation lang="en-GB">Epidermoid cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42164003">
+        <designation lang="en-GB">Posterior displacement</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42182000">
+        <designation lang="en-GB">Cystic medial necrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="423699002">
+        <designation lang="en-GB">Enchondroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42508007">
+        <designation lang="en-GB">Fracture, closed, comminuted</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42577003">
+        <designation lang="en-GB">Stab wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42685002">
+        <designation lang="en-GB">Adhesion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="426912003">
+        <designation lang="en-GB">Splinter foreign body</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="42717009">
+        <designation lang="en-GB">Teratoma, benign</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="427657002">
+        <designation lang="en-GB">Ileal pouch</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43127003">
+        <designation lang="en-GB">Lewy bodies</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43299000">
+        <designation lang="en-GB">Miliary aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43327007">
+        <designation lang="en-GB">Acantholysis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43526002">
+        <designation lang="en-GB">Operative site</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="438074005">
+        <designation lang="en-GB">Vaginal cuff</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43846000">
+        <designation lang="en-GB">Sclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="43865008">
+        <designation lang="en-GB">Acute hemorrhagic inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="44132006">
+        <designation lang="en-GB">Abscess morphology</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="441850003">
+        <designation lang="en-GB">Appendiceal stump</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="441901008">
+        <designation lang="en-GB">Inverted diverticulum</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="442021009">
+        <designation lang="en-GB">Enlargement</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="442085002">
+        <designation lang="en-GB">Greenstick fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="442672001">
+        <designation lang="en-GB">Swelling</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="442894007">
+        <designation lang="en-GB">Deposition of calcium pyrophosphate crystals, calcified structure</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443096004">
+        <designation lang="en-GB">Surgically constructed connection of aorta to pulmonary artery</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443208000">
+        <designation lang="en-GB">Pulmonary vein confluence to atrium connection</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443260009">
+        <designation lang="en-GB">Rastelli interventricular tunnel</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="44328006">
+        <designation lang="en-GB">Granulomatosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443283007">
+        <designation lang="en-GB">Neoaortic valve</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443297004">
+        <designation lang="en-GB">Pulmonary vein to atrium connection</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443298009">
+        <designation lang="en-GB">Fontan pathway</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443326004">
+        <designation lang="en-GB">Fontan inferior vena cava pathway</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443327008">
+        <designation lang="en-GB">Hemi-Fontan pathway</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443328003">
+        <designation lang="en-GB">Right ventricle to pulmonary artery conduit anastomosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443329006">
+        <designation lang="en-GB">Bulboventricular foramen</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443444008">
+        <designation lang="en-GB">Right superior vena cava</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443445009">
+        <designation lang="en-GB">Cor triatriatum orifice</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443625008">
+        <designation lang="en-GB">Fontan pulmonary artery connection</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443696003">
+        <designation lang="en-GB">Left ventricle to pulmonary artery conduit anastomosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443724003">
+        <designation lang="en-GB">Fontan fenestration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443726001">
+        <designation lang="en-GB">Neoaortic root</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443789005">
+        <designation lang="en-GB">Surgically constructed bidirectional pathway from superior vena cava to pulmonary artery</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443809000">
+        <designation lang="en-GB">Surgically constructed convergence of inferior and superior vena cava pathways into common pathway superior to atrioventricular valve</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="443907004">
+        <designation lang="en-GB">Surgically constructed pathway from pulmonary veins to tricuspid valve</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="444177009">
+        <designation lang="en-GB">Surgically constructed pathway from superior vena cava to mitral valve</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="444329004">
+        <designation lang="en-GB">Surgically constructed pathway from inferior vena cava to mitral valve</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="446569001">
+        <designation lang="en-GB">Microthrombus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="446944008">
+        <designation lang="en-GB">Immunoglobulin A deposit</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="447136001">
+        <designation lang="en-GB">Palisading granuloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="449735000">
+        <designation lang="en-GB">Structural change due to ischemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45024009">
+        <designation lang="en-GB">Hepatoblastoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45027002">
+        <designation lang="en-GB">Inversion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="450910000">
+        <designation lang="en-GB">ALK positive large B-cell lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4532008">
+        <designation lang="en-GB">Acute inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4538007">
+        <designation lang="en-GB">Papulovesicular rash</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45486003">
+        <designation lang="en-GB">Aplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45559001">
+        <designation lang="en-GB">Focal fibrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45647009">
+        <designation lang="en-GB">Granuloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45771005">
+        <designation lang="en-GB">Acute bleeding ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="45959006">
+        <designation lang="en-GB">Acute suppurative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="46212000">
+        <designation lang="en-GB">Juvenile fibroadenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4631006">
+        <designation lang="en-GB">Tubular adenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="46541008">
+        <designation lang="en-GB">Second degree burn injury</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="46595003">
+        <designation lang="en-GB">Deposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="46675001">
+        <designation lang="en-GB">Osteoporotic fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47002008">
+        <designation lang="en-GB">Pustule</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4720007">
+        <designation lang="en-GB">Dystrophy</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47212006">
+        <designation lang="en-GB">Linear atrophy</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47284001">
+        <designation lang="en-GB">Aggressive fibromatosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47393002">
+        <designation lang="en-GB">Fissure</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47488001">
+        <designation lang="en-GB">Intracystic papillary adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47631006">
+        <designation lang="en-GB">Adventitial degeneration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="47725002">
+        <designation lang="en-GB">Maculopapular rash</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4797003">
+        <designation lang="en-GB">Papillary adenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="48010006">
+        <designation lang="en-GB">Melanosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4830009">
+        <designation lang="en-GB">Hyperpigmentation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="48333001">
+        <designation lang="en-GB">Burn injury</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="48434008">
+        <designation lang="en-GB">Atheroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="48554007">
+        <designation lang="en-GB">Enterochromaffin cell carcinoid</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="48707006">
+        <designation lang="en-GB">Growth acceleration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="49158009">
+        <designation lang="en-GB">Emphysema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="49210009">
+        <designation lang="en-GB">Posterior closed dislocation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="49247009">
+        <designation lang="en-GB">Protein deposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="49409001">
+        <designation lang="en-GB">Compound nevus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="4950009">
+        <designation lang="en-GB">Sezary syndrome</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="49938009">
+        <designation lang="en-GB">Drepanocyte</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50091001">
+        <designation lang="en-GB">Petechia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50173008">
+        <designation lang="en-GB">Complete obstruction</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50399007">
+        <designation lang="en-GB">Closed dislocation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="5052009">
+        <designation lang="en-GB">Merkel cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50916005">
+        <designation lang="en-GB">Fibrosing adenosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50960005">
+        <designation lang="en-GB">Hemorrhage</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="50978000">
+        <designation lang="en-GB">Leukoplakia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51083003">
+        <designation lang="en-GB">Pigment deposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51092000">
+        <designation lang="en-GB">B-cell chronic lymphocytic leukemia/small lymphocytic lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51398009">
+        <designation lang="en-GB">Hamartoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51404004">
+        <designation lang="en-GB">Fibrous bands</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51668007">
+        <designation lang="en-GB">Mycotic aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51670003">
+        <designation lang="en-GB">Mural thrombus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51697005">
+        <designation lang="en-GB">Cutaneous hamartoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="51936002">
+        <designation lang="en-GB">Deposition of foreign material</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52090005">
+        <designation lang="en-GB">Malunion of fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52248008">
+        <designation lang="en-GB">Hodgkin lymphoma, nodular sclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52299001">
+        <designation lang="en-GB">Osteochondroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52329006">
+        <designation lang="en-GB">Fracture, open</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="5242004">
+        <designation lang="en-GB">Synechia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="5244003">
+        <designation lang="en-GB">Intraductal papilloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="5257006">
+        <designation lang="en-GB">Follicular adenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52856002">
+        <designation lang="en-GB">Cylindroid aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="52988006">
+        <designation lang="en-GB">Lesion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="53151000">
+        <designation lang="en-GB">Fatty streaks</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="53237008">
+        <designation lang="en-GB">Anaplastic large cell lymphoma, T cell and Null cell type</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="53654007">
+        <designation lang="en-GB">Fibrosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="53788007">
+        <designation lang="en-GB">Vesicular rash</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="5399005">
+        <designation lang="en-GB">Dissecting hemorrhage</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="54002007">
+        <designation lang="en-GB">Saccular aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="54087003">
+        <designation lang="en-GB">Hairy cell leukemia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="54493002">
+        <designation lang="en-GB">Intramural hematoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55021007">
+        <designation lang="en-GB">Follicular adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55075001">
+        <designation lang="en-GB">Bleeding ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55150002">
+        <designation lang="en-GB">Follicular lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55199003">
+        <designation lang="en-GB">Hypoplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55470003">
+        <designation lang="en-GB">Acute infarct</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55584005">
+        <designation lang="en-GB">Embolus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="55641003">
+        <designation lang="en-GB">Infarct</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="56021002">
+        <designation lang="en-GB">Seroma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="56208002">
+        <designation lang="en-GB">Ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="56246009">
+        <designation lang="en-GB">Hypertrophy</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="56381008">
+        <designation lang="en-GB">Calculus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="56457002">
+        <designation lang="en-GB">Congenital atresia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="56468002">
+        <designation lang="en-GB">Venous hemangioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="56768003">
+        <designation lang="en-GB">Gunshot wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57048009">
+        <designation lang="en-GB">Contracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57052009">
+        <designation lang="en-GB">Bleeding varices</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57141000">
+        <designation lang="en-GB">Apocrine adenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57174000">
+        <designation lang="en-GB">Focal amyloid</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="575006">
+        <designation lang="en-GB">Cholesteatoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="5755004">
+        <designation lang="en-GB">Cystic hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57596004">
+        <designation lang="en-GB">Oxyphilic adenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57597008">
+        <designation lang="en-GB">Adenosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57697001">
+        <designation lang="en-GB">Growth alteration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57754000">
+        <designation lang="en-GB">Varicose aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="57977008">
+        <designation lang="en-GB">Chronic fibrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="58405006">
+        <designation lang="en-GB">Keloid</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="58898007">
+        <designation lang="en-GB">Acute serous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="58909005">
+        <designation lang="en-GB">Amputated structure</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="59091005">
+        <designation lang="en-GB">Open wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="59576002">
+        <designation lang="en-GB">Growth retardation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="59843005">
+        <designation lang="en-GB">Furuncle</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="59984009">
+        <designation lang="en-GB">Prolapsed varices</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="60549007">
+        <designation lang="en-GB">Multiple endocrine adenomas</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="6081001">
+        <designation lang="en-GB">Deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="609345009">
+        <designation lang="en-GB">Disrupted surgical incision wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="609445005">
+        <designation lang="en-GB">Entrapment with compression</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="60963005">
+        <designation lang="en-GB">Dystrophic calcification</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="61051007">
+        <designation lang="en-GB">Anteroposterior abnormal curvature</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="61295008">
+        <designation lang="en-GB">Congenital abnormal number</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="61494005">
+        <designation lang="en-GB">Impaction</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="61814002">
+        <designation lang="en-GB">Dysplastic nevus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="62047007">
+        <designation lang="en-GB">Hyperplastic polyp</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="62064005">
+        <designation lang="en-GB">Mesothelioma, malignant</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="62189002">
+        <designation lang="en-GB">Ulcerated atheromatous plaque</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="6219000">
+        <designation lang="en-GB">Neoplasm, malignant, uncertain whether primary or metastatic</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="62312006">
+        <designation lang="en-GB">Acute exudative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="62570005">
+        <designation lang="en-GB">Microcytic hypochromic erythrocyte</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="6266001">
+        <designation lang="en-GB">Granulomatous inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="62814004">
+        <designation lang="en-GB">Chronic ulcerative inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="63130001">
+        <designation lang="en-GB">Surgical scar</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="63211008">
+        <designation lang="en-GB">Synovial sarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="63264007">
+        <designation lang="en-GB">Carcinosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="63280002">
+        <designation lang="en-GB">Dendritic ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="64204000">
+        <designation lang="en-GB">Squamous cell carcinoma, metastatic</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="64305001">
+        <designation lang="en-GB">Urticaria</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="64770007">
+        <designation lang="en-GB">Nodular regeneration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="65413006">
+        <designation lang="en-GB">Caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="65692009">
+        <designation lang="en-GB">Spindle cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="6574001">
+        <designation lang="en-GB">Necrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="66146003">
+        <designation lang="en-GB">Sarcoid type granuloma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="6660000">
+        <designation lang="en-GB">Atypical intraductal hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="66696003">
+        <designation lang="en-GB">Empyema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="66954000">
+        <designation lang="en-GB">Bone cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="67409000">
+        <designation lang="en-GB">Fecal impaction</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="67617000">
+        <designation lang="en-GB">Intraductal hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="67798003">
+        <designation lang="en-GB">Congenital premature fusion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="67824002">
+        <designation lang="en-GB">Lymphosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="68790008">
+        <designation lang="en-GB">Amyloid deposition</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="69310004">
+        <designation lang="en-GB">Intestinal metaplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="699289006">
+        <designation lang="en-GB">Lichenoid inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="7003006">
+        <designation lang="en-GB">Chronic hemorrhage</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70033004">
+        <designation lang="en-GB">Torus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70048005">
+        <designation lang="en-GB">Superficial foreign body</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="7010000">
+        <designation lang="en-GB">Carcinomatosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70179006">
+        <designation lang="en-GB">Cholangiocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70310009">
+        <designation lang="en-GB">Schistocyte</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="703707001">
+        <designation lang="en-GB">Ewing sarcoma / peripheral neuroectodermal tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70594002">
+        <designation lang="en-GB">Amelanotic melanoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="707496003">
+        <designation lang="en-GB">Inflammation and consolidation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="707598004">
+        <designation lang="en-GB">Malocclusion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708024004">
+        <designation lang="en-GB">Valvular insufficiency</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708027006">
+        <designation lang="en-GB">Valvular stenosis with valvular insufficiency</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708039003">
+        <designation lang="en-GB">Inflammatory lesion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708041002">
+        <designation lang="en-GB">Mechanical lesion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70819003">
+        <designation lang="en-GB">Erythema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70831001">
+        <designation lang="en-GB">Papular rash</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708528005">
+        <designation lang="en-GB">Narrowing</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708529002">
+        <designation lang="en-GB">Lesion of degenerative abnormality</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708539008">
+        <designation lang="en-GB">Concussive injury</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708573003">
+        <designation lang="en-GB">Cavitated caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708574009">
+        <designation lang="en-GB">Non-cavitated caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708575005">
+        <designation lang="en-GB">Secondary caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708576006">
+        <designation lang="en-GB">Primary caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708577002">
+        <designation lang="en-GB">Non-active caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="708578007">
+        <designation lang="en-GB">Active caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="70984001">
+        <designation lang="en-GB">Serpentine aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="71072006">
+        <designation lang="en-GB">Angiodysplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="71173004">
+        <designation lang="en-GB">Compression</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="71232009">
+        <designation lang="en-GB">Borderline phyllodes tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="71307009">
+        <designation lang="en-GB">Ganglion cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="71379006">
+        <designation lang="en-GB">Erythroplakia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="71447003">
+        <designation lang="en-GB">Paget&apos;s disease, extramammary (except Paget&apos;s disease of bone)</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="716577004">
+        <designation lang="en-GB">Preauricular sinus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="718355007">
+        <designation lang="en-GB">Torsion deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="71911007">
+        <designation lang="en-GB">Healed infarct</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="719880007">
+        <designation lang="en-GB">Acute lymphoid follicular inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72095004">
+        <designation lang="en-GB">Vesicular inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72166006">
+        <designation lang="en-GB">Fibroelastosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="722192005">
+        <designation lang="en-GB">Localized swelling</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="722796003">
+        <designation lang="en-GB">Primary active caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="722797007">
+        <designation lang="en-GB">Secondary active caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="722798002">
+        <designation lang="en-GB">Primary non-active caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="722799005">
+        <designation lang="en-GB">Secondary non-active caries</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72495009">
+        <designation lang="en-GB">Mucinous adenocarcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72587008">
+        <designation lang="en-GB">Sting</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72704001">
+        <designation lang="en-GB">Fracture</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="72756009">
+        <designation lang="en-GB">Aseptic necrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="73219006">
+        <designation lang="en-GB">Angiolipoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="73728008">
+        <designation lang="en-GB">Maturation acceleration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="74280008">
+        <designation lang="en-GB">Glycogen-rich carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="74364000">
+        <designation lang="en-GB">Small cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="74532006">
+        <designation lang="en-GB">Malignant glioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="74571009">
+        <designation lang="en-GB">Bile pigmentation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="74654000">
+        <designation lang="en-GB">Mantle cell lymphoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="74937006">
+        <designation lang="en-GB">Complicated atheromatous plaque</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75567003">
+        <designation lang="en-GB">Anterior closed dislocation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75616009">
+        <designation lang="en-GB">Reticulin fibrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75753009">
+        <designation lang="en-GB">Blood clot</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75797008">
+        <designation lang="en-GB">Syrinx</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75823008">
+        <designation lang="en-GB">Discharge</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="75889009">
+        <designation lang="en-GB">Acute and chronic inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="76000001">
+        <designation lang="en-GB">Aneurysmal bone cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="76060004">
+        <designation lang="en-GB">Esthesioneuroblastoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="76093008">
+        <designation lang="en-GB">Anterior displacement</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="76197007">
+        <designation lang="en-GB">Hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="76555007">
+        <designation lang="en-GB">Disruption</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="766235003">
+        <designation lang="en-GB">Cavovarus deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="767376003">
+        <designation lang="en-GB">Lentigo</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="76909002">
+        <designation lang="en-GB">Ewing&apos;s sarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="770951006">
+        <designation lang="en-GB">Superficial bite wound</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="77126004">
+        <designation lang="en-GB">Abnormal caruncle</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="771485007">
+        <designation lang="en-GB">Fracture of multiple bones</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="771486008">
+        <designation lang="en-GB">Closed fracture of multiple bones</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="771487004">
+        <designation lang="en-GB">Compound fracture of multiple bones</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="77284006">
+        <designation lang="en-GB">Lobular carcinoma in situ</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="77643000">
+        <designation lang="en-GB">Ecchymosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="77986002">
+        <designation lang="en-GB">Melanoma in situ</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78195007">
+        <designation lang="en-GB">Occlusive thrombus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78197004">
+        <designation lang="en-GB">Comedocarcinoma, noninfiltrating</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="782173000">
+        <designation lang="en-GB">Agenesis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="783710005">
+        <designation lang="en-GB">Superficial laceration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="783727002">
+        <designation lang="en-GB">First degree laceration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="783746001">
+        <designation lang="en-GB">Second degree laceration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="783747005">
+        <designation lang="en-GB">Third degree laceration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="783804002">
+        <designation lang="en-GB">Abnormal communication</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="783806000">
+        <designation lang="en-GB">Vascular malformation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78441005">
+        <designation lang="en-GB">Osteopenia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="785284009">
+        <designation lang="en-GB">Arachnoid cyst</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="789563006">
+        <designation lang="en-GB">Arterial ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="78989007">
+        <designation lang="en-GB">Trisomy</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="79108005">
+        <designation lang="en-GB">Sclerosing inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="7939003">
+        <designation lang="en-GB">Localized edema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="79644001">
+        <designation lang="en-GB">Pigment alteration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="79654002">
+        <designation lang="en-GB">Edema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="803009">
+        <designation lang="en-GB">Paraganglioma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="80400009">
+        <designation lang="en-GB">External hyperostosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="81018009">
+        <designation lang="en-GB">Radiation injury</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="81037000">
+        <designation lang="en-GB">Lacunar infarct</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="81274009">
+        <designation lang="en-GB">Apocrine metaplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="81409000">
+        <designation lang="en-GB">Coarctation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="81450008">
+        <designation lang="en-GB">Intercapillary glomerulosclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="81669005">
+        <designation lang="en-GB">Neurofibromatosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="81845009">
+        <designation lang="en-GB">Follicular hyperkeratosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82014009">
+        <designation lang="en-GB">Peripheral edema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82375006">
+        <designation lang="en-GB">Adenomatous polyp</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82513007">
+        <designation lang="en-GB">Myeloid metaplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82515000">
+        <designation lang="en-GB">Vesicle</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82646005">
+        <designation lang="en-GB">Glomerulosclerosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="82711006">
+        <designation lang="en-GB">Infiltrating duct carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="8360001">
+        <designation lang="en-GB">Pleomorphic adenoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="84050003">
+        <designation lang="en-GB">Glandular and stromal hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="84499006">
+        <designation lang="en-GB">Chronic inflammation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="846575004">
+        <designation lang="en-GB">Angioedema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="85243001">
+        <designation lang="en-GB">Minor laceration</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="85431000">
+        <designation lang="en-GB">Fusiform aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="856006">
+        <designation lang="en-GB">Actinic keratosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="85659009">
+        <designation lang="en-GB">Aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="85726003">
+        <designation lang="en-GB">Mixed aneurysm</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="85804007">
+        <designation lang="en-GB">Congestion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="86217007">
+        <designation lang="en-GB">Avascular necrosis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="86251006">
+        <designation lang="en-GB">Neoplasm of uncertain behavior</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="863913009">
+        <designation lang="en-GB">Open amputated structure</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="863926008">
+        <designation lang="en-GB">Angiosarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="86732001">
+        <designation lang="en-GB">Hyperplastic scar</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="87364003">
+        <designation lang="en-GB">Neuroblastoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="874913002">
+        <designation lang="en-GB">Multinodular hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="874935005">
+        <designation lang="en-GB">Focal glandular and stromal hyperplasia</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="87642003">
+        <designation lang="en-GB">Dislocation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="87737001">
+        <designation lang="en-GB">Signet ring cell carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="87913009">
+        <designation lang="en-GB">Malignant phyllodes tumor</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="88195001">
+        <designation lang="en-GB">Alveolar soft part sarcoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="88270009">
+        <designation lang="en-GB">Intercellular edema</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="88295005">
+        <designation lang="en-GB">Urate calculus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="88565003">
+        <designation lang="en-GB">Flexion deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89010004">
+        <designation lang="en-GB">Rhabdomyolysis</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89031001">
+        <designation lang="en-GB">Hypopigmentation</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="895217008">
+        <designation lang="en-GB">Lichen sclerosus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89740008">
+        <designation lang="en-GB">Lobular carcinoma</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89753006">
+        <designation lang="en-GB">Calcium calculus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="89757007">
+        <designation lang="en-GB">Macular rash</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="90120004">
+        <designation lang="en-GB">Mycosis fungoides</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="90510001">
+        <designation lang="en-GB">Extension deformity</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="90738007">
+        <designation lang="en-GB">Obstruction by torsion</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="91182001">
+        <designation lang="en-GB">Perforated ulcer</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="91369002">
+        <designation lang="en-GB">Bloody discharge</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="91431006">
+        <designation lang="en-GB">Supernumerary structure</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="9196004">
+        <designation lang="en-GB">Staghorn calculus</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="9499001">
+        <designation lang="en-GB">Multiple polyps</designation>
+    </concept>
+    <concept codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" code="985004">
+        <designation lang="en-GB">Schwannoma</designation>
+    </concept>
+</ValueSet>
