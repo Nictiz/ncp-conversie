@@ -19,7 +19,7 @@
          codeSystem="2.16.840.1.113883.6.1"
          displayName="Patient summary Document"/>
    <title>Patiënt samenvatting</title>
-   <effectiveTime value="202506301158480200"/>
+   <effectiveTime value="202507071733070200"/>
    <!--No mapping-->
    <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"/>
    <languageCode code="nl-NL"/>
@@ -57,7 +57,9 @@
          <id extension="70000003" root="2.16.840.1.113883.2.4.6.6"/>
          <addr nullFlavor="NI"/>
          <telecom nullFlavor="NI"/>
-         <assignedAuthoringDevice nullFlavor="NI"/>
+         <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+            <softwareName>AORTA Applicatie-id: 70000003</softwareName>
+         </assignedAuthoringDevice>
          <representedOrganization>
             <id extension="00002727" root="2.16.528.1.1007.3.3"/>
             <name>Simulator VZVZ</name>
@@ -79,7 +81,9 @@
          <id extension="70002057" root="2.16.840.1.113883.2.4.6.6"/>
          <addr nullFlavor="NI"/>
          <telecom nullFlavor="NI"/>
-         <assignedAuthoringDevice nullFlavor="NI"/>
+         <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+            <softwareName>AORTA Applicatie-id: 70002057</softwareName>
+         </assignedAuthoringDevice>
          <representedOrganization>
             <id extension="00002727" root="2.16.528.1.1007.3.3"/>
             <name>VZVZ Simulator</name>
@@ -104,7 +108,7 @@
       </assignedCustodian>
    </custodian>
    <legalAuthenticator typeCode="LA">
-      <time value="202506301158480200"/>
+      <time value="202507071733070200"/>
       <signatureCode code="S"/>
       <assignedEntity>
     <!-- To be replaced by definitive legalAuthenticator -->
@@ -151,7 +155,7 @@
    <documentationOf typeCode="DOC">
       <serviceEvent classCode="PCPR" moodCode="EVN">
          <effectiveTime>
-            <high value="202506301158480200"/>
+            <high value="202507071733070200"/>
          </effectiveTime>
       </serviceEvent>
    </documentationOf>
@@ -548,7 +552,7 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td ID="allergy-d10e1644">Allergic disposition</td>
+                           <td ID="allergy-d8e1644">Allergic disposition</td>
                            <td/>
                            <td>Amoxicilline, opmerking: via neuroloog</td>
                            <td>Vanaf: 2024-03-04</td>
@@ -587,7 +591,7 @@
                                            displayName="allergie voor substantie"/>
                            </code>
                            <text>
-                              <reference value="#allergy-d10e1644"/>
+                              <reference value="#allergy-d8e1644"/>
                            </text>
                            <statusCode code="completed"/>
                            <!--Duration (Onset-End date)-->
@@ -663,14 +667,14 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td ID="problem-d10e218">Appendicitis</td>
+                           <td ID="problem-d8e218">Appendicitis</td>
                            <td>Vanaf: 2025-04-30 12:33</td>
                            <td/>
                            <td/>
                            <td/>
                         </tr>
                         <tr>
-                           <td ID="problem-d10e1439">VERKEERSDEELNAME</td>
+                           <td ID="problem-d8e1439">VERKEERSDEELNAME</td>
                            <td>Vanaf: 2024-12-01 11:33</td>
                            <td/>
                            <td/>
@@ -701,7 +705,7 @@
                                  codeSystem="2.16.840.1.113883.6.96"
                                  displayName="Clinical finding (finding)"/>
                            <text>
-                              <reference value="#problem-d10e218"/>
+                              <reference value="#problem-d8e218"/>
                            </text>
                            <statusCode code="completed"/>
                            <effectiveTime>
@@ -743,7 +747,7 @@
                                  codeSystem="2.16.840.1.113883.6.96"
                                  displayName="Clinical finding (finding)"/>
                            <text>
-                              <reference value="#problem-d10e1439"/>
+                              <reference value="#problem-d8e1439"/>
                            </text>
                            <statusCode code="completed"/>
                            <effectiveTime>

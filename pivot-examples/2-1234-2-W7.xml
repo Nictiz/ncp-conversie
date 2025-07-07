@@ -90,18 +90,18 @@ Although being real choices for the different diseases and conditions, the selec
             <telecom value="tel:351211234568" use="WP"/>
             <telecom value="mailto:medico@gmail.com"/>
             <!-- Author Information: Health Professional -->
-            <assignedPerson>
+            <!--<assignedPerson>
                 <name>
                     <family>Pereira</family>
                     <given>António</given>
                 </name>
-            </assignedPerson>
+            </assignedPerson>-->
             <!-- Author Information: Authoring Device -->
-            <!--
+            
             <assignedAuthoringDevice>
                 <softwareName>Apoteken Service</softwareName>
             </assignedAuthoringDevice>
-            -->
+            
             <representedOrganization>
                 <id root="2.999" extension="12345678"/>
                 <name>Centro Hospitalar de Lisboa Central</name>

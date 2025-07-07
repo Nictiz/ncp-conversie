@@ -19,7 +19,7 @@
          codeSystem="2.16.840.1.113883.6.1"
          displayName="Patient summary Document"/>
    <title>Patiënt samenvatting</title>
-   <effectiveTime value="20250702160731+0200"/>
+   <effectiveTime value="20250707173245+0200"/>
    <!--No mapping-->
    <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"/>
    <languageCode code="nl-NL"/>
@@ -61,7 +61,9 @@
          <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
          <addr nullFlavor="NI"/>
          <telecom nullFlavor="NI"/>
-         <assignedAuthoringDevice nullFlavor="NI"/>
+         <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+            <softwareName>AORTA Applicatie-id: 00002727</softwareName>
+         </assignedAuthoringDevice>
          <representedOrganization>
             <id root="2.16.528.1.1007.3.3" extension="00001111"/>
             <name>Gezondheidscentrum A</name>
@@ -82,7 +84,9 @@
          <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
          <addr nullFlavor="NI"/>
          <telecom nullFlavor="NI"/>
-         <assignedAuthoringDevice nullFlavor="NI"/>
+         <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+            <softwareName>AORTA Applicatie-id: 1</softwareName>
+         </assignedAuthoringDevice>
          <representedOrganization nullFlavor="NI">
             <id nullFlavor="NI"/>
             <name nullFlavor="NI"/>
@@ -107,7 +111,7 @@
       </assignedCustodian>
    </custodian>
    <legalAuthenticator typeCode="LA">
-      <time value="20250702160731+0200"/>
+      <time value="20250707173245+0200"/>
       <signatureCode code="S"/>
       <assignedEntity>
     <!-- To be replaced by definitive legalAuthenticator -->
@@ -169,7 +173,7 @@
    <documentationOf typeCode="DOC">
       <serviceEvent classCode="PCPR" moodCode="EVN">
          <effectiveTime>
-            <high value="20250702160731+0200"/>
+            <high value="20250707173245+0200"/>
          </effectiveTime>
       </serviceEvent>
    </documentationOf>

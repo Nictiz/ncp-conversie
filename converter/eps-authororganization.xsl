@@ -40,7 +40,22 @@
                     <xsl:if test="not(hl7:telecom)">
                         <telecom nullFlavor="NI"/>
                     </xsl:if>
-                    <assignedAuthoringDevice nullFlavor="NI"/>
+                    <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+                        <softwareName>
+                            <xsl:choose>
+                                <xsl:when test="hl7:id/@root='2.16.840.1.113883.2.4.6.6'">
+                                    <xsl:value-of select="concat('AORTA Applicatie-id: ', hl7:id[@root='2.16.840.1.113883.2.4.6.6']/@extension/string())"/>
+                                </xsl:when>
+                                <xsl:when test="hl7:id/@root='2.16.528.1.1007.3.2'">
+                                    <xsl:value-of select="concat('UZI-nummer systemen: ', hl7:id[@root='2.16.528.1.1007.3.2']/@extension/string())"/>
+                                </xsl:when>
+                                <xsl:when test="hl7:id/@root='2.16.528.1.1007.4'">
+                                    <xsl:value-of select="concat('SBV-Z Systeemnummer: ', hl7:id[@root='2.16.528.1.1007.4']/@extension/string())"/>
+                                </xsl:when>
+                                <xsl:otherwise><assignedAuthoringDevice nullFlavor="NI"/></xsl:otherwise>
+                            </xsl:choose>
+                        </softwareName>
+                    </assignedAuthoringDevice>
                     <xsl:for-each select="hl7:Organization">
                         <representedOrganization>
                             <xsl:apply-templates select="hl7:id"/>
