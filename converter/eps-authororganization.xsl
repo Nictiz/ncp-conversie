@@ -94,7 +94,7 @@
     </xsl:template>
 
     <xsl:template name="addParticipants">
-        <xsl:for-each-group select="//hl7:organizer[hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.66.10.16']//hl7:participantRole" group-by=".//hl7:id">
+        <xsl:for-each select="//hl7:organizer[hl7:templateId/@root = '2.16.840.1.113883.2.4.3.11.60.66.10.16']//hl7:participant[@typeCode='RESP']/hl7:participantRole">
             <participant typeCode="IND">
                 <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
                 <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
@@ -111,7 +111,7 @@
                     </associatedPerson>
                 </associatedEntity>
             </participant>
-        </xsl:for-each-group>
+        </xsl:for-each>
     </xsl:template>
 
     <xsl:template name="custodian" exclude-result-prefixes="#all">

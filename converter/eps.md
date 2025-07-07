@@ -114,7 +114,7 @@ ID a UID is needed for @root, an identifier for extension. For development and t
 
 - [eHDSI A.1.1 Identification of the patient/subject](eps-patient.md)
 - eHDSI A.1.2 Contact information: geen vulling
-- eHDSI A.1.2.2 Preferred HP to contact: geen vulling
+- [eHDSI A.1.2.2 Preferred HP to contact](eps-authororganization.md)
 - eHDSI A.1.2.3 Contact person/legal guardian: geen vulling (geen gegevens in acute zorg batch)
 - eHDSI A.1.3 Insurance information: geen vulling
 - [eHDSI A.1.5 Author and Organisation](eps-authororganization.md)
