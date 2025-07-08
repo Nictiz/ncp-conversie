@@ -69,26 +69,9 @@
         <observation classCode="OBS" moodCode="EVN" negationInd="false">
             <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.17"/>
             <xsl:comment>Type of propensity</xsl:comment>
-            <!-- This is a temporary hack , terminology mapping needs update, then this hack is no longer needed.
-            See: https://github.com/Duometis/ncp-conversie/issues/27 and issue #4-->
-            <xsl:choose>
-                <xsl:when test="(hl7:value/@code = '419511003') and (hl7:value/@codeSystem = '2.16.840.1.113883.6.96')">
-                    <code code="420134006" codeSystem="2.16.840.1.113883.6.96" displayName="Propensity to adverse reaction" xsi:type="CD">
-                        <translation xsi:type="CD" code="419511003" codeSystem="2.16.840.1.113883.6.96" displayName="neiging tot ongewenste reactie op medicatie en/of drug"/>
-                    </code>
-                </xsl:when>
-                <xsl:when test="(hl7:value/@code = '419199007') and (hl7:value/@codeSystem = '2.16.840.1.113883.6.96')">
-                    <code code="609328004" codeSystem="2.16.840.1.113883.6.96" displayName="Allergic disposition" xsi:type="CD">
-                        <translation xsi:type="CD" code="419199007" codeSystem="2.16.840.1.113883.6.96" displayName="allergie voor substantie"/>
-                    </code>
-                </xsl:when>
-                <xsl:otherwise>
-                    <!-- Dit is zonder de hack, buiten de choose halen en choose weg -->
                     <code>
                         <xsl:apply-templates select="hl7:value/@*"/>
                     </code>
-                </xsl:otherwise>
-            </xsl:choose>
             <!-- Referred-to narrative to be generated later -->
             <text>
                 <reference value="#allergy-{generate-id()}"/>
