@@ -18,7 +18,7 @@
          codeSystem="2.16.840.1.113883.6.1"
          displayName="Patiënt samenvatting"/>
    <title>Patiënt samenvatting</title>
-   <effectiveTime value="20250707174835+0200"/>
+   <effectiveTime value="20250708081041+0200"/>
    <confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25"/>
    <languageCode code="nl-NL"/>
    <setId root="1.2.3" extension="5678-TEST"/>
@@ -106,7 +106,7 @@
       </assignedCustodian>
    </custodian>
    <legalAuthenticator typeCode="LA">
-      <time value="20250707174835+0200"/>
+      <time value="20250708081041+0200"/>
       <signatureCode code="S"/>
       <assignedEntity>
     <!-- To be replaced by definitive legalAuthenticator -->
@@ -140,7 +140,7 @@
       <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
       <associatedEntity classCode="PRS">
          <addr>
-            <streetName>Valkendaelll</streetName>
+            <streetName>Valkendael</streetName>
             <houseNumber>45</houseNumber>
             <buildingNumberSuffix>A 2</buildingNumberSuffix>
             <additionalLocator>by</additionalLocator>
@@ -167,7 +167,7 @@
    <documentationOf typeCode="DOC">
       <serviceEvent classCode="PCPR" moodCode="EVN">
          <effectiveTime>
-            <high value="20250707174835+0200"/>
+            <high value="20250708081041+0200"/>
          </effectiveTime>
       </serviceEvent>
    </documentationOf>

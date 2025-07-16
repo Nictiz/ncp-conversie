@@ -69,9 +69,9 @@
         <observation classCode="OBS" moodCode="EVN" negationInd="false">
             <templateId root="1.3.6.1.4.1.12559.11.10.1.3.1.3.17"/>
             <xsl:comment>Type of propensity</xsl:comment>
-                    <code>
-                        <xsl:apply-templates select="hl7:value/@*"/>
-                    </code>
+            <code>
+                <xsl:apply-templates select="hl7:value/@*"/>
+            </code>
             <!-- Referred-to narrative to be generated later -->
             <text>
                 <reference value="#allergy-{generate-id()}"/>

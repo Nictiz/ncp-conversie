@@ -2,6 +2,12 @@
 
 ## Conversion specifications
 
+### Terminology mapping file
+
+This code needs the latest mapping.xml from https://github.com/Nictiz/ncp-terminologie
+
+### Conversion of acute zorg to eHDSI format
+
 These markdown files describe in readable language the conversion of "acute zorg" (emergency care) patient summary to the European Patient Summary in eHDSI format.
 
 Target: [Template  eHDSI Patient Summary](https://art-decor.ehdsi.eu/publication/epsos-html-20240422T073854/tmp-1.3.6.1.4.1.12559.11.10.1.3.1.1.3-2024-04-19T100332.html)
