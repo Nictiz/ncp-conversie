@@ -11,7 +11,7 @@
     <!-- Converts Xpath (ISO-formatted) time to HL7 time -->
     <xsl:function name="dm:formatTS">
         <xsl:param name="datetime" as="xs:dateTime"/>
-        <xsl:value-of select="xs:string(concat(fn:substring(fn:translate(xs:string($datetime), '-:T', ''), 0, 15), fn:substring(fn:translate(xs:string($datetime), ':', ''), 26, 6)))"/>
+		<xsl:value-of select="translate(format-dateTime($datetime, '[Y0001][M01][D01][H01][m01][s01][Z]'), ':', '')"/>
     </xsl:function>
     
     <xsl:function name="dm:formatHl7date">
