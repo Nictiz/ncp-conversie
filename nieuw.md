@@ -17,10 +17,10 @@ Note right of XSLT: addition NL-narrative
 
     XSLT->>A: eHDSI friendly version
     A->>A: create original document (pdf)
-XSLT->>XSLT: add strenght, unit, farmaceutische vorm based on GPK-ATC map
+Note left of A: PDF created from added NL-narrative
+XSLT->>XSLT: add strenght, unit, farmaceutische vorm
 Note right of XSLT: This is where the data for the GPK split is inserted
 Note right of XSLT: Also row per active ingredient added or is this done during the syntax conversion?  
-Note left of A: PDF created from added NL-narrative
     XSLT->>XSLT: add transations to items that are not mapped onto MVC valueset items (NEC)
 Note right of XSLT: This is the OTH-er-workaround
   create participant openNCP
