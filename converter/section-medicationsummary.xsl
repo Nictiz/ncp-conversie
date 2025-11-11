@@ -239,10 +239,7 @@
                             <tr>
                                 <th>Medicijn</th>
                                 <th>Actief ingrediënt</th>
-                                <th>Sterkte</th>
-                                <th>Farmaceutische vorm</th>
-                                <th>Eenheden per keer</th>
-                                <th>Frequentie</th>
+                                <th>Instructies</th>
                                 <th>Toedieningsweg</th>
                                 <th>Doseerduur</th>
                                 <th>Reden van voorschrijven</th>
@@ -285,14 +282,10 @@
                                     </td>
                                     <!-- Active ingredient -->
                                     <td> </td>
-                                    <!-- Strength -->
-                                    <td/>
-                                    <!-- Dose form -->
-                                    <td/>
-                                    <!-- Units per intake -->
-                                    <td/>
-                                    <!-- Frequency of intakes -->
-                                    <td/>
+                                    <!-- Instructies -->
+                                    <td>
+                                        <xsl:value-of select="./hl7:text"/>
+                                    </td>
                                     <!-- Route of administration -->
                                     <td>
                                         <xsl:value-of select="./hl7:routeCode/@displayName"/>
