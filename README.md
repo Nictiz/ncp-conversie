@@ -77,8 +77,7 @@ versie: acutezorg 2.1.0 https://decor.nictiz.nl/ad/#/acutezorg-/project/publicat
 * publicaties kentenzorg (voor acute zorg): https://decor.nictiz.nl/ad/#/az-vzvz-/project/publication
 * samenvatting SEH: https://decor.nictiz.nl/pub/vzvz/az-vzvz-html-20230717T130020/tmp-2.16.840.1.113883.2.4.3.111.3.21.10.3-2020-06-04T135255.html
 * batch wrapper LSP is MCCI**, daaronder REPC** etc.
-* batch wrappers zitten in "acute zorg op het LSP", versie 1.4? navragen Dennis
-* Dennis van Leeuwen is de architect bij VZVZ
+* batch wrappers zitten in "acute zorg op het LSP", versie 1.4
 * ze gebruiken geen ADA maar maken de voorbeelden in XML
 * acutezorg  2.1.0 zit ook in kwalificatie.nictiz.nl
 
