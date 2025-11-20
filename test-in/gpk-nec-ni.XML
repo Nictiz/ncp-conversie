@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MCCI_IN200101 xmlns="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm:medication" xmlns:hl7nl="urn:hl7-nl:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/MCCI_IN200101.xsd">
+   <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+   <creationTime value="20240813161021"/>
+   <versionCode code="NICTIZEd2005-Okt"/>
+   <interactionId extension="MCCI_IN200101" root="2.16.840.1.113883.1.6"/>
+   <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+   <transmissionQuantity value="8"/>
+   <acknowledgement typeCode="AA">
+      <targetTransmission>
+         <id extension="ID_012345ABCFED" root="1.2.3.999"/>
+      </targetTransmission>
+   </acknowledgement>
+   <receiver>
+      <device>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+      </device>
+   </receiver>
+   <sender>
+      <device>
+         <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+      </device>
+   </sender>
+   <!-- medicatieafspraken -->
+   <QUMA_IN991203NL02 xsi:schemaLocation="urn:hl7-org:v3 file:/C:/Publicaties/VZVZ/Ketenzorg/1.0.2/schemas_codeGen_flat/REPC_IN990121NL.xsd">
+      <id root="2.16.840.1.113883.2.4.6.6.1.1" extension="Nictiz_testMessageId"/>
+      <creationTime value="20240813161021"/>
+      <versionCode code="NICTIZEd2005-Okt"/>
+      <interactionId extension="QUMA_IN991203NL02" root="2.16.840.1.113883.1.6"/>
+      <profileId root="2.16.840.1.113883.2.4.3.11.1" extension="810"/>
+      <processingCode code="P"/>
+      <processingModeCode code="T"/>
+      <acceptAckCode code="NE"/>
+      <acknowledgement typeCode="AA">
+         <targetMessage>
+            <id extension="ID_012345ABCFED" root="1.2.3.999"/>
+         </targetMessage>
+      </acknowledgement>
+      <receiver>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="70000003"/>
+         </device>
+      </receiver>
+      <sender>
+         <device>
+            <id root="2.16.840.1.113883.2.4.6.6" extension="1"/>
+         </device>
+      </sender>
+      <ControlActProcess moodCode="EVN">
+         <authorOrPerformer typeCode="AUT">
+            <participant>
+               <AssignedDevice>
+                  <id root="2.16.528.1.1007.3.2" extension="000011111"/>
+                  <id root="2.16.840.1.113883.2.4.6.6" extension="00002727"/>
+                  <Organization>
+                     <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                     <name>Gezondheidscentrum A</name>
+                  </Organization>
+               </AssignedDevice>
+            </participant>
+         </authorOrPerformer>
+         <subject>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+               <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9265"/>
+               <code code="419891008" displayName="Medicatiegegevens" codeSystem="2.16.840.1.113883.6.96"/>
+               <statusCode code="completed"/>
+               <recordTarget typeCode="RCT" contextControlCode="OP">
+                  <patientRole>
+                     <id root="2.16.840.1.113883.2.4.6.3" extension="999910942"/>
+                     <!-- Adresgegevens (volgens CDA datatype 'AD') -->
+                     <addr use="HP">
+                        <!-- adrestype -->
+                        <streetName>Knolweg</streetName>
+                        <houseNumber>1000</houseNumber>
+                        <buildingNumberSuffix>A 2</buildingNumberSuffix>
+                        <!--                                <additionalLocator>to</additionalLocator>-->
+                        <postalCode>9999 XX</postalCode>
+                        <city>STITSWERD</city>
+                        <country code="NL" codeSystem="1.0.3166.1.2.2">Nederland</country>
+                        <unitID>Flat Oost</unitID>
+                     </addr>
+                     <patient>
+                        <!-- Voornamen, geslachtsnaam -->
+                        <name>
+                           <given qualifier="BR">Gerard Jan</given>
+                           <given qualifier="IN">G. J.</given>
+                           <given qualifier="CL">Gerard</given>
+                           <family qualifier="BR">XXX_Bomele</family>
+                           <delimiter>-</delimiter>
+                           <prefix qualifier="VV">van </prefix>
+                           <family qualifier="SP">Zegels</family>
+                        </name>
+                        <!-- geslacht -->
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                        <birthTime value="19540822"/>
+                        <sdtc:multipleBirthInd value="false"/>
+                     </patient>
+                  </patientRole>
+               </recordTarget>
+               <!-- gekopieerd (en aangepast) van Scenario 0.1 - MBH_907_QA1-JNK -  uit de MP 907 testset  
+                        https://github.com/Nictiz/art_decor/blob/master/ada_2_test-xslt/mp/9.0.7/beschikbaarstellen_medicatiegegevens/hl7_instance_TestSet/mg-mgr-ma-TestSet-scen0_MA_filterqueries-0-1.xml-->
+               <component typeCode="COMP">
+                  <substanceAdministration classCode="SBADM" moodCode="RQO">
+                     <!-- MdG: 'Andermans' afspraak ingevoegd, template .9241 -->
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9241"/>
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9233"/>
+                     <id extension="Med01" root="2.16.840.1.113883.2.4.3.11.999.77.16076005.1"/>
+                     <code code="16076005" displayName="Medicatieafspraak" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                     <text mediaType="text/plain">Vanaf vandaag, voor 9 dagen, 1 maal per dag 2 stuks, Oraal</text>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20240813000000"/>
+                        <high value="20240911235900"/>
+                     </effectiveTime>
+                     <routeCode code="9" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="Oraal" codeSystemName="G-Standaard Toedieningswegen"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9254"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="130532" codeSystem="2.16.840.1.113883.2.4.4.1" displayName="OTC KAUWTABLET MET O.A. VITAMINE K" codeSystemName="G-Standaard GPK"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <time value="20240813080000"/>
+                        <assignedAuthor>
+                           <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                           <code code="01.000" codeSystem="2.16.840.1.113883.2.4.15.111" displayName="Arts"/>
+                           <assignedPerson>
+                              <name>K. H. G. Huis</name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                              <name>Gezondheidscentrum A</name>
+                              <addr use="WP">
+                                 <!-- adrestype -->
+                                 <streetName>Valkendael</streetName>
+                                 <houseNumber>45</houseNumber>
+                                 <buildingNumberSuffix>A 2</buildingNumberSuffix>
+                                 <additionalLocator>by</additionalLocator>
+                                 <postalCode>6245 HK</postalCode>
+                                 <city>Maastricht</city>
+                                 <country code="NL" codeSystem="1.0.3166.1.2.2">Nederland</country>
+                                 <!--<unitID>Ingang via de zijkant</unitID>-->
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship typeCode="COMP">
+                        <sequenceNumber value="1"/>
+                        <substanceAdministration classCode="SBADM" moodCode="RQO">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9149"/>
+                           <effectiveTime xsi:type="hl7nl:PIVL_TS" operator="A" isFlexible="true">
+                              <hl7nl:frequency>
+                                 <hl7nl:numerator xsi:type="hl7nl:INT" value="1"/>
+                                 <hl7nl:denominator xsi:type="hl7nl:PQ" value="1" unit="d"/>
+                              </hl7nl:frequency>
+                           </effectiveTime>
+                           <doseQuantity>
+                              <center value="2" unit="1">
+                                 <translation value="2" code="245" displayName="stuk" codeSystem="2.16.840.1.113883.2.4.4.1.900.2" codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                              </center>
+                           </doseQuantity>
+                           <consumable xsi:nil="true"/>
+                        </substanceAdministration>
+                     </entryRelationship>
+                     <!--Relatie naar medicamenteuze behandeling-->
+                     <entryRelationship typeCode="COMP" inversionInd="true">
+                        <procedure classCode="PROC" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9084"/>
+                           <id root="2.16.840.1.113883.2.4.3.11.999.77.1.1" extension="MBH01"/>
+                           <code code="1" displayName="Medicamenteuze behandeling" codeSystem="2.16.840.1.113883.2.4.3.11.60.20.77.5.3"/>
+                        </procedure>
+                     </entryRelationship>
+                     <!-- Relatie naar OverdrachtConcern -->
+                     <entryRelationship typeCode="REFR">
+                        <act classCode="ACT" moodCode="EVN">
+                           <id extension="da0ac0d3-f233-43f7-94a0-d243efd1a866" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                           <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+                        </act>
+                     </entryRelationship>
+                     <!-- Relatie naar contactmoment -->
+                     <entryRelationship typeCode="REFR">
+                        <encounter classCode="ENC" moodCode="EVN">
+                           <id extension="Contact01" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                        </encounter>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </component>
+               <!-- overgenomen (en aangepast) van MP 907 testmaterialen Scenario 7.1 - tsMBH_907_magistraalalleingredienten-GSB 
+                        https://github.com/Nictiz/art_decor/blob/master/ada_2_test-xslt/mp/9.0.7/beschikbaarstellen_medicatiegegevens/hl7_instance_TestSet/mg-mgr-ma-TestSet-scen7_MA_Magistraal-7-1optioneel.xml-->
+               <component typeCode="COMP">
+                  <substanceAdministration classCode="SBADM" moodCode="RQO">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9235"/>
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9233"/>
+                     <id extension="Med02_magistraal" root="2.16.840.1.113883.2.4.3.11.999.77.16076005.1"/>
+                     <code code="16076005" displayName="Medicatieafspraak" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                     <text mediaType="text/plain">Vanaf vandaag, voor 28 dagen, 1 maal per 12 uur, cutaan</text>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20240813000000"/>
+                        <high value="20240910235900"/>
+                     </effectiveTime>
+                     <routeCode code="53" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="cutaan" codeSystemName="G-Standaard Toedieningswegen"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9254"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code nullFlavor="OTH"/>
+                              <name>Zinkoxide 10% in hydrocortisoncrème FNA 100 gr</name>
+                              <pharm:desc>Titel: Zinkoxide 10% in hydrocortisoncrème FNA 100 gr Regel: zinkoxide 10gr Regel: hydrocortisoncrème FNA 100gr</pharm:desc>
+                              <pharm:ingredient classCode="INGR">
+                                 <pharm:quantity>
+                                    <numerator xsi:type="PQ" value="10" unit="g">
+                                       <translation value="10" code="215" displayName="gram" codeSystem="2.16.840.1.113883.2.4.4.1.900.2" codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                                    </numerator>
+                                    <denominator xsi:type="PQ" value="100" unit="g">
+                                       <translation value="100" code="215" displayName="gram" codeSystem="2.16.840.1.113883.2.4.4.1.900.2" codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                                    </denominator>
+                                 </pharm:quantity>
+                                 <pharm:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <pharm:code code="265225" codeSystem="2.16.840.1.113883.2.4.4.7" displayName="ZINKOXIDE" codeSystemName="G-Standaard HPK"/>
+                                 </pharm:ingredient>
+                              </pharm:ingredient>
+                              <pharm:ingredient classCode="INGR">
+                                 <pharm:quantity>
+                                    <numerator xsi:type="PQ" value="90" unit="g">
+                                       <translation value="90" code="215" displayName="gram" codeSystem="2.16.840.1.113883.2.4.4.1.900.2" codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                                    </numerator>
+                                    <denominator xsi:type="PQ" value="100" unit="g">
+                                       <translation value="100" code="215" displayName="gram" codeSystem="2.16.840.1.113883.2.4.4.1.900.2" codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                                    </denominator>
+                                 </pharm:quantity>
+                                 <pharm:ingredient classCode="MMAT" determinerCode="KIND">
+                                    <pharm:code code="467928" codeSystem="2.16.840.1.113883.2.4.4.7" displayName="HYDROCORTISON ZALF 10MG/G" codeSystemName="G-Standaard HPK"/>
+                                 </pharm:ingredient>
+                              </pharm:ingredient>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <time value="20240813120000"/>
+                        <assignedAuthor>
+                           <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                           <code code="01.000" codeSystem="2.16.840.1.113883.2.4.15.111" displayName="Arts"/>
+                           <assignedPerson>
+                              <name>K. H. G. Huis</name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                              <name>Gezondheidscentrum A</name>
+                              <addr use="WP">
+                                 <!-- adrestype -->
+                                 <streetName>Valkendael</streetName>
+                                 <houseNumber>45</houseNumber>
+                                 <buildingNumberSuffix>A 2</buildingNumberSuffix>
+                                 <additionalLocator>by</additionalLocator>
+                                 <postalCode>6245 HK</postalCode>
+                                 <city>Maastricht</city>
+                                 <country code="NL" codeSystem="1.0.3166.1.2.2">Nederland</country>
+                                 <!--<unitID>Ingang via de zijkant</unitID>-->
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship typeCode="COMP">
+                        <sequenceNumber value="1"/>
+                        <substanceAdministration classCode="SBADM" moodCode="RQO">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9149"/>
+                           <effectiveTime xsi:type="hl7nl:PIVL_TS" operator="A" isFlexible="true">
+                              <hl7nl:frequency>
+                                 <hl7nl:numerator xsi:type="hl7nl:INT" value="1"/>
+                                 <hl7nl:denominator xsi:type="hl7nl:PQ" value="12" unit="h"/>
+                              </hl7nl:frequency>
+                           </effectiveTime>
+                           <consumable xsi:nil="true"/>
+                        </substanceAdministration>
+                     </entryRelationship>
+                     <!-- Relatie naar OverdrachtConcern -->
+                     <entryRelationship typeCode="REFR">
+                        <act classCode="ACT" moodCode="EVN">
+                           <id extension="da0ac0d3-f233-43f7-94a0-d243efd1a866" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                           <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+                        </act>
+                     </entryRelationship>
+                     <!-- Relatie naar contactmoment -->
+                     <entryRelationship typeCode="REFR">
+                        <encounter classCode="ENC" moodCode="EVN">
+                           <id extension="Contact01" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                        </encounter>
+                     </entryRelationship>
+                     <entryRelationship typeCode="COMP" inversionInd="true">
+                        <procedure classCode="PROC" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9084"/>
+                           <id root="2.16.840.1.113883.2.4.3.11.999.77.1.1" extension="MBH02"/>
+                           <code code="1" displayName="Medicamenteuze behandeling" codeSystem="2.16.840.1.113883.2.4.3.11.60.20.77.5.3"/>
+                        </procedure>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </component>
+               <!-- overgenomen (en aangepast) van MP 907 testmaterialen Scenario 6.10 - tsMBH_907_cyclischschema-GSB 
+                        https://github.com/Nictiz/art_decor/blob/master/ada_2_test-xslt/mp/9.0.7/beschikbaarstellen_medicatiegegevens/hl7_instance_TestSet/mg-mgr-ma-TestSet-scen6_MA_Doseerschemas-6-10optioneel.xml-->
+               <component typeCode="COMP">
+                  <substanceAdministration classCode="SBADM" moodCode="RQO">
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9235"/>
+                     <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9233"/>
+                     <id extension="ed03_cyclischschema" root="2.16.840.1.113883.2.4.3.11.999.77.16076005.1"/>
+                     <code code="16076005" displayName="Medicatieafspraak" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                     <text mediaType="text/plain">Vanaf vandaag, voorr 23 dagen, cyclus van 3 dagen: steeds eerst gedurende 2 dagen 1 maal per dag 1 stuk, dan gedurende 1 dag 1 maal per dag 2 stuks, oraal</text>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20240813000000"/>
+                        <high value="20240905235900"/>
+                     </effectiveTime>
+                     <routeCode code="9" codeSystem="2.16.840.1.113883.2.4.4.9" displayName="oraal" codeSystemName="G-Standaard Toedieningswegen"/>
+                     <consumable>
+                        <manufacturedProduct>
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9254"/>
+                           <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                              <code code="7323" codeSystem="2.16.840.1.113883.2.4.4.10" displayName="ACENOCOUMAROL TABLET 1MG" codeSystemName="G-Standaard PRK">
+                                 <translation code="20303" codeSystem="2.16.840.1.113883.2.4.4.1" displayName="ACENOCOUMAROL TABLET 1MG" codeSystemName="G-Standaard GPK"/>
+                              </code>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <author>
+                        <time value="20240813083300"/>
+                        <assignedAuthor>
+                           <id root="2.16.528.1.1007.3.1" extension="000002221"/>
+                           <code code="01.000" codeSystem="2.16.840.1.113883.2.4.15.111" displayName="Arts"/>
+                           <assignedPerson>
+                              <name>K. H. G. Huis</name>
+                           </assignedPerson>
+                           <representedOrganization>
+                              <id root="2.16.528.1.1007.3.3" extension="00001111"/>
+                              <name>Gezondheidscentrum A</name>
+                              <addr use="WP">
+                                 <!-- adrestype -->
+                                 <streetName>Valkendael</streetName>
+                                 <houseNumber>45</houseNumber>
+                                 <buildingNumberSuffix>A 2</buildingNumberSuffix>
+                                 <additionalLocator>by</additionalLocator>
+                                 <postalCode>6245 HK</postalCode>
+                                 <city>Maastricht</city>
+                                 <country code="NL" codeSystem="1.0.3166.1.2.2">Nederland</country>
+                                 <!--<unitID>Ingang via de zijkant</unitID>-->
+                              </addr>
+                           </representedOrganization>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship typeCode="COMP">
+                        <sequenceNumber value="1"/>
+                        <substanceAdministration classCode="SBADM" moodCode="RQO">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9149"/>
+                           <effectiveTime operator="A" xsi:type="SXPR_TS">
+                              <comp xsi:type="hl7nl:PIVL_TS" operator="A" isFlexible="true">
+                                 <hl7nl:frequency>
+                                    <hl7nl:numerator xsi:type="hl7nl:INT" value="1"/>
+                                    <hl7nl:denominator xsi:type="hl7nl:PQ" value="1" unit="d"/>
+                                 </hl7nl:frequency>
+                              </comp>
+                              <comp xsi:type="hl7nl:PIVL_TS" operator="A" isFlexible="true">
+                                 <hl7nl:phase>
+                                    <hl7nl:width xsi:type="hl7nl:PQ" value="2" unit="d"/>
+                                 </hl7nl:phase>
+                                 <hl7nl:period value="3" unit="d"/>
+                              </comp>
+                           </effectiveTime>
+                           <doseQuantity>
+                              <center value="1" unit="1">
+                                 <translation value="1" code="245" displayName="stuk" codeSystem="2.16.840.1.113883.2.4.4.1.900.2" codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                              </center>
+                           </doseQuantity>
+                           <consumable xsi:nil="true"/>
+                        </substanceAdministration>
+                     </entryRelationship>
+                     <entryRelationship typeCode="COMP">
+                        <sequenceNumber value="2"/>
+                        <substanceAdministration classCode="SBADM" moodCode="RQO">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9149"/>
+                           <effectiveTime operator="A" xsi:type="SXPR_TS">
+                              <comp xsi:type="hl7nl:PIVL_TS" operator="A" isFlexible="true">
+                                 <hl7nl:frequency>
+                                    <hl7nl:numerator xsi:type="hl7nl:INT" value="1"/>
+                                    <hl7nl:denominator xsi:type="hl7nl:PQ" value="1" unit="d"/>
+                                 </hl7nl:frequency>
+                              </comp>
+                              <comp xsi:type="hl7nl:PIVL_TS" operator="A" isFlexible="true">
+                                 <hl7nl:phase>
+                                    <hl7nl:width xsi:type="hl7nl:PQ" value="1" unit="d"/>
+                                 </hl7nl:phase>
+                                 <hl7nl:period value="3" unit="d"/>
+                              </comp>
+                           </effectiveTime>
+                           <doseQuantity>
+                              <center value="2" unit="1">
+                                 <translation value="2" code="245" displayName="stuk" codeSystem="2.16.840.1.113883.2.4.4.1.900.2" codeSystemName="G-Standaard thesaurus basiseenheden"/>
+                              </center>
+                           </doseQuantity>
+                           <consumable xsi:nil="true"/>
+                        </substanceAdministration>
+                     </entryRelationship>
+                     <!-- Relatie naar OverdrachtConcern -->
+                     <entryRelationship typeCode="REFR">
+                        <act classCode="ACT" moodCode="EVN">
+                           <id extension="da0ac0d3-f233-43f7-94a0-d243efd1a866" root="2.16.528.1.1007.3.3.765332.1.12"/>
+                           <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+                        </act>
+                     </entryRelationship>
+                     <!-- Relatie naar contactmoment -->
+                     <entryRelationship typeCode="REFR">
+                        <encounter classCode="ENC" moodCode="EVN">
+                           <id extension="Contact01" root="2.16.840.1.113883.2.4.6.6.100001111"/>
+                        </encounter>
+                     </entryRelationship>
+                     <entryRelationship typeCode="COMP" inversionInd="true">
+                        <procedure classCode="PROC" moodCode="EVN">
+                           <templateId root="2.16.840.1.113883.2.4.3.11.60.20.77.10.9084"/>
+                           <id root="2.16.840.1.113883.2.4.3.11.999.77.1.1" extension="MBH03"/>
+                           <code code="1" displayName="Medicamenteuze behandeling" codeSystem="2.16.840.1.113883.2.4.3.11.60.20.77.5.3"/>
+                        </procedure>
+                     </entryRelationship>
+                  </substanceAdministration>
+               </component>
+            </organizer>
+         </subject>
+         <queryAck>
+            <queryId extension="queryId_012345ABCFED" root="1.2.3.999"/>
+            <queryResponseCode code="OK"/>
+            <resultTotalQuantity value="1"/>
+            <resultCurrentQuantity value="1"/>
+            <resultRemainingQuantity value="0"/>
+         </queryAck>
+      </ControlActProcess>
+   </QUMA_IN991203NL02>
+</MCCI_IN200101>
