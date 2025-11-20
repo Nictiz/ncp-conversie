@@ -13,7 +13,7 @@ Don't forget to remove rows when future updates allow these to exist.
     <unencoded codeSystem="2.16.840.1.113883.2.4.4.1.902.122" codeSystemName="G-standaard Ongewenste medicatiegroepen"/>
     <unencoded codeSystem="2.16.840.1.113883.2.4.4.7" codeSystemName="G-Standaard HPK (Handels Product Kode)"/>
     <unencoded codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.9.5.9" codeSystemName="VoorschriftProductHPKCodelijst (versie 2015-04-01)"/>
-    <unencoded codeSystem="22.16.840.1.113883.2.4.3.11.60.40.2.9.5.13" codeSystemName="VoorschriftProductZICodelijst (versie 2015-04-01)"/>
+    <unencoded codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.9.5.13" codeSystemName="VoorschriftProductZICodelijst (versie 2015-04-01)"/>
     <unencoded codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.9.5.10" codeSystemName="VoorschriftProductPRKCodelijst (versie 2015-04-01)"/>
     <!--unencoded codeSystem="2.16.840.1.113883.2.4.4.10" codeSystemName="PRK"/-->
     <unencoded codeSystem="2.16.840.1.113883.2.4.3.11.60.40.2.8.2.10" codeSystemName="SpecifiekeStofSNKCodelijst (versie 2015-04-01)"/>
