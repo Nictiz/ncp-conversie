@@ -116,7 +116,7 @@
                         <xsl:comment>NEC w/o OTH in mapping</xsl:comment>
                         <xsl:copy-of select="."/>
                     </xsl:when>
-                    <!-- For TT translations (Alerts) use unencoded text -->
+                    <!-- For TT translations use unencoded text -->
                     <xsl:when test="($translation/soort_mapping = 'TXT') or ($translation/soort_mapping = 'Tekst')">
                         <xsl:copy>
                             <xsl:attribute name="nullFlavor" select="'OTH'"/>
@@ -124,19 +124,13 @@
                             <xsl:attribute name="xsi:type">CD</xsl:attribute>
                             <!-- Put the TEXT translation in an <originalText> element -->
                             <originalText>
-                                <xsl:value-of select="$translation/text/string()"/>
+                                <xsl:value-of select="@displayName/string()"/>
                             </originalText>
                             <!-- And put original as translation -->
                             <translation>
-                                <xsl:copy-of select="@*"/>
+                                <xsl:copy-of select="(@* except @displayName)"/>
+                                <xsl:attribute name="displayName" select="$translation/text/string()"/>
                             </translation>
-                        </xsl:copy>
-                    </xsl:when>
-                    <xsl:when test="$translation/soort_mapping = '1:1' and not(@displayName)">
-                        <xsl:copy>
-                            <xsl:attribute name="displayName" select="$translation/nl_description/string()"/>
-                            <xsl:copy-of select="@*"/>
-                            <xsl:copy-of select="node()"/>
                         </xsl:copy>
                     </xsl:when>
                     <!-- Translate LOINC section codes etc. -->

@@ -153,6 +153,11 @@ ID a UID is needed for @root, an identifier for extension. For development and t
   - eHDSI A.2.8.2 Vital Signs: Plateau 1: geen vulling vanuit HIS
 - eHDSI A.2.9 Plan of Care: Plateau 1: geen vulling vanuit HIS
 
+
+## Terminology mapping
+
+See: [Terminology mapping](terminology-mapping.md)
+
 ## Versioning
 
 For each new release of:
