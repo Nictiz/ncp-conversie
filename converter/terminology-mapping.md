@@ -35,7 +35,7 @@ Mapping done by terminology_mapping.xslt.
 
 The GPK-ATC mapping is done in: section-medicationsummary.xsl
 
-The ATC codes are supplied in another CDA part than the original GPK codes: therefore this is not done in the generic terminology_mapping.xsl which only changes a <code> element. The section-medicationsummary.xsl will add a generic code construct with the proper ATC code to the pivot document.
+The ATC codes are supplied in another CDA part than the original GPK codes: therefore this is not done in the generic terminology_mapping.xsl which only changes a code or value element. The section-medicationsummary.xsl will add a generic code construct with the proper ATC code to the pivot document.
 
 Other NEC mappings are done in terminology_mapping.xsl.
 
