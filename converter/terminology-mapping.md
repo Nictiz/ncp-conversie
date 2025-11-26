@@ -31,6 +31,8 @@ The column 'soort_mapping' decides which mapping is done in ncp-conversie, CTS i
 
 ## NEC/OTH mappings
 
+Mapping done by terminology_mapping.xslt.
+
 The GPK-ATC mapping is done in: section-medicationsummary.xsl
 
 The ATC codes are supplied in another CDA part than the original GPK codes: therefore this is not done in the generic terminology_mapping.xsl which only changes a <code> element. The section-medicationsummary.xsl will add a generic code construct with the proper ATC code to the pivot document.
@@ -75,12 +77,24 @@ Existing translation elements in source will be copied as well. This may be high
 
 ## NEC without OTH
 
+Mapping done by terminology_mapping.xslt.
+
 Code will be copied as-is from source to target.
 
 ## Tekst mappings
+
+Mapping done by terminology_mapping.xslt.
 
 Some mappings are marked 'Tekst', they must contain a field 'text'.
 
 The value of 'text' is copied to the translation element.
 
-TODO from here
+## G-standaard mapping
+
+Mapping done by section-medicationsummary.xsl.
+
+Mapping for the G-standaard cannot be done in the generic terminology_mapping.xslt since the translated part (ATC-code) which is derived from the G-standaard GPK code is not stored in the eHDSI pivot document in a generic value+translation element, but is stored in a separate construct. 
+
+## Country code mapping
+
+To be done, the country codes aren't properly coded in the AZ batch and need special treatment.
